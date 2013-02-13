@@ -28,6 +28,7 @@ nosetests.xml
 
 # Translations
 *.mo
+*.swp
 
 # Mr Developer
 .mr.developer.cfg

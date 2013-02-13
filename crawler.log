@@ -1,0 +1,17 @@
+2013-02-12 23:38:28,306 ERROR open file error:abc [Errno 2] No such file or directory: 'abc'
+2013-02-12 23:39:25,223 ERROR open file error:abc [Errno 2] No such file or directory: 'abc'
+2013-02-13 00:14:57,269 ERROR Config file error. No section: 'CrawlerConfig'
+2013-02-13 00:15:11,943 ERROR Config file error. No section: 'CrawlerConfig'
+2013-02-13 00:15:55,561 ERROR Can't open file:'abc'.' [Errno 2] No such file or directory: 'abc'
+2013-02-13 00:16:12,165 ERROR Can't open file:'abc'. [Errno 2] No such file or directory: 'abc'
+2013-02-13 00:16:43,996 ERROR Config file error. No section: 'CrawlerConfig'
+2013-02-13 00:17:07,616 ERROR Config file error. No option 'logfile' in section: 'CrawlerConfig'
+2013-02-13 00:18:02,582 ERROR Config file error. No option 'mimeblacklist' in section: 'CrawlerConfig'
+2013-02-13 00:20:00,486 ERROR Config file error. No option 'suffixblacklist' in section: 'CrawlerConfig'
+2013-02-13 00:21:05,080 ERROR Log file is not set in configurationd.
+2013-02-13 00:21:23,175 ERROR Log file is not configed.
+2013-02-13 00:33:23,009 ERROR Config file error. No option 'mimetypeblacklist' in section: 'CrawlerConfig'
+2013-02-13 00:41:31,531 ERROR Can't open file:'abc'. [Errno 2] No such file or directory: 'abc'
+2013-02-13 00:42:07,013 ERROR Can't open file:'abc'. [Errno 2] No such file or directory: 'abc'
+2013-02-13 10:49:10,536 INFO Initial config success.
+2013-02-13 10:52:03,620 INFO Initial config success.
