@@ -1,4 +1,3 @@
-import config
 import ConfigParser
 import sys
 import crlogger
@@ -15,7 +14,7 @@ class config:
 
 	def __init__(self):
 		logger = crlogger.Logger()
-		logger.info("Initial config success.")
+		logger.info("Initial configuration success.")
 		configParser = ConfigParser.ConfigParser()
 		configParser.read(CONFIGFILE)
 		try:
@@ -31,7 +30,7 @@ class config:
 			mimeSubTypeWhiteList = []
 			suffixBlackList = []
 			if not logFileName or len(logFileName) < 1:					
-				logger.error("Log file is not configed.")
+				logger.error("Log file is not configured.")
 				sys.exit()
 			if len(mimeTypeBlackListStr) > 0:
 				mimes = mimeTypeBlackListStr.split(',')
