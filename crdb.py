@@ -1,25 +1,27 @@
 import page
+import zipfile
 import crlogger
 
 def savePage(thePage):
-	if thePage.size > 0 and thePage.data is not None and thePage.name is not "":
-		fi = open(thePage.name, "w")
-		fi.write(thePage.data)
-		fi.close()
+	logger = crlogger.Logger()
+	if thePage.size > 0 and thePage.data is not None and len(thePage.name) > 0:
+		try:
+			zipFile = zipfile.ZipFile(thePage.name+".zip", mode="w")
+			zipFile.writestr(thePage.name+".html", thePage.data)
+			zipFile.close()
+		except Exception, exp:
+			logger.error("Can't save file:'"+thePage.name+"'.zip "+str(exp))
 
 # thePageName is the hashed URL, return page.data only
 def getPage(thePageName):
 	data = ""
 	logger = crlogger.Logger()
 	try:
-		fi = open(thePageName, "r")
-		data = fi.read()
-	except IOError, exp:
+		zipFile = zipfile.ZipFile(thePageName+".zip")
+		data = zipFile.read(thePageName+".html")
+	except Exception, exp:
 		logger.error("Can't open file:'"+thePageName+"'. "+str(exp))
 	else:
-		fi.close()
+		zipFile.close()
 	return data
-
-a = getPage("abc")
-print a == ""
 
