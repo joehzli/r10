@@ -15,3 +15,27 @@
 2013-02-13 00:42:07,013 ERROR Can't open file:'abc'. [Errno 2] No such file or directory: 'abc'
 2013-02-13 10:49:10,536 INFO Initial config success.
 2013-02-13 10:52:03,620 INFO Initial config success.
+2013-02-13 11:56:36,397 ERROR Parser Error. Url:http://localhost/abc/sdfsdf FileName:f84a108153967c28d9f9e860308949f2 malformed start tag, at line 4, column 38
+2013-02-13 11:57:46,163 ERROR Parser Error. Url:http://localhost/abc/sdfsdf FileName:f84a108153967c28d9f9e860308949f2 malformed start tag, at line 4, column 38
+2013-02-13 13:39:46,573 ERROR Parser Error. Url:http://localhost/abc/sdfsdf FileName:f84a108153967c28d9f9e860308949f2 malformed start tag, at line 4, column 38
+2013-02-13 13:40:10,979 ERROR Parser Error. Url:http://localhost/abc/sdfsdf FileName:f84a108153967c28d9f9e860308949f2 malformed start tag, at line 4, column 38
+2013-02-13 13:55:15,200 ERROR Parser Error. Url:http://localhost/abc/sdfsdf FileName:f84a108153967c28d9f9e860308949f2 'function' object has no attribute 'join'
+2013-02-13 13:55:33,899 ERROR Parser Error. Url:http://localhost/abc/sdfsdf FileName:f84a108153967c28d9f9e860308949f2 'function' object has no attribute 'join'
+2013-02-13 13:56:08,551 ERROR Parser Error. Url:http://localhost/abc/sdfsdf FileName:f84a108153967c28d9f9e860308949f2 'function' object has no attribute 'urljoin'
+2013-02-13 13:57:39,855 ERROR Parser Error. Url:http://localhost/abc/sdfsdf FileName:f84a108153967c28d9f9e860308949f2 malformed start tag, at line 4, column 38
+2013-02-13 13:58:07,005 ERROR Parser Error. Url:http://localhost/abc/sdfsdf FileName:f84a108153967c28d9f9e860308949f2 malformed start tag, at line 4, column 38
+2013-02-13 13:58:31,261 ERROR Parser Error. Url:http://localhost/abc/sdfsdf FileName:f84a108153967c28d9f9e860308949f2 malformed start tag, at line 4, column 38
+2013-02-13 13:58:54,704 ERROR Parser Error. Url:http://localhost/abc/sdfsdf FileName:f84a108153967c28d9f9e860308949f2 malformed start tag, at line 5, column 38
+2013-02-13 13:59:02,358 ERROR Parser Error. Url:http://localhost/abc/sdfsdf FileName:f84a108153967c28d9f9e860308949f2 malformed start tag, at line 5, column 38
+2013-02-13 13:59:15,376 ERROR Parser Error. Url:http://localhost/abc/sdfsdf/shit/ FileName:130dc6b0171c6f522271a0a02b2c1cab malformed start tag, at line 5, column 38
+2013-02-13 13:59:31,954 ERROR Parser Error. Url:http://localhost/abc/sdfsdf/shit/ FileName:130dc6b0171c6f522271a0a02b2c1cab malformed start tag, at line 5, column 38
+2013-02-13 14:13:28,739 ERROR Parser Error. Url:http://localhost/abc/sdfsdf/shit/ FileName:130dc6b0171c6f522271a0a02b2c1cab malformed start tag, at line 5, column 38
+2013-02-13 16:57:40,089 ERROR Parser Error. Url:http://localhost/abc/sdfsdf/shit/ FileName:130dc6b0171c6f522271a0a02b2c1cab malformed start tag, at line 5, column 38
+2013-02-13 16:57:40,089 ERROR Parser Error. Url:http://localhost/abc/sdfsdf/shit/ FileName:130dc6b0171c6f522271a0a02b2c1cab malformed start tag, at line 5, column 38
+2013-02-18 15:57:12,136 ERROR Parser Error. Url:http://stackoverflow.com/questions/3337911/go-language-compared-to-python FileName:311701aa354a12bca173157c36ab0809 malformed start tag, at line 142, column 111
+2013-02-18 15:57:13,443 ERROR Parser Error. Url:http://forum.codecall.net/topic/50915-should-i-program-games-in-python-or-in-c/ FileName:9317a43715f2fb26759c1efd09885dfb EOF in middle of construct, at line 1519, column 20
+2013-02-18 15:57:14,204 ERROR Parser Error. Url:http://programmers.stackexchange.com/questions/29109/is-there-any-reason-to-use-c-instead-of-c-perl-python-etc FileName:a4547d27814e6a22d1e795d471f00ce6 malformed start tag, at line 146, column 136
+2013-02-18 15:57:29,231 ERROR Parser Error. Url:http://www.programmersheaven.com/ FileName:b8c02bad9031df6777307a33d7166441 malformed start tag, at line 624, column 1003
+2013-02-18 15:57:43,471 ERROR Parser Error. Url:http://www.youtube.com/watch?v=ZxjXlQrBvk0 FileName:f8938818bbd1c1b5a467551f05f11356 EOF in middle of construct, at line 410, column 597
+2013-02-18 15:57:47,169 ERROR Parser Error. Url:http://dannyman.toldme.com/2003/02/19/why-python-sucks/ FileName:d60562b347070cce9a5f48dced94a77a bad end tag: '</",j,">', at line 946, column 726
+2013-02-18 15:57:48,173 ERROR Parser Error. Url:http://scrubclubrecords.com/free-music-albums/kabuto-the-python-shed-skins-a-collection-of-shit-that-sucks/ FileName:8d08c0fb672b20b40474b6e9a5d29105 EOF in middle of construct, at line 12, column 1
