@@ -2,7 +2,7 @@ from singleton import singleton
 import datetime
 
 # Summary format:
-# DOWNLOAD_TIME, URL, FILE_NAME, SIZE, RETURN_CODE
+# DOWNLOAD_TIME, DEPTH, URL, FILE_NAME, SIZE, RETURN_CODE
 # ...
 # ...
 # Statics:
@@ -19,10 +19,10 @@ class CRSummary:
         self.records = []
         self.n = 0
     
-    def add(self, theUrl, theFileName, theSize, theReturnCode, theHasHttpError):
+    def add(self, theUrl, theDepth, theFileName, theSize, theReturnCode, theHasHttpError):
         utcDatetime = datetime.datetime.utcnow()
         downloadTime = utcDatetime.strftime("%m/%d/%Y %H:%M:%S")
-        record = {"downloadtime":downloadTime, "url":theUrl, "filename":theFileName, "size":theSize, "code":theReturnCode, "hashttperror":theHasHttpError}
+        record = {"downloadtime":downloadTime, "url":theUrl, "depth":theDepth,"filename":theFileName, "size":theSize, "code":theReturnCode, "hashttperror":theHasHttpError}
         self.records.append(record)
     
     def saveSummary(self, theQuery, theN, theTotalTime):
@@ -35,6 +35,7 @@ class CRSummary:
         for record in self.records:
             downloadtime = str(record["downloadtime"])
             url = str(record["url"])
+            depth = str(record["depth"])
             fileName = ""
             if len(record["filename"]) > 0:
                 fileName = str(record["filename"])+".zip"
@@ -44,7 +45,7 @@ class CRSummary:
             size = str(record["size"])
             code = str(record["code"])
             totalSize += record["size"]/1024.0/1024.0
-            f.write(downloadtime+", "+url+", "+fileName+", "+size+", "+code+"\n")
+            f.write(downloadtime+", "+ depth+", " +url+", "+fileName+", "+size+", "+code+"\n")
         f.write("Statics:\n")
         f.write("Query words: "+theQuery+"\n")
         f.write("The N user input: "+str(theN)+"\n")

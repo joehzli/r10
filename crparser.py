@@ -7,14 +7,14 @@ import re
 class Parser:
 	_regForHref = r'<a[^<>]*?href=[\'\"]?([^\'\" >]+)'	# the result of this regex is as same as parsing with BeautifulSoup, much better than HTMLParser
 	
-	def _putUrl(self, theUrl):
+	def _putUrl(self, theUrl, theDepth):
 		#robot = crrobot.CRRobot()
 		# to check if this url is allowed by robot.txt
 		#if robot.CheckUrl(theUrl):
 		scheduler = crscheduler.Scheduler()
-		scheduler.put(theUrl)
+		scheduler.put(theUrl, theDepth+1)
 		
-	def parseHTMLWithReg(self, thePage):
+	def parseHTMLWithReg(self, thePage, theDepth):
 		data = thePage.getData()
 		pageUrl = thePage.getUrl()
 		urls = re.findall(self._regForHref, data, re.S|re.I)
@@ -36,7 +36,7 @@ class Parser:
 				parsedUrlResult = urlparse.urlparse(extractedUrl)
 				if parsedUrlResult.netloc is None or len(parsedUrlResult.netloc) == 0:
 					continue
-				self._putUrl(extractedUrl)
+				self._putUrl(extractedUrl, theDepth)
 			except Exception, exp:
 				logger = crlogger.Logger()
 				logger.error("Parser Error. Url:"+pageUrl+" FileName:"+thePage.getName()+" "+str(exp))	

@@ -1,0 +1,1062 @@
+2013-02-19 12:33:34,083 ERROR Download Error. Url:http://www.2110uaw.org/poly/nyu_poly_faq_translated.pdf MimeType is not Valid
+2013-02-19 12:33:35,253 ERROR HTTP Error. Url:http://isis.poly.edu/memon/1993 HTTP Error 404: Not Found
+2013-02-19 12:33:43,067 ERROR HTTP Error. Url:http://isis.poly.edu/memon/isis.poly.edu/courses/cs996-management.../incident_response.pdf HTTP Error 404: Not Found
+2013-02-19 12:33:43,117 ERROR HTTP Error. Url:http://isis.poly.edu/~baris/3 HTTP Error 404: Not Found
+2013-02-19 12:33:46,130 ERROR HTTP Error. Url:http://isis.poly.edu/memon/securejtag HTTP Error 404: Not Found
+2013-02-19 12:33:46,566 ERROR Robot Error. Url:http://www.1point3acres.com/咨询服务 'ascii' codec can't decode byte 0xe5 in position 28: ordinal not in range(128)
+2013-02-19 12:33:46,578 ERROR HTTP Error. Url:http://www.nytimes.com/2011/12/24/technology/logging-in-with-a-touch-or-a-phrase-anything-but-a-password.html HTTP Error 303: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+See Other
+2013-02-19 12:33:46,656 ERROR HTTP Error. Url:http://www.nytimes.com/2009/03/01/business/01novel.html HTTP Error 303: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+See Other
+2013-02-19 12:33:47,826 ERROR Download Error. Url:http://www.smartertechnology.com/c/a/Technology-For-Change/Photo-Forensics-Tool-Reconstructs-Erased-Data/ Not a gzipped file
+2013-02-19 12:33:54,947 ERROR HTTP Error. Url:http://isis.poly.edu/me.html HTTP Error 404: Not Found
+2013-02-19 12:33:55,164 ERROR HTTP Error. Url:http://isis.poly.edu/exp.html HTTP Error 404: Not Found
+2013-02-19 12:33:55,295 ERROR HTTP Error. Url:http://isis.poly.edu/research.html HTTP Error 404: Not Found
+2013-02-19 12:33:55,509 ERROR HTTP Error. Url:http://isis.poly.edu/certificates.html HTTP Error 404: Not Found
+2013-02-19 12:33:56,880 ERROR HTTP Error. Url:http://isis.poly.edu/index-4.html HTTP Error 404: Not Found
+2013-02-19 12:33:57,112 ERROR HTTP Error. Url:http://isis.poly.edu/index-5.html HTTP Error 404: Not Found
+2013-02-19 12:33:58,152 ERROR HTTP Error. Url:http://isis.poly.edu/html/resume.html HTTP Error 404: Not Found
+2013-02-19 12:33:58,583 ERROR HTTP Error. Url:http://knol.google.com/k/sankar-ponnusamy/-/3n16xn8g0ly6w/0#knols HTTP Error 410: Gone
+2013-02-19 12:33:59,747 ERROR HTTP Error. Url:http://www.poly.edu/academics/support HTTP Error 403: Forbidden
+2013-02-19 12:33:59,764 ERROR HTTP Error. Url:http://www.poly.edu/academics/support HTTP Error 403: Forbidden
+2013-02-19 12:33:59,766 ERROR HTTP Error. Url:http://www.poly.edu/graduate-school HTTP Error 403: Forbidden
+2013-02-19 12:33:59,767 ERROR HTTP Error. Url:http://www.poly.edu/academics/class HTTP Error 403: Forbidden
+2013-02-19 12:33:59,769 ERROR HTTP Error. Url:http://www.poly.edu/academics/textbooks HTTP Error 403: Forbidden
+2013-02-19 12:33:59,777 ERROR HTTP Error. Url:http://www.poly.edu/academics/textbooks HTTP Error 403: Forbidden
+2013-02-19 12:33:59,784 ERROR HTTP Error. Url:http://www.poly.edu/life/student-resources/registrar/academic-calendar HTTP Error 403: Forbidden
+2013-02-19 12:33:59,791 ERROR HTTP Error. Url:http://www.poly.edu/academics/code-of-conduct HTTP Error 403: Forbidden
+2013-02-19 12:33:59,797 ERROR HTTP Error. Url:http://www.poly.edu/academics/code-of-conduct HTTP Error 403: Forbidden
+2013-02-19 12:34:00,193 ERROR HTTP Error. Url:http://www.poly.edu/business HTTP Error 403: Forbidden
+2013-02-19 12:34:00,193 ERROR HTTP Error. Url:http://www.poly.edu/business/nyc-seed HTTP Error 403: Forbidden
+2013-02-19 12:34:00,194 ERROR HTTP Error. Url:http://www.poly.edu/business HTTP Error 403: Forbidden
+2013-02-19 12:34:00,229 ERROR HTTP Error. Url:http://www.poly.edu/enterprise-learning HTTP Error 403: Forbidden
+2013-02-19 12:34:00,240 ERROR HTTP Error. Url:http://www.poly.edu/k12stem HTTP Error 403: Forbidden
+2013-02-19 12:34:00,241 ERROR HTTP Error. Url:http://www.poly.edu/business/powerbridgeny HTTP Error 403: Forbidden
+2013-02-19 12:34:00,243 ERROR HTTP Error. Url:http://www.poly.edu/life HTTP Error 403: Forbidden
+2013-02-19 12:34:00,268 ERROR HTTP Error. Url:http://www.poly.edu/life HTTP Error 403: Forbidden
+2013-02-19 12:34:00,280 ERROR HTTP Error. Url:http://www.poly.edu/life/student HTTP Error 403: Forbidden
+2013-02-19 12:34:00,294 ERROR HTTP Error. Url:http://www.poly.edu/life/student HTTP Error 403: Forbidden
+2013-02-19 12:34:00,300 ERROR HTTP Error. Url:http://www.poly.edu/dining HTTP Error 403: Forbidden
+2013-02-19 12:34:00,301 ERROR HTTP Error. Url:http://www.poly.edu/dining HTTP Error 403: Forbidden
+2013-02-19 12:34:00,301 ERROR HTTP Error. Url:http://www.poly.edu/life/campus-safety HTTP Error 403: Forbidden
+2013-02-19 12:34:00,302 ERROR HTTP Error. Url:http://www.poly.edu/life/campus-safety HTTP Error 403: Forbidden
+2013-02-19 12:34:00,316 ERROR HTTP Error. Url:http://www.poly.edu/life/graduate HTTP Error 403: Forbidden
+2013-02-19 12:34:00,319 ERROR HTTP Error. Url:http://www.poly.edu/life/graduate HTTP Error 403: Forbidden
+2013-02-19 12:34:00,335 ERROR HTTP Error. Url:http://www.poly.edu/life/health HTTP Error 403: Forbidden
+2013-02-19 12:34:00,348 ERROR HTTP Error. Url:http://www.poly.edu/life/health HTTP Error 403: Forbidden
+2013-02-19 12:34:00,349 ERROR HTTP Error. Url:http://www.poly.edu/international-students HTTP Error 403: Forbidden
+2013-02-19 12:34:00,354 ERROR HTTP Error. Url:http://www.poly.edu/international-students HTTP Error 403: Forbidden
+2013-02-19 12:34:00,355 ERROR HTTP Error. Url:http://www.poly.edu/life/orientation HTTP Error 403: Forbidden
+2013-02-19 12:34:00,355 ERROR HTTP Error. Url:http://www.poly.edu/life/orientation HTTP Error 403: Forbidden
+2013-02-19 12:34:00,362 ERROR HTTP Error. Url:http://www.poly.edu/life/studentactivities HTTP Error 403: Forbidden
+2013-02-19 12:34:00,362 ERROR HTTP Error. Url:http://www.poly.edu/life/studentactivities HTTP Error 403: Forbidden
+2013-02-19 12:34:00,387 ERROR HTTP Error. Url:http://www.poly.edu/disabilities HTTP Error 403: Forbidden
+2013-02-19 12:34:00,402 ERROR HTTP Error. Url:http://www.poly.edu/about HTTP Error 403: Forbidden
+2013-02-19 12:34:00,403 ERROR HTTP Error. Url:http://www.poly.edu/life/student-resources HTTP Error 403: Forbidden
+2013-02-19 12:34:00,405 ERROR HTTP Error. Url:http://www.poly.edu/about HTTP Error 403: Forbidden
+2013-02-19 12:34:00,406 ERROR HTTP Error. Url:http://www.poly.edu/about/leadership HTTP Error 403: Forbidden
+2013-02-19 12:34:00,406 ERROR HTTP Error. Url:http://www.poly.edu/about/mission HTTP Error 403: Forbidden
+2013-02-19 12:34:00,407 ERROR HTTP Error. Url:http://www.poly.edu/about/leadership HTTP Error 403: Forbidden
+2013-02-19 12:34:00,413 ERROR HTTP Error. Url:http://www.poly.edu/about/mission HTTP Error 403: Forbidden
+2013-02-19 12:34:00,428 ERROR HTTP Error. Url:http://www.poly.edu/about/middle-states HTTP Error 403: Forbidden
+2013-02-19 12:34:00,468 ERROR HTTP Error. Url:http://www.poly.edu/about/affiliation HTTP Error 403: Forbidden
+2013-02-19 12:34:00,469 ERROR HTTP Error. Url:http://www.poly.edu/about/affiliation HTTP Error 403: Forbidden
+2013-02-19 12:34:00,472 ERROR HTTP Error. Url:http://www.poly.edu/about/past-present-future HTTP Error 403: Forbidden
+2013-02-19 12:34:00,476 ERROR HTTP Error. Url:http://www.poly.edu/about/past-present-future HTTP Error 403: Forbidden
+2013-02-19 12:34:00,511 ERROR HTTP Error. Url:http://www.poly.edu/academics/departments/biomolecular HTTP Error 403: Forbidden
+2013-02-19 12:34:00,513 ERROR HTTP Error. Url:http://www.poly.edu/news/2013/01/18/nyu-poly-students-lead-nyus-global-idea-exchange-challenge HTTP Error 403: Forbidden
+2013-02-19 12:34:00,514 ERROR HTTP Error. Url:http://www.poly.edu/news/2013/01/22/young-engineers-build-robotic-bridge-reach-seniors HTTP Error 403: Forbidden
+2013-02-19 12:34:00,517 ERROR HTTP Error. Url:http://www.poly.edu/news/2013/01/17/nyu-polys-online-engineering-degrees-ranked-top-10-us-news-world-report HTTP Error 403: Forbidden
+2013-02-19 12:34:00,523 ERROR HTTP Error. Url:http://www.poly.edu/academics/departments/civil HTTP Error 403: Forbidden
+2013-02-19 12:34:00,530 ERROR HTTP Error. Url:http://www.poly.edu/press-release/2012/12/20/4-plus-1-raised-higher-power HTTP Error 403: Forbidden
+2013-02-19 12:34:00,552 ERROR HTTP Error. Url:http://www.poly.edu/academics/departments/computer/majors HTTP Error 403: Forbidden
+2013-02-19 12:34:00,556 ERROR HTTP Error. Url:http://www.poly.edu/academics/departments/computer/research HTTP Error 403: Forbidden
+2013-02-19 12:34:00,572 ERROR HTTP Error. Url:http://www.poly.edu/news/2013/02/02/dangers-too-much-java HTTP Error 403: Forbidden
+2013-02-19 12:34:00,584 ERROR HTTP Error. Url:http://www.poly.edu/academics/departments/computer/people HTTP Error 403: Forbidden
+2013-02-19 12:34:00,596 ERROR HTTP Error. Url:http://www.poly.edu/news/2013/01/29/nyu-poly-mourns-loss-trustee-michael-hegel-kappaz HTTP Error 403: Forbidden
+2013-02-19 12:34:00,604 ERROR HTTP Error. Url:http://www.poly.edu/events HTTP Error 403: Forbidden
+2013-02-19 12:34:00,604 ERROR HTTP Error. Url:http://www.poly.edu/academics/departments/computer/news HTTP Error 403: Forbidden
+2013-02-19 12:34:00,620 ERROR HTTP Error. Url:http://www.poly.edu/academics/departments/computer/events HTTP Error 403: Forbidden
+2013-02-19 12:34:00,628 ERROR HTTP Error. Url:http://www.poly.edu/academics/departments/electrical HTTP Error 403: Forbidden
+2013-02-19 12:34:00,643 ERROR HTTP Error. Url:http://www.poly.edu/events/2013/02/19/tracking-reporting-clickers-faculty-workshop HTTP Error 403: Forbidden
+2013-02-19 12:34:00,652 ERROR HTTP Error. Url:http://www.poly.edu/events/2013/02/20/resumes-and-cover-letters-work-nyu-poly HTTP Error 403: Forbidden
+2013-02-19 12:34:00,652 ERROR HTTP Error. Url:http://www.poly.edu/academics/departments/finance HTTP Error 403: Forbidden
+2013-02-19 12:34:00,671 ERROR HTTP Error. Url:http://www.poly.edu/events/2013/02/20/collaborating-groups-blackboard-faculty-workshop HTTP Error 403: Forbidden
+2013-02-19 12:34:00,672 ERROR HTTP Error. Url:http://www.poly.edu/academics/departments/mathematics HTTP Error 403: Forbidden
+2013-02-19 12:34:00,674 ERROR HTTP Error. Url:http://www.poly.edu/academics/departments/mechanical HTTP Error 403: Forbidden
+2013-02-19 12:34:00,690 ERROR HTTP Error. Url:http://www.poly.edu/events/2013/02/20/transfer-information-session HTTP Error 403: Forbidden
+2013-02-19 12:34:00,709 ERROR HTTP Error. Url:http://www.poly.edu/events/2013/02/20/poly-coffee-sessions HTTP Error 403: Forbidden
+2013-02-19 12:34:00,710 ERROR HTTP Error. Url:http://www.poly.edu/academics/departments/technology HTTP Error 403: Forbidden
+2013-02-19 12:34:00,714 ERROR HTTP Error. Url:http://www.poly.edu/academics/departments/tcs HTTP Error 403: Forbidden
+2013-02-19 12:34:00,715 ERROR HTTP Error. Url:http://www.poly.edu/events/2013/02/21/teaching-smart-classrooms-eno-interactive-board HTTP Error 403: Forbidden
+2013-02-19 12:34:00,729 ERROR HTTP Error. Url:http://www.poly.edu/user/ross HTTP Error 403: Forbidden
+2013-02-19 12:34:00,733 ERROR HTTP Error. Url:http://www.poly.edu/events/2013/02/21/acing-interview-nyu-poly HTTP Error 403: Forbidden
+2013-02-19 12:34:00,736 ERROR HTTP Error. Url:http://www.poly.edu/directory/ HTTP Error 403: Forbidden
+2013-02-19 12:34:00,760 ERROR HTTP Error. Url:http://www.poly.edu/events/2013/02/21/thousand-year-old-puzzle-about-triangles-talk-shou-wu-zhang HTTP Error 403: Forbidden
+2013-02-19 12:34:00,760 ERROR HTTP Error. Url:http://www.poly.edu/events/calendar HTTP Error 403: Forbidden
+2013-02-19 12:34:00,793 ERROR HTTP Error. Url:http://www.poly.edu/user HTTP Error 403: Forbidden
+2013-02-19 12:34:00,793 ERROR HTTP Error. Url:http://www.poly.edu/ct/ HTTP Error 403: Forbidden
+2013-02-19 12:34:01,302 ERROR HTTP Error. Url:http://gonyupoly.com/ HTTP Error 500: Internal Server Error
+2013-02-19 12:34:01,878 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2010_Tracking.pdf MimeType is not Valid
+2013-02-19 12:34:01,944 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2011_acecost.pdf MimeType is not Valid
+2013-02-19 12:34:02,484 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2010_Friend_Of_An_Enemy.pdf MimeType is not Valid
+2013-02-19 12:34:02,753 ERROR HTTP Error. Url:http://www.computer.org/portal/web/csdl/doi/10.1109/ICASSP.2009.4960376 HTTP Error 404: Not Found
+2013-02-19 12:34:03,222 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2010_Biometric_Info.pdf MimeType is not Valid
+2013-02-19 12:34:03,247 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2008_source HTTP Error 404: Not Found
+2013-02-19 12:34:03,364 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2010_netstore.pdf MimeType is not Valid
+2013-02-19 12:34:03,732 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2010_An_Ensemble.pdf MimeType is not Valid
+2013-02-19 12:34:03,734 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2008_detecting HTTP Error 404: Not Found
+2013-02-19 12:34:04,594 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2008_digital HTTP Error 404: Not Found
+2013-02-19 12:34:05,537 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2009_out.pdf MimeType is not Valid
+2013-02-19 12:34:05,577 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2008_A_State_of_Art.pdf MimeType is not Valid
+2013-02-19 12:34:05,737 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2008_selfish.pdf MimeType is not Valid
+2013-02-19 12:34:05,797 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/stochastic_model.pdf MimeType is not Valid
+2013-02-19 12:34:05,812 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2008_detection.pdf MimeType is not Valid
+2013-02-19 12:34:06,531 ERROR Robot Error. Url:http://psdata.poly.edu [Errno socket error] timed out
+2013-02-19 12:34:06,588 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2009_flatbed.pdf MimeType is not Valid
+2013-02-19 12:34:06,665 ERROR Robot Error. Url:http://psdata.poly.edu [Errno socket error] timed out
+2013-02-19 12:34:06,763 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2007_modeling HTTP Error 404: Not Found
+2013-02-19 12:34:07,155 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2008_copymove.pdf MimeType is not Valid
+2013-02-19 12:34:07,183 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2009_modeling.pdf MimeType is not Valid
+2013-02-19 12:34:07,473 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2007_secure HTTP Error 404: Not Found
+2013-02-19 12:34:07,563 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2007_how HTTP Error 404: Not Found
+2013-02-19 12:34:07,804 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2007_source HTTP Error 404: Not Found
+2013-02-19 12:34:07,995 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2007_detection HTTP Error 404: Not Found
+2013-02-19 12:34:08,455 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2007_alphabet.pdf MimeType is not Valid
+2013-02-19 12:34:08,821 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2007_tamper.pdf MimeType is not Valid
+2013-02-19 12:34:08,866 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2007_volleystore.pdf MimeType is not Valid
+2013-02-19 12:34:09,002 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2007_new.pdf MimeType is not Valid
+2013-02-19 12:34:09,180 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2007_a_geo.pdf MimeType is not Valid
+2013-02-19 12:34:09,662 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2008_classification.pdf MimeType is not Valid
+2013-02-19 12:34:09,930 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2007_cooperative.pdf MimeType is not Valid
+2013-02-19 12:34:09,943 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2006_performance HTTP Error 404: Not Found
+2013-02-19 12:34:09,948 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2008_d.pdf MimeType is not Valid
+2013-02-19 12:34:09,991 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2006_improving.pdf MimeType is not Valid
+2013-02-19 12:34:10,169 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2007_improvement.pdf MimeType is not Valid
+2013-02-19 12:34:10,312 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2006_automated.pdf MimeType is not Valid
+2013-02-19 12:34:10,455 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2006_improvements.pdf MimeType is not Valid
+2013-02-19 12:34:10,653 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2005_Lossless_Image_Compression.pdf HTTP Error 404: Not Found
+2013-02-19 12:34:10,834 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2005_The_JPEG_Standard.pdf HTTP Error 404: Not Found
+2013-02-19 12:34:10,965 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2005_The_JPEG_Lossless_Compression_Standards.pdf HTTP Error 404: Not Found
+2013-02-19 12:34:11,282 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2005_Multispectral_Image_Compression.pdf HTTP Error 404: Not Found
+2013-02-19 12:34:11,603 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2006_confusion.pdf MimeType is not Valid
+2013-02-19 12:34:11,837 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2006_robust.pdf MimeType is not Valid
+2013-02-19 12:34:11,901 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2006_security.pdf MimeType is not Valid
+2013-02-19 12:34:12,089 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2005_Perceptual_Audio_Hashing_Functions.pdf HTTP Error 404: Not Found
+2013-02-19 12:34:12,217 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2006_cover.pdf MimeType is not Valid
+2013-02-19 12:34:12,541 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2006_digital.pdf MimeType is not Valid
+2013-02-19 12:34:12,576 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2006_secure.pdf MimeType is not Valid
+2013-02-19 12:34:12,618 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2006_Detection_Of_Audio_Convert_Channels.pdf MimeType is not Valid
+2013-02-19 12:34:12,639 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2005_An_Efficient_Key_Pre-Distribution_Scheme_for_Ad-Hoc_Network_Security.pdf HTTP Error 404: Not Found
+2013-02-19 12:34:13,668 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2009_file_carving.pdf MimeType is not Valid
+2013-02-19 12:34:13,760 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2005_automated.pdf MimeType is not Valid
+2013-02-19 12:34:14,027 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2007_protecting.pdf MimeType is not Valid
+2013-02-19 12:34:14,320 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2005_geometry.pdf MimeType is not Valid
+2013-02-19 12:34:14,614 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/.pdf HTTP Error 404: Not Found
+2013-02-19 12:34:14,949 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2005_Image_Steganalysis_with_Binary_Similarity_Measures.pdf MimeType is not Valid
+2013-02-19 12:34:14,994 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2004_Data HTTP Error 404: Not Found
+2013-02-19 12:34:15,187 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2005_Design_of_a_Virtual_Laboratory_for_Information_Assurance_Research_and_Education.pdf HTTP Error 404: Not Found
+2013-02-19 12:34:15,225 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2005_robust.pdf MimeType is not Valid
+2013-02-19 12:34:15,433 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2005_source_camera.pdf MimeType is not Valid
+2013-02-19 12:34:15,689 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2006_lossless.pdf MimeType is not Valid
+2013-02-19 12:34:15,778 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2005_passpoint.pdf MimeType is not Valid
+2013-02-19 12:34:15,839 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2005_safe.pdf MimeType is not Valid
+2013-02-19 12:34:15,926 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2005_Image_manipulation_detection_with_binary_similarity_measures.pdf MimeType is not Valid
+2013-02-19 12:34:16,092 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2005_KPI_A_Security_Infrastructure_for_Trusted_Devices.pdf HTTP Error 404: Not Found
+2013-02-19 12:34:16,102 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2005_Integrating_Forensic_Support_in_the_Network_Digital_Forensics_Worshop.pdf HTTP Error 404: Not Found
+2013-02-19 12:34:16,103 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2005_Optimized_Prediction_for_Geometry_Compression_of_Triangle_Meshes.pdf HTTP Error 404: Not Found
+2013-02-19 12:34:16,386 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2005_Benchmarking_steganographic_and_steganalysis_techniques.pdf HTTP Error 404: Not Found
+2013-02-19 12:34:16,508 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2003_Optimal_Alphabet_Partitioning_for_Semi-Adaptive_Coding.pdf MimeType is not Valid
+2013-02-19 12:34:16,534 ERROR Download Error. Url:http://psdata.poly.edu <urlopen error timed out>
+2013-02-19 12:34:16,667 ERROR Download Error. Url:http://psdata.poly.edu <urlopen error timed out>
+2013-02-19 12:34:16,703 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2009_identification.pdf MimeType is not Valid
+2013-02-19 12:34:16,968 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2003_pro.pdf MimeType is not Valid
+2013-02-19 12:34:17,280 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2005_A_Hierarchical_Key_Predistribution_scheme.pdf HTTP Error 404: Not Found
+2013-02-19 12:34:18,212 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2005_Authentication_Using_Graphical_Passwords_Effects_of_Tolerance_and_Image_Choice.pdf MimeType is not Valid
+2013-02-19 12:34:18,374 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2009_Effecient.pdf MimeType is not Valid
+2013-02-19 12:34:18,476 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2004_Robust_Audio_Hashing_for_Audio_Identification.pdf MimeType is not Valid
+2013-02-19 12:34:18,659 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2003_Pre-Loaded_Key_Based_Multicast_and_Broadcast_Authentication_in_Mobile_Ad-Hoc_Networks.pdf MimeType is not Valid
+2013-02-19 12:34:18,813 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2004_Nabs_A_System_for_Detecting_Resource_Abuses_via_Characterization_of_Flow_Content_Type.pdf MimeType is not Valid
+2013-02-19 12:34:18,914 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2004_A_Classifier_Design_for_Detecting_Image_Manipulations.pdf MimeType is not Valid
+2013-02-19 12:34:19,025 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2003_on.pdf MimeType is not Valid
+2013-02-19 12:34:19,244 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2005_A_DRM_Based_on_Renewable_Broadcast_Encryption.pdf MimeType is not Valid
+2013-02-19 12:34:19,309 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2005_A_Secure_Biometric_Authentication_Scheme_Based_on_Robust_Hashing.pdf MimeType is not Valid
+2013-02-19 12:34:19,396 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2003_Obfuscation_of_Design_Intent_in_Object-Oriented_Applications.pdf MimeType is not Valid
+2013-02-19 12:34:19,452 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2009_Image.pdf MimeType is not Valid
+2013-02-19 12:34:19,514 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2003_Image_Stego.pdf MimeType is not Valid
+2013-02-19 12:34:20,066 ERROR HTTP Error. Url:http://isis.poly.edu/memon/pdf/2003_Steganography HTTP Error 404: Not Found
+2013-02-19 12:34:20,493 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2004_pre.pdf MimeType is not Valid
+2013-02-19 12:34:20,806 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2004_Information_Flow_Based_Routing_Algorithms_for_Wireless_Sensor_Networks.pdf MimeType is not Valid
+2013-02-19 12:34:21,004 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2003_Automatic_Reassembly_of_Document_Fragments_via_Context_Based_Statistical_Models.pdf MimeType is not Valid
+2013-02-19 12:34:21,157 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2004_Payload_Attribution_via_Hierarchical_Bloom_Filters.pdf MimeType is not Valid
+2013-02-19 12:34:21,165 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2003_fornet.pdf MimeType is not Valid
+2013-02-19 12:34:21,355 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2004_On_the_Security_of_Random_Key_Pre-Distribution_Schemes.pdf MimeType is not Valid
+2013-02-19 12:34:21,430 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2005_PSteg_steganographic_embedding_through_patching.pdf MimeType is not Valid
+2013-02-19 12:34:21,709 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2003_Optimal_Alphabet_Partitioning_for_Semi-Adaptive_Coding_of_Sources_of_Unknown_Sparse_Distributions.pdf MimeType is not Valid
+2013-02-19 12:34:21,920 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2004_Network_Abuse_Detection_via_Flow_Content_Characterization.pdf MimeType is not Valid
+2013-02-19 12:34:21,988 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2004_sec.pdf MimeType is not Valid
+2013-02-19 12:34:22,337 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2003_An_Error-Resilient_Blocksorting_Compression_Algorithm.pdf MimeType is not Valid
+2013-02-19 12:34:22,497 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2003_Detection_of_Audio_Covert_Channels_Using_Statistical_Footprints_of_Hidden_Message.pdf MimeType is not Valid
+2013-02-19 12:34:23,076 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2004_Steganalysis_of_Boundary-based_Steganography_using_Autoregressive_Model_of_Digital_Boundaries.pdf MimeType is not Valid
+2013-02-19 12:34:23,770 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2002_Algorithms_for_Delta_Compression_and_Remote_File_Synchronization.pdf MimeType is not Valid
+2013-02-19 12:34:23,996 ERROR HTTP Error. Url:http://www.poly.edu/user/memon#overview HTTP Error 403: Forbidden
+2013-02-19 12:34:23,997 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2003_Design_of_a_Laboratory_for_Information_Security_Education.pdf MimeType is not Valid
+2013-02-19 12:34:24,020 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2002_Cluster_Based_Delta_Compression_of_a_Collection_of_Files.pdf MimeType is not Valid
+2013-02-19 12:34:24,205 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2003_harps.pdf MimeType is not Valid
+2013-02-19 12:34:24,217 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2002_Automatic_Reassembly_of_Document_Fragments_via_Data_Compression.pdf MimeType is not Valid
+2013-02-19 12:34:24,295 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2005_Multiple-Description_Geometry_Compression_for_Networked_Interactive_3D_Graphics.pdf MimeType is not Valid
+2013-02-19 12:34:24,329 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2002_On_Steganalysis_of_Random_LSB_Embedding_in_Continuous-tone_Images.pdf MimeType is not Valid
+2013-02-19 12:34:24,511 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2002_On_the_Security_of_the_SARI_Image_Authentication_System.pdf MimeType is not Valid
+2013-02-19 12:34:24,836 ERROR HTTP Error. Url:http://www.poly.edu/user/memon#research HTTP Error 403: Forbidden
+2013-02-19 12:34:24,837 ERROR HTTP Error. Url:http://www.poly.edu/user/memon#biography HTTP Error 403: Forbidden
+2013-02-19 12:34:24,926 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2001_A_Buyer-Seller_Watermarking_Protocol.pdf MimeType is not Valid
+2013-02-19 12:34:25,330 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2001_Recent_Developments_in_Document_Image_Watermarking_and_Data_Hiding.pdf MimeType is not Valid
+2013-02-19 12:34:25,395 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2002_Image_Steganalysis_with_Binary_Similarity_Measures.pdf MimeType is not Valid
+2013-02-19 12:34:25,422 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2002_Data_Masking_A_Secure-Covert_Channel_Paradigm.pdf MimeType is not Valid
+2013-02-19 12:34:26,224 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2005_Lossless_Geometry_Compression_for_Steady-State_and_Time-Varying_Irregular_Grids.pdf MimeType is not Valid
+2013-02-19 12:34:26,280 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2001_Data_Hiding_in_Binary_Text_Documents.pdf MimeType is not Valid
+2013-02-19 12:34:27,054 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2000_Error_Resilient_Block_Sorting.pdf MimeType is not Valid
+2013-02-19 12:34:27,064 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2006_image.pdf MimeType is not Valid
+2013-02-19 12:34:28,423 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2000_Using_Delta_Encoding_for_Compressing_Related_Web_Pages.pdf MimeType is not Valid
+2013-02-19 12:34:28,952 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2000_The_JPEG_Standard.pdf MimeType is not Valid
+2013-02-19 12:34:29,212 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2000_Secret_and_Public_Key_Authentication_Watermarking_Schemes_that_Resist_Vector_Quantization_Attack.pdf MimeType is not Valid
+2013-02-19 12:34:29,380 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2000_Context-Based_Lossless_Interband_Compression-Extending_CALIC.pdf MimeType is not Valid
+2013-02-19 12:34:29,475 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2001_Digital_Watermarking.pdf MimeType is not Valid
+2013-02-19 12:34:29,511 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/1996_calic.pdf MimeType is not Valid
+2013-02-19 12:34:30,230 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2002_Cryptanalysis_of_the_Yeung-Mintzer_Fragile_Watermarking_Technique.pdf MimeType is not Valid
+2013-02-19 12:34:30,454 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2003_image.pdf MimeType is not Valid
+2013-02-19 12:34:30,974 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2000_A_Method_for_Variable_Quantization_in_JPEG_for_Improved_Perceptual_Quality.pdf MimeType is not Valid
+2013-02-19 12:34:31,485 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/1998_resolving.pdf MimeType is not Valid
+2013-02-19 12:34:32,096 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/2000_Further_Attacks_on_Yeung-Mintzer_Fragile_Watermarking_Scheme.pdf MimeType is not Valid
+2013-02-19 12:34:39,699 ERROR Download Error. Url:http://crissp.poly.edu/?page_id=428 <urlopen error timed out>
+2013-02-19 12:34:40,117 ERROR Download Error. Url:http://crissp.poly.edu/?page_id=455 <urlopen error timed out>
+2013-02-19 12:34:40,653 ERROR HTTP Error. Url:http://jjay.cuny.edu/ HTTP Error 400: Bad Request
+2013-02-19 12:34:41,612 ERROR Download Error. Url:http://crissp.poly.edu/?p=1110 <urlopen error timed out>
+2013-02-19 12:34:41,778 ERROR Download Error. Url:http://crissp.poly.edu/?paged=2 <urlopen error timed out>
+2013-02-19 12:34:41,785 ERROR Download Error. Url:http://crissp.poly.edu/?feed=rss2 <urlopen error timed out>
+2013-02-19 12:34:41,792 ERROR Download Error. Url:http://crissp.poly.edu/?month=1&amp;yr=2013#jd-calendar <urlopen error timed out>
+2013-02-19 12:34:43,170 ERROR Download Error. Url:http://isis.poly.edu/memon/pdf/1996_content_based.pdf MimeType is not Valid
+2013-02-19 12:34:44,925 ERROR HTTP Error. Url:http://www.douban.com/people/ HTTP Error 404: Not Found
+2013-02-19 12:34:47,605 ERROR HTTP Error. Url:http://isis.poly.edu/cyber-security-club HTTP Error 404: Not Found
+2013-02-19 12:34:47,606 ERROR HTTP Error. Url:http://isis.poly.edu/hack-night HTTP Error 404: Not Found
+2013-02-19 12:34:47,651 ERROR HTTP Error. Url:http://isis.poly.edu/brooklynt-overflow HTTP Error 404: Not Found
+2013-02-19 12:34:47,653 ERROR HTTP Error. Url:http://isis.poly.edu/hackers-in-residence HTTP Error 404: Not Found
+2013-02-19 12:34:48,598 ERROR HTTP Error. Url:http://isis.poly.edu/jobs HTTP Error 404: Not Found
+2013-02-19 12:34:48,610 ERROR HTTP Error. Url:http://isis.poly.edu/dod-scholarship HTTP Error 404: Not Found
+2013-02-19 12:34:48,711 ERROR HTTP Error. Url:http://isis.poly.edu/resources HTTP Error 404: Not Found
+2013-02-19 12:34:48,712 ERROR HTTP Error. Url:http://isis.poly.edu/calendar HTTP Error 404: Not Found
+2013-02-19 12:34:48,931 ERROR HTTP Error. Url:http://www.poly.edu/academics/course/CS6823 HTTP Error 403: Forbidden
+2013-02-19 12:34:48,932 ERROR HTTP Error. Url:http://www.poly.edu/academics/course/CS6963 HTTP Error 403: Forbidden
+2013-02-19 12:34:48,950 ERROR HTTP Error. Url:http://www.poly.edu/academics/course/CS6813 HTTP Error 403: Forbidden
+2013-02-19 12:34:48,982 ERROR HTTP Error. Url:http://www.poly.edu/academics/course/CS9163 HTTP Error 403: Forbidden
+2013-02-19 12:34:48,997 ERROR HTTP Error. Url:http://www.poly.edu/academics/course/CS6573 HTTP Error 403: Forbidden
+2013-02-19 12:34:48,997 ERROR HTTP Error. Url:http://isis.poly.edu/announcements/lowlevelnetworksecurity HTTP Error 404: Not Found
+2013-02-19 12:34:48,998 ERROR HTTP Error. Url:http://isis.poly.edu/announcements/clearingtheredforest HTTP Error 404: Not Found
+2013-02-19 12:34:49,018 ERROR HTTP Error. Url:http://isis.poly.edu/announcements/wontswiresharkwonderfulharmoniouswinningforjusticeandpeace HTTP Error 404: Not Found
+2013-02-19 12:34:49,030 ERROR HTTP Error. Url:http://isis.poly.edu/announcements/passivewebforensics HTTP Error 404: Not Found
+2013-02-19 12:34:49,081 ERROR HTTP Error. Url:http://isis.poly.edu/announcements HTTP Error 404: Not Found
+2013-02-19 12:34:49,082 ERROR HTTP Error. Url:http://isis.poly.edu/announcements/voight-kampffingtheblackberryplaybook HTTP Error 404: Not Found
+2013-02-19 12:34:49,082 ERROR HTTP Error. Url:http://isis.poly.edu/system/app/pages/reportAbuse HTTP Error 404: Not Found
+2013-02-19 12:34:49,087 ERROR HTTP Error. Url:http://isis.poly.edu/system/app/pages/removeAccess HTTP Error 404: Not Found
+2013-02-19 12:34:49,629 ERROR Download Error. Url:http://isis.poly.edu/~vlab/vlab_paper.pdf MimeType is not Valid
+2013-02-19 12:34:55,384 ERROR Download Error. Url:http://alphatown.com <urlopen error timed out>
+2013-02-19 12:34:57,265 ERROR Download Error. Url:http://tw.myblog.yahoo.com/trenton-kang/rss MimeType is not Valid
+2013-02-19 12:34:57,956 ERROR Download Error. Url:http://read.douban.com/?dcs=top-nav&amp;dcm=douban <urlopen error timed out>
+2013-02-19 12:35:01,661 ERROR Download Error. Url:http://www.wordgod.com/wordgod.xls MimeType is not Valid
+2013-02-19 12:35:01,868 ERROR HTTP Error. Url:http://isis.poly.edu/csaw/ HTTP Error 403: Forbidden
+2013-02-19 12:35:02,230 ERROR HTTP Error. Url:http://isis.poly.edu/thesistopics.php HTTP Error 401: Authorization Required
+2013-02-19 12:35:08,345 ERROR Download Error. Url:http://tw.rd.yahoo.com/referurl/blog/addtomy/*http://tw.my.yahoo.com/add/module?url=http://tw.myblog.yahoo.com/trenton-kang/rss <urlopen error timed out>
+2013-02-19 12:35:10,932 ERROR Download Error. Url:http://www.ieeuc.com/cache/201111231708337_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:10,934 ERROR Download Error. Url:http://www.ieeuc.com/cache/201111231708330_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:11,035 ERROR Download Error. Url:http://www.ieeuc.com/cache/20111123170833_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:11,110 ERROR Download Error. Url:http://www.ieeuc.com/cache/201111231708336_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:11,162 ERROR Download Error. Url:http://www.ieeuc.com/cache/20121210170433_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:11,310 ERROR Download Error. Url:http://www.ieeuc.com/cache/2011112317083311_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:11,320 ERROR Download Error. Url:http://www.ieeuc.com/cache/201212101704330_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:11,774 ERROR Download Error. Url:http://www.ieeuc.com/cache/201212101704331_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:11,776 ERROR Download Error. Url:http://www.ieeuc.com/cache/201111231708331_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:11,785 ERROR Download Error. Url:http://www.ieeuc.com/cache/201111231708338_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:11,817 ERROR Download Error. Url:http://www.ieeuc.com/cache/2011112317083312_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:11,862 ERROR Download Error. Url:http://www.ieeuc.com/cache/201212101704332_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:12,841 ERROR Download Error. Url:http://www.ieeuc.com/ <urlopen error timed out>
+2013-02-19 12:35:12,871 ERROR Download Error. Url:http://www.ieeuc.com/cache/201111231708333_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:12,883 ERROR Download Error. Url:http://www.ieeuc.com/index.php?do=news&act=true <urlopen error timed out>
+2013-02-19 12:35:14,182 ERROR Download Error. Url:http://www.ieeuc.com/cache/201212101704335_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:15,364 ERROR Download Error. Url:http://www.ieeuc.com/cache/2012121017043311_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:18,827 ERROR Download Error. Url:http://www.ieeuc.com/cache/201212101704339_cut.w_600.jpg MimeType is not Valid
+2013-02-19 12:35:21,411 ERROR Download Error. Url:http://www.ieeuc.com/cache/201212101704333_cut.w_600.jpg timed out
+2013-02-19 12:35:22,163 ERROR Download Error. Url:http://www.ieeuc.com/cache/2011112317083313_cut.w_600.jpg timed out
+2013-02-19 12:35:22,168 ERROR Download Error. Url:http://www.ieeuc.com/index.php?do=faq&id=395 <urlopen error timed out>
+2013-02-19 12:35:22,168 ERROR Download Error. Url:http://www.ieeuc.com/cache/201212101704334_cut.w_600.jpg timed out
+2013-02-19 12:35:22,174 ERROR Download Error. Url:http://www.ieeuc.com/index.php?do=faq&id=408 <urlopen error timed out>
+2013-02-19 12:35:22,181 ERROR Download Error. Url:http://www.ieeuc.com/cache/201212101704336_cut.w_600.jpg timed out
+2013-02-19 12:35:22,183 ERROR Download Error. Url:http://www.ieeuc.com/cache/201212101704337_cut.w_600.jpg timed out
+2013-02-19 12:35:22,586 ERROR Download Error. Url:http://www.ieeuc.com/cache/2011112317083310_cut.w_600.jpg timed out
+2013-02-19 12:35:22,590 ERROR Download Error. Url:http://www.ieeuc.com/cache/201212101704338_cut.w_600.jpg timed out
+2013-02-19 12:35:23,021 ERROR Download Error. Url:http://www.ieeuc.com/cache/2012121017043310_cut.w_600.jpg timed out
+2013-02-19 12:35:23,096 ERROR Download Error. Url:http://www.ieeuc.com/index.php?do=faq&id=392 <urlopen error timed out>
+2013-02-19 12:35:23,106 ERROR Download Error. Url:http://www.ieeuc.com/index.php?do=map <urlopen error timed out>
+2013-02-19 12:35:23,115 ERROR Download Error. Url:http://www.ieeuc.com/index.php?do=news&types=news <urlopen error timed out>
+2013-02-19 12:35:32,895 ERROR HTTP Error. Url:http://isis.poly.edu/projects/index.php?page=5 HTTP Error 404: Not Found
+2013-02-19 12:35:33,426 ERROR Download Error. Url:http://crissp.poly.edu/media/aspiretrifold.pdf MimeType is not Valid
+2013-02-19 12:35:36,539 ERROR HTTP Error. Url:http://www.edutime.net/Search.aspx?CT_ID=1 HTTP Error 404: Not Found
+2013-02-19 12:35:43,485 ERROR Download Error. Url:http://www.nyu.edu/gsas/dept/fineart/pdfs/conservation/VLP_Project_2013.pdf MimeType is not Valid
+2013-02-19 12:35:43,646 ERROR Download Error. Url:http://www.nyu.edu/gsas/dept/fineart/pdfs/press/Harrison_Obit.pdf MimeType is not Valid
+2013-02-19 12:35:44,692 ERROR Download Error. Url:http://usa.edutime.net/University/NewYorkInstituteofTechnology/NewYorkInstituteofTechnologyInfo.aspx <urlopen error timed out>
+2013-02-19 12:35:46,281 ERROR HTTP Error. Url:http://isisblogs.poly.edu/www.toniblogs.com/08/2012/security/shellcoding-with-python-pickles/ HTTP Error 404: Not Found
+2013-02-19 12:35:46,375 ERROR Download Error. Url:http://i0.wp.com/isisblogs.poly.edu/wp-content/uploads/2013/02/minesweeper.png?resize=640%2C527 MimeType is not Valid
+2013-02-19 12:35:47,058 ERROR Download Error. Url:http://i0.wp.com/2.bp.blogspot.com/-P1dCfIK3Mo4/UGjlIt1hm-I/AAAAAAAAAWs/rX4lf8MDlMw/s1600/fuark_its_bcrypt.png MimeType is not Valid
+2013-02-19 12:35:47,111 ERROR Download Error. Url:http://www.nyu.edu/gsas/dept/fineart/pdfs/publications/IFA_Archaeology_Journal_2012-2013.pdf MimeType is not Valid
+2013-02-19 12:35:47,521 ERROR Download Error. Url:http://i2.wp.com/2.bp.blogspot.com/-r_Ee1mNYHxM/UGjmLOojzsI/AAAAAAAAAW4/8v_xuEfKtlA/s1600/the_key.png MimeType is not Valid
+2013-02-19 12:35:47,846 ERROR Download Error. Url:http://1.bp.blogspot.com/-waXz2GjOiFs/UGjd9XdZZgI/AAAAAAAAAWA/ienhWsiUo0o/s1600/horseforcepng.png MimeType is not Valid
+2013-02-19 12:35:47,942 ERROR Download Error. Url:http://i0.wp.com/isisblogs.poly.edu/wp-content/uploads/2012/08/demsg.png?resize=640%2C114 MimeType is not Valid
+2013-02-19 12:35:48,068 ERROR Download Error. Url:http://i2.wp.com/isisblogs.poly.edu/wp-content/uploads/2012/08/need1337.png?resize=640%2C319 MimeType is not Valid
+2013-02-19 12:35:48,230 ERROR Download Error. Url:http://i1.wp.com/isisblogs.poly.edu/wp-content/uploads/2012/08/Screenshot-evan@ubuntu-wireshark-wireshark-1.8.1.png?resize=640%2C850 MimeType is not Valid
+2013-02-19 12:35:48,291 ERROR Download Error. Url:http://i0.wp.com/3.bp.blogspot.com/-vGeExmk7qb0/UGjflQrzGmI/AAAAAAAAAWY/K6NaYxGdjxk/s1600/hackerdetected.png MimeType is not Valid
+2013-02-19 12:35:48,352 ERROR Download Error. Url:http://www.nyu.edu/gsas/dept/fineart/pdfs/publications/ifa_annual_2012.pdf MimeType is not Valid
+2013-02-19 12:35:48,368 ERROR Download Error. Url:http://i0.wp.com/isisblogs.poly.edu/wp-content/uploads/2012/05/littleendian.png?resize=640%2C500 MimeType is not Valid
+2013-02-19 12:35:48,691 ERROR Download Error. Url:http://i1.wp.com/4.bp.blogspot.com/-pnXC7rLecZk/UGjfKisDoDI/AAAAAAAAAWM/BL0j2KoaAnE/s1600/beepboopvulnerabilityfound.png MimeType is not Valid
+2013-02-19 12:35:50,006 ERROR HTTP Error. Url:http://blackbox.sibears.ru/uploads/6/school-ctf-2011-files/long.txt HTTP Error 404: Not Found
+2013-02-19 12:36:00,468 ERROR Download Error. Url:http://www.stern.nyu.edu/experience-stern/faculty-research/index.htm <urlopen error timed out>
+2013-02-19 12:36:00,552 ERROR Download Error. Url:http://www.stern.nyu.edu/experience-stern/faculty-research/index.htm?refine=catg-books <urlopen error timed out>
+2013-02-19 12:36:00,575 ERROR Download Error. Url:http://www.stern.nyu.edu/experience-stern/faculty-research/index.htm?refine=catg-opinion <urlopen error timed out>
+2013-02-19 12:36:00,657 ERROR Download Error. Url:http://www.stern.nyu.edu/experience-stern/faculty-research/index.htm?refine=catg-researchhighlights <urlopen error timed out>
+2013-02-19 12:36:00,775 ERROR Download Error. Url:http://www.stern.nyu.edu/experience-stern/faculty-research/index.htm?refine=catg-researchinthenews <urlopen error timed out>
+2013-02-19 12:36:00,788 ERROR Download Error. Url:http://www.stern.nyu.edu/experience-stern/faculty-research/archive/index.htm <urlopen error timed out>
+2013-02-19 12:36:00,957 ERROR Download Error. Url:http://www.stern.nyu.edu/experience-stern/global/index.htm <urlopen error timed out>
+2013-02-19 12:36:00,973 ERROR Download Error. Url:http://www.stern.nyu.edu/experience-stern/global/index.htm?refine=catg-businessacrossborders <urlopen error timed out>
+2013-02-19 12:36:01,022 ERROR Download Error. Url:http://www.stern.nyu.edu/experience-stern/global/index.htm?refine=catg-globalstudy <urlopen error timed out>
+2013-02-19 12:36:01,100 ERROR Download Error. Url:http://www.stern.nyu.edu/experience-stern/global/index.htm?refine=catg-voicesfromabroad <urlopen error timed out>
+2013-02-19 12:36:01,162 ERROR Download Error. Url:http://www.stern.nyu.edu/experience-stern/global/archive/index.htm <urlopen error timed out>
+2013-02-19 12:36:01,215 ERROR Download Error. Url:http://www.stern.nyu.edu/experience-stern/news-events/index.htm <urlopen error timed out>
+2013-02-19 12:36:01,294 ERROR Download Error. Url:http://www.stern.nyu.edu/experience-stern/news-events/index.htm?refine=pressreleases <urlopen error timed out>
+2013-02-19 12:36:01,301 ERROR Download Error. Url:http://www.stern.nyu.edu/experience-stern/news-events/index.htm?refine=schoolnews <urlopen error timed out>
+2013-02-19 12:36:01,323 ERROR Download Error. Url:http://www.stern.nyu.edu/experience-stern/news-events/events/index.htm <urlopen error timed out>
+2013-02-19 12:36:04,026 ERROR HTTP Error. Url:http://www.nyu.edu/as/lsp/advising/facinfo/ HTTP Error 401: Authorization Required
+2013-02-19 12:36:07,509 ERROR Download Error. Url:http://gsas.nyu.edu/object/gsas.pdfs.far4guidelines MimeType is not Valid
+2013-02-19 12:36:08,645 ERROR Download Error. Url:http://www.stern.nyu.edu/programs-admissions/dual-degrees/mba-ms-in-mathematics/index.htm <urlopen error timed out>
+2013-02-19 12:36:14,203 ERROR Robot Error. Url:http://ionadmin.fas.nyu.edu/admin/ContextPageEditAction.ion?method=setup&key=3165 [Errno socket error] timed out
+2013-02-19 12:36:24,207 ERROR Download Error. Url:http://ionadmin.fas.nyu.edu/admin/ContextPageEditAction.ion?method=setup&key=3165 <urlopen error timed out>
+2013-02-19 12:36:29,887 ERROR Download Error. Url:http://nyuad.nyu.edu/academics/undergraduate-programs/core-curriculum.html <urlopen error timed out>
+2013-02-19 12:36:32,043 ERROR Download Error. Url:http://nyuad.nyu.edu/academics/mentoring/mentoring-faqs.html <urlopen error timed out>
+2013-02-19 12:36:32,475 ERROR Download Error. Url:http://nyuad.nyu.edu/academics/registrar/transcripts.html <urlopen error timed out>
+2013-02-19 12:36:36,014 ERROR HTTP Error. Url:http://wagner.nyu.edu/careers/careerdirectory.php HTTP Error 404: Not Found
+2013-02-19 12:36:36,987 ERROR Download Error. Url:http://nyuad.nyu.edu/news-events/abu-dhabi-events/archived-abu-dhabi-events.html <urlopen error timed out>
+2013-02-19 12:36:39,071 ERROR HTTP Error. Url:https://wagner.nyu.edu/evaluation/evaluation.php HTTP Error 401: Authorization Required
+2013-02-19 12:36:46,615 ERROR Download Error. Url:http://wagner.nyu.edu/nyu_wagner_dean_search.pdf MimeType is not Valid
+2013-02-19 12:36:51,119 ERROR Download Error. Url:http://furmancenter.org/files/publications/PRRACHousingLocationSchools.pdf MimeType is not Valid
+2013-02-19 12:36:52,382 ERROR HTTP Error. Url:http://www.nytimes.com/2013/02/19/nyregion/eco-friendly-dry-cleaners-as-a-barometer-of-gentrification.html?emc=eta1&_r=0 HTTP Error 303: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+See Other
+2013-02-19 12:36:55,001 ERROR HTTP Error. Url:http://cas.nyu.edu/page/admin.pp HTTP Error 401: Authorization Required
+2013-02-19 12:36:56,014 ERROR HTTP Error. Url:http://isaw.nyu.edu/search_form HTTP Error 404: Not Found
+2013-02-19 12:36:59,415 ERROR Download Error. Url:http://www.nyu.edu/content/dam/nyu/hr/documents/LiveSmart/FebruaryLiveSmart.pdf MimeType is not Valid
+2013-02-19 12:37:00,313 ERROR HTTP Error. Url:http://www.nytimes.com/2012/09/14/arts/design/echoes-of-the-past-chinese-buddhist-cave-art-in-new-york.html?pagewanted=all HTTP Error 303: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+See Other
+2013-02-19 12:37:00,941 ERROR Robot Error. Url:http://ionadmin.fas.nyu.edu/admin/ContextPageEditAction.ion?method=setup&key=4095 [Errno socket error] timed out
+2013-02-19 12:37:03,891 ERROR HTTP Error. Url:https://www.nytimes.com/2012/11/24/science/scientists-see-advances-in-deep-learning-a-part-of-artificial-intelligence.html?ref=todayspaper HTTP Error 303: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+See Other
+2013-02-19 12:37:05,881 ERROR HTTP Error. Url:http://www.nytimes.com/2013/01/22/opinion/a-plan-to-cut-social-security-benefits.html HTTP Error 303: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+See Other
+2013-02-19 12:37:10,943 ERROR Download Error. Url:http://ionadmin.fas.nyu.edu/admin/ContextPageEditAction.ion?method=setup&key=4095 <urlopen error timed out>
+2013-02-19 12:37:11,818 ERROR Robot Error. Url:https://www1.albert.nyu.edu/cgi-bin/sisget.cgi?/awosgnon [Errno socket error] timed out
+2013-02-19 12:37:21,821 ERROR Download Error. Url:https://www1.albert.nyu.edu/cgi-bin/sisget.cgi?/awosgnon <urlopen error timed out>
+2013-02-19 12:40:12,582 ERROR HTTP Error. Url:http://www.nytimes.com/2010/03/23/arts/design/23nyu.html HTTP Error 303: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+See Other
+2013-02-19 12:40:18,305 ERROR HTTP Error. Url:http://nyulocal.com/on-campus/2012/12/13/professors-decide-whether-to-hold-no-confidence-vote-against-president-sexton/ HTTP Error 500: Internal Server Error
+2013-02-19 12:40:18,783 ERROR Download Error. Url:http://blogs.villagevoice.com/runninscared/nyudebtor.jpeg MimeType is not Valid
+2013-02-19 12:40:18,886 ERROR HTTP Error. Url:http://www.nytimes.com/2012/12/13/education/sexton-nyu-president-faces-prelude-to-a-possible-no-confidence-vote.html?_r=0&amp;adxnnl=1&amp;adxnnlx=1355431143-SlLlRrPJlCSeOvZmOuColw HTTP Error 303: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+See Other
+2013-02-19 12:40:28,258 ERROR HTTP Error. Url:http://www.youtube.com/channel/UCEuCK4HXaDDWliN7mtkbqnQ/__video_url__ HTTP Error 404: Not Found
+2013-02-19 12:40:29,193 ERROR HTTP Error. Url:https://plus.google.com/104960912859654260411 HTTP Error 404: Not Found
+2013-02-19 12:40:32,095 ERROR HTTP Error. Url:http://www.surfperu.tv/huanchaco2013/ HTTP Error 404: Not Found
+2013-02-19 12:40:33,016 ERROR HTTP Error. Url:http://vanstriplecrownofsurfing.com/billabongpipemas HTTP Error 404: Not Found
+2013-02-19 12:40:45,827 ERROR Download Error. Url:http://www.youtube.com/nytimes timed out
+2013-02-19 12:40:46,016 ERROR Download Error. Url:http://www.youtube.com/watch?v=L_9rewBhbiA timed out
+2013-02-19 12:40:46,537 ERROR Download Error. Url:http://www.youtube.com/watch?v=IgHOf5DXGbo timed out
+2013-02-19 12:40:46,537 ERROR Download Error. Url:http://www.youtube.com/watch?v=7zzWaBz2Y0A timed out
+2013-02-19 12:40:46,579 ERROR Download Error. Url:http://www.youtube.com/watch?v=ZUngqKWTCZU timed out
+2013-02-19 12:40:46,579 ERROR Download Error. Url:http://www.youtube.com/user/ReutersTV timed out
+2013-02-19 12:40:46,580 ERROR Download Error. Url:http://www.youtube.com/wsj timed out
+2013-02-19 12:40:46,587 ERROR Download Error. Url:http://www.youtube.com/watch?v=rq6dvHfeQZ4 timed out
+2013-02-19 12:40:46,601 ERROR Download Error. Url:http://www.youtube.com/watch?v=3PuHGKnboNY&amp;feature=g-user-a&amp;list=PLoEv-SeYyHZYveIyXkfTe2m6e9WG4jiuJ timed out
+2013-02-19 12:41:03,303 ERROR Download Error. Url:http://bit.ly/AllAroundTheWorldMOVIE timed out
+2013-02-19 12:41:23,348 ERROR HTTP Error. Url:http://www.youtube.com/channel/__video_url__ HTTP Error 404: Not Found
+2013-02-19 12:42:31,548 ERROR HTTP Error. Url:http://www.youtube.com/t/__video_url__ HTTP Error 404: Not Found
+2013-02-19 12:42:31,802 ERROR HTTP Error. Url:http://www.youtube.com/yt/copyright/copyright-disputes.html HTTP Error 404: Not Found
+2013-02-19 12:42:31,811 ERROR HTTP Error. Url:http://www.youtube.com/yt/copyright/content-id.html HTTP Error 404: Not Found
+2013-02-19 12:42:39,062 ERROR HTTP Error. Url:http://nyulocal.com/on-campus/2012/12/13/professors-decide-whether-to-hold-no-confidence-vote-against-president-sexton/ HTTP Error 500: Internal Server Error
+2013-02-19 12:42:39,716 ERROR HTTP Error. Url:http://www.nytimes.com/2012/12/13/education/sexton-nyu-president-faces-prelude-to-a-possible-no-confidence-vote.html?_r=0&amp;adxnnl=1&amp;adxnnlx=1355431143-SlLlRrPJlCSeOvZmOuColw HTTP Error 303: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+See Other
+2013-02-19 12:42:39,771 ERROR Download Error. Url:http://blogs.villagevoice.com/runninscared/nyudebtor.jpeg MimeType is not Valid
+2013-02-19 12:42:43,580 ERROR HTTP Error. Url:http://www.nytimes.com/2010/03/23/arts/design/23nyu.html HTTP Error 303: The HTTP server returned a redirect error that would lead to an infinite loop.
+The last 30x error message was:
+See Other
+2013-02-19 12:42:45,219 ERROR Download Error. Url:http://happyhours.villagevoice.com/nyc/find/places <urlopen error timed out>
+2013-02-19 12:42:54,241 ERROR Download Error. Url:http://happyhours.villagevoice.com/ <urlopen error timed out>
+2013-02-19 12:44:20,671 ERROR Download Error. Url:http://jds.cass.cn/UploadFiles/2010/11/201011041440416999.pdf MimeType is not Valid
+2013-02-19 12:44:25,989 ERROR HTTP Error. Url:http://www.kaoyan.com/pages/2013tuimian/ HTTP Error 404: Not Found
+2013-02-19 13:05:25,869 ERROR Download Error. Url:http://daveroever.org/downloads/Schools/Poland_Schools_letter.pdf MimeType is not Valid
+2013-02-19 13:06:21,462 ERROR Download Error. Url:http://daveroever.org/downloads/Schools/Poland_Schools_letter.pdf MimeType is not Valid
+2013-02-19 13:07:24,595 ERROR Download Error. Url:http://daveroever.org/downloads/Schools/Poland_Schools_letter.pdf MimeType is not Valid
+2013-02-19 13:07:29,318 ERROR Robot Error. Url:http://bicycles.stackexchange.com ('http protocol error', 0, 'got a bad status line', None)
+2013-02-19 13:07:29,338 ERROR HTTP Error. Url:http://electronics.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:29,353 ERROR HTTP Error. Url:http://bicycles.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:29,362 ERROR HTTP Error. Url:http://android.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:29,407 ERROR HTTP Error. Url:http://android.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:29,556 ERROR HTTP Error. Url:http://dba.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:29,556 ERROR HTTP Error. Url:http://drupal.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:29,557 ERROR HTTP Error. Url:http://dba.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:29,570 ERROR HTTP Error. Url:http://sharepoint.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:29,609 ERROR HTTP Error. Url:http://sharepoint.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:29,708 ERROR HTTP Error. Url:http://scifi.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:29,727 ERROR HTTP Error. Url:http://scifi.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:29,752 ERROR HTTP Error. Url:http://security.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:29,752 ERROR HTTP Error. Url:http://security.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,127 ERROR HTTP Error. Url:http://ux.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,130 ERROR HTTP Error. Url:http://bicycles.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,491 ERROR HTTP Error. Url:http://skeptics.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,511 ERROR HTTP Error. Url:http://meta.math.stackexchange.com/questions/1803/how-to-ask-a-homework-question HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,515 ERROR HTTP Error. Url:http://rpg.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,515 ERROR HTTP Error. Url:http://meta.math.stackexchange.com/q/1868/1543 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,556 ERROR HTTP Error. Url:http://judaism.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,556 ERROR HTTP Error. Url:http://mathematica.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,557 ERROR HTTP Error. Url:http://rpg.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,557 ERROR HTTP Error. Url:http://cstheory.stackexchange.com/faq HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,557 ERROR HTTP Error. Url:http://mathematica.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,559 ERROR HTTP Error. Url:http://travel.stackexchange.com HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,710 ERROR HTTP Error. Url:http://mathematica.stackexchange.com/ HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,711 ERROR HTTP Error. Url:http://electronics.stackexchange.com/ HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,725 ERROR HTTP Error. Url:http://meta.math.stackexchange.com/ HTTP Error 503: Service Unavailable
+2013-02-19 13:07:30,728 ERROR HTTP Error. Url:http://meta.math.stackexchange.com/questions/107/what-should-go-in-the-math-stackexchange-faq/117#117 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,285 ERROR HTTP Error. Url:http://meta.math.stackexchange.com/questions/5020/tex-latex-mathjax-basic-tutorial-and-quick-reference HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,290 ERROR HTTP Error. Url:http://meta.math.stackexchange.com/questions/107 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,291 ERROR HTTP Error. Url:http://math.stackexchange.com/faq#deletion HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,291 ERROR HTTP Error. Url:http://meta.math.stackexchange.com/questions/1773/do-we-have-an-equation-editing-howto HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,292 ERROR HTTP Error. Url:http://math.stackexchange.com/search HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,292 ERROR HTTP Error. Url:http://scicomp.stackexchange.com/ HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,294 ERROR HTTP Error. Url:http://cs.stackexchange.com/ HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,303 ERROR HTTP Error. Url:http://quant.stackexchange.com/ HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,364 ERROR HTTP Error. Url:http://math.stackexchange.com/privileges/vote-down HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,365 ERROR HTTP Error. Url:http://math.stackexchange.com/privileges/vote-up HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,365 ERROR HTTP Error. Url:http://math.stackexchange.com/privileges/comment HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,366 ERROR HTTP Error. Url:http://stackexchange.com/sites HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,384 ERROR HTTP Error. Url:http://math.stackexchange.com/privileges/edit HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,759 ERROR HTTP Error. Url:http://math.stackexchange.com/privileges HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,760 ERROR HTTP Error. Url:http://math.stackexchange.com/users/login HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,766 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/how-to-ask HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,767 ERROR HTTP Error. Url:http://math.stackexchange.com/faq#questions HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,769 ERROR HTTP Error. Url:http://math.stackexchange.com/?tab=featured HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,769 ERROR HTTP Error. Url:http://math.stackexchange.com/faq#dontask HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,770 ERROR HTTP Error. Url:http://math.stackexchange.com/faq#reputation HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,771 ERROR HTTP Error. Url:http://math.stackexchange.com/privileges/set-bounties HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,772 ERROR HTTP Error. Url:http://math.stackexchange.com/faq#close HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,792 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/how-to-answer HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,849 ERROR HTTP Error. Url:http://meta.math.stackexchange.com/questions/tagged/faq HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,850 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/vector-spaces HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,855 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/vector-analysis HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,856 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/258/informed HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,862 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/3/editor HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,866 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/2/student HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,866 ERROR HTTP Error. Url:http://math.stackexchange.com/questions?sort=newest HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,866 ERROR HTTP Error. Url:http://math.stackexchange.com/users?tab=moderators HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,877 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/24/good-answer HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,877 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/28/famous-question HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,878 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/32/civic-duty HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,889 ERROR HTTP Error. Url:http://math.stackexchange.com/tags?tab=popular HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,903 ERROR HTTP Error. Url:http://math.stackexchange.com/tags?tab=name HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,904 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/homework HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,904 ERROR HTTP Error. Url:http://math.stackexchange.com/tags?tab=new HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,915 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/homework?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,919 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/homework?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,919 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/calculus?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,924 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/real-analysis HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,925 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/calculus?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,931 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/calculus HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,932 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/real-analysis?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,938 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/real-analysis?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,948 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/linear-algebra?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,995 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/probability?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,995 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/probability HTTP Error 503: Service Unavailable
+2013-02-19 13:07:31,996 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/linear-algebra?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,039 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/general-topology?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,040 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/probability?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,041 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/general-topology HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,041 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/abstract-algebra HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,041 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/combinatorics?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,042 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/combinatorics?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,042 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/abstract-algebra?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,043 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/abstract-algebra?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,043 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/combinatorics HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,117 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/general-topology?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,130 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/sequences-and-series HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,133 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/algebra-precalculus?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,134 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/sequences-and-series?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,134 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/sequences-and-series?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,134 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/geometry?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,133 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/group-theory?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,135 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/group-theory?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,140 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/group-theory HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,162 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/number-theory HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,164 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/geometry?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,165 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/algebra-precalculus?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,166 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/algebra-precalculus HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,166 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/geometry HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,198 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/analysis HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,199 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/analysis?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,200 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/matrices?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,201 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/complex-analysis?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,201 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/matrices HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,201 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/number-theory?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,202 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/complex-analysis HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,203 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/analysis?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,204 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/number-theory?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,204 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/complex-analysis?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,226 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/matrices?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,227 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/functional-analysis?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,240 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/functional-analysis HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,241 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/elementary-number-theory HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,263 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/functional-analysis?sort=newest&days=30 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,291 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/measure-theory HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,292 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/measure-theory?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,292 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/statistics?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,292 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/measure-theory?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,293 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/elementary-number-theory?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,293 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/elementary-number-theory?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,300 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/statistics?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,301 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/statistics HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,301 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/integral HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,302 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/integral?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,308 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/reference-request?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,314 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/reference-request HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,314 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/integral?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,315 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/algebraic-geometry HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,315 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/reference-request?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,319 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/algebraic-geometry?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,365 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/probability-theory HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,381 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/algebraic-geometry?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,410 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/probability-theory?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,411 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/elementary-set-theory?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,411 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/differential-equations?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,412 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/differential-equations?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,412 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/limit?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,413 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/probability-theory?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,413 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/elementary-set-theory?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,414 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/differential-geometry?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,414 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/differential-geometry HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,415 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/limit HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,415 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/elementary-set-theory HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,415 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/differential-geometry?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,416 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/differential-equations HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,416 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/limit?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,450 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/functions?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,451 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/functions HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,503 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/functions?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,503 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/trigonometry?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,504 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/commutative-algebra?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,504 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/trigonometry HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,504 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/trigonometry?sort=newest&days=30 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,505 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/graph-theory HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,505 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/graph-theory?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,506 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/commutative-algebra HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,506 ERROR HTTP Error. Url:http://math.stackexchange.com/q/282727 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,506 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/dynamical-systems HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,507 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/commutative-algebra?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,523 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/graph-theory?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,538 ERROR HTTP Error. Url:http://math.stackexchange.com/users/42887/joyeuse-saint-valentin HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,539 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/logic?sort=newest&days=30 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,540 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/logic HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,541 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/logic?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,621 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/282727/show-that-ker-w-is-a-invariant?answertab=oldest#tab-top HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,622 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/282727/show-that-ker-w-is-a-invariant?answertab=active#tab-top HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,622 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/algebraic-topology?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,623 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/algorithms?sort=newest&days=30 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,624 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/algorithms HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,637 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/inequality HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,637 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/algebraic-topology HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,638 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/282727/show-that-ker-w-is-a-invariant?answertab=votes#tab-top HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,638 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/algebraic-topology?sort=newest&days=30 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,639 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/algorithms?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,639 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/inequality?sort=newest&days=1 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,655 ERROR HTTP Error. Url:http://math.stackexchange.com/tags?page=2&amp;tab=popular HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,656 ERROR HTTP Error. Url:http://math.stackexchange.com/a/282777 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,656 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/inequality?sort=newest&days=7 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,656 ERROR HTTP Error. Url:http://math.stackexchange.com/tags?page=3&amp;tab=popular HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,733 ERROR HTTP Error. Url:http://math.stackexchange.com/users/1551/user1551 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,734 ERROR HTTP Error. Url:http://math.stackexchange.com/tags?page=4&amp;tab=popular HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,737 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/282727/show-that-ker-w-is-a-invariant?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,738 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/26323/a-confusion-about-kera-and-kerat HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,738 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/19910/first-order-dynamic-system HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,739 ERROR HTTP Error. Url:http://math.stackexchange.com/tags?page=23&amp;tab=popular HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,742 ERROR HTTP Error. Url:http://math.stackexchange.com/tags?page=5&amp;tab=popular HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,774 ERROR HTTP Error. Url:http://math.stackexchange.com/tags/synonyms HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,774 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/40013/does-the-following-dynamic-system-converge-to-a-steady-state HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,775 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/45536/linear-algebra-finding-a-steady-state-matrix HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,780 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/57642/for-v-vector-space-of-dimension-n-under-mathbb-c-and-t-v-to-v-linear HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,783 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/78941/state-space-to-transfer-function HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,783 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/80366/stability-region-of-a-polynomial-map HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,784 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/78346/on-the-derivative-along-the-trajectories-of-a-dynamical-system HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,784 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/57426/find-v-in-kera-i3-such-that-langle-v-rangle-oplus-kera-i2-ker HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,810 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/101037/invariant-set-sufficient-condition HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,814 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/151745/show-that-zero-attractor-basin-is-not-mathbbr2 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,815 ERROR HTTP Error. Url:http://math.stackexchange.com/users?tab=newusers HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,817 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/135906/an-invariant-subspace-question HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,818 ERROR HTTP Error. Url:http://math.stackexchange.com/users?tab=voters HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,818 ERROR HTTP Error. Url:http://math.stackexchange.com/users?tab=reputation HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,819 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/169061/when-are-attracting-sets-invariant HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,834 ERROR HTTP Error. Url:http://math.stackexchange.com/questions?sort=featured HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,835 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/205359/show-that-the-span-of-two-vectors-is-t-invariant HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,835 ERROR HTTP Error. Url:http://math.stackexchange.com/badges?tab=general HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,835 ERROR HTTP Error. Url:http://math.stackexchange.com/questions?sort=faq HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,837 ERROR HTTP Error. Url:http://math.stackexchange.com/?tab=active HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,838 ERROR HTTP Error. Url:http://math.stackexchange.com/users?tab=editors HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,864 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/202574/a-question-about-conjugacy-between-two-systems HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,864 ERROR HTTP Error. Url:http://math.stackexchange.com/questions?sort=votes HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,865 ERROR HTTP Error. Url:http://math.stackexchange.com/users?tab=reputation&amp;filter=all HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,916 ERROR HTTP Error. Url:http://math.stackexchange.com/badges?tab=tags HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,917 ERROR HTTP Error. Url:http://math.stackexchange.com/?tab=hot HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,932 ERROR HTTP Error. Url:http://math.stackexchange.com/questions?sort=unanswered HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,936 ERROR HTTP Error. Url:http://math.stackexchange.com/badges?tab=general&amp;filter=bronze HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,936 ERROR HTTP Error. Url:http://math.stackexchange.com/questions?sort=active HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,937 ERROR HTTP Error. Url:http://math.stackexchange.com/users?tab=reputation&amp;filter=year HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,937 ERROR HTTP Error. Url:http://math.stackexchange.com/users?tab=reputation&amp;filter=quarter HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,937 ERROR HTTP Error. Url:http://math.stackexchange.com/?tab=week HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,939 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/217372/invariant-subspaces HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,939 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/214894/show-that-a-set-is-not-invariant HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,943 ERROR HTTP Error. Url:http://math.stackexchange.com/?tab=month HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,944 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308285/what-are-the-norms-in-ito-isometry HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,943 ERROR HTTP Error. Url:http://math.stackexchange.com/badges?tab=general&amp;filter=silver HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,945 ERROR HTTP Error. Url:http://math.stackexchange.com/users?tab=reputation&amp;filter=month HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,957 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/248914/prove-that-anosov-automorphisms-are-chaotic HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,957 ERROR HTTP Error. Url:http://math.stackexchange.com/badges?tab=general&amp;filter=gold HTTP Error 503: Service Unavailable
+2013-02-19 13:07:32,981 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308285/what-are-the-norms-in-ito-isometry HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,015 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/stochastic-calculus HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,016 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/252964/stability-of-a-system-that-has-jacobian-like-matrix-with-eigenvalue-of-less-th HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,016 ERROR HTTP Error. Url:http://math.stackexchange.com/users?tab=reputation&amp;filter=week HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,017 ERROR HTTP Error. Url:http://math.stackexchange.com/badges?tab=general&amp;filter=all HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,035 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/254176/the-system-of-xt1-ax-growing-and-retaining-stability-possible HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,036 ERROR HTTP Error. Url:http://math.stackexchange.com/users/1281/tim HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,036 ERROR HTTP Error. Url:http://math.stackexchange.com/users/1281/tim HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,037 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308282/is-this-equation-valid-gamma-be-log-bne-gamma-be-ne HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,037 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/stochastic-calculus HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,037 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/48/altruist HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,036 ERROR HTTP Error. Url:http://math.stackexchange.com/users/12042/brian-m-scott HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,040 ERROR HTTP Error. Url:http://math.stackexchange.com/users/6312/andre-nicolas HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,041 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/265932/poles-and-zeros-of-linear-systems HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,041 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308265/calculus-limit-of-infinity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,044 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/133/analytical HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,045 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/transformation HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,078 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/266908/studying-a-nonlinear-system-under-constraints-in-linear-fashion HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,079 ERROR HTTP Error. Url:http://math.stackexchange.com/users/21163/sim HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,080 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/269247/how-to-model-a-system-for-tracking-a-person-using-kalman-filter HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,080 ERROR HTTP Error. Url:http://math.stackexchange.com/users/9003/amwhy HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,084 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308265/calculus-limit-of-infinity/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,085 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/59/announcer HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,113 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/127/archaeologist HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,125 ERROR HTTP Error. Url:http://math.stackexchange.com/users/32785/jonas HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,126 ERROR HTTP Error. Url:http://math.stackexchange.com/users/622/asaf-karagila HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,126 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/276264/how-to-solve-simple-systems-of-differential-equations HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,126 ERROR HTTP Error. Url:http://math.stackexchange.com/users/62278/dominic-michaelis HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,127 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308117/how-to-compute-nullspace-on-maple/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,132 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/47/benefactor HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,138 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/277187/why-do-we-want-to-know-the-poles-and-zeros-of-a-linear-system HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,138 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/set-theory HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,139 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308281/hausdorff-space-if-and-only-if-subspaces-are-closed HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,204 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/9/autobiographer HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,205 ERROR HTTP Error. Url:http://math.stackexchange.com/users/38839/amzoti HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,206 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/30/beta HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,206 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/60/booster HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,207 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308280/commutative-algebra-integral-extensions-question HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,207 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308117/how-to-compute-nullspace-on-maple HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,208 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/axiom-of-choice HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,218 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308264/prove-that-two-normed-linear-spaces-are-equivalent-as-metric-spaces-if-and-only HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,222 ERROR HTTP Error. Url:http://math.stackexchange.com/users/53268/rlgordonma HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,226 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308278/homotopy-topology-question HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,226 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/metric-spaces HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,226 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/low-dimensional-topology HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,227 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/207/caucus HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,227 ERROR HTTP Error. Url:http://math.stackexchange.com/election HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,227 ERROR HTTP Error. Url:http://math.stackexchange.com/users/38053/julien HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,228 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/8/citizen-patrol HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,228 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/4/cleanup HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,229 ERROR HTTP Error. Url:http://math.stackexchange.com/users/10704/patrick-da-silva HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,251 ERROR HTTP Error. Url:http://math.stackexchange.com/users/28900/cameron-buie HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,256 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/208/constituent HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,257 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/31/commentator HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,257 ERROR HTTP Error. Url:http://math.stackexchange.com/users/62934/doncarlos HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,258 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/307727/solving-the-recurrence-hi-h-left-left-lfloor-fraci1d-right-rfloor-ri HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,265 ERROR HTTP Error. Url:http://math.stackexchange.com/users/6179/did HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,266 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/logarithms HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,276 ERROR HTTP Error. Url:http://math.stackexchange.com/users/1827/ross-millikan HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,276 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/79/convention HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,277 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308276/normalize-merchant-weights-based-on-long-term-performance HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,278 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/recurrence-relations HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,280 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/49/copy-editor HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,281 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308271/unital-and-non-unital-cx-algebras HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,291 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/7/critic HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,292 ERROR HTTP Error. Url:http://math.stackexchange.com/users/63012/brian-lovett HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,292 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/307727/solving-the-recurrence-hi-h-left-left-lfloor-fraci1d-right-rfloor-ri/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,299 ERROR HTTP Error. Url:http://math.stackexchange.com/users/61421/zaarcis HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,302 ERROR HTTP Error. Url:http://math.stackexchange.com/users/39174/hagen-von-eitzen HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,311 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/227/custodian HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,311 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/operator-algebras HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,316 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308158/proving-b-n-n-1-infty-converges-given-a-n-n-1-infty-and-a-n HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,323 ERROR HTTP Error. Url:http://math.stackexchange.com/users/63011/wonderer HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,324 ERROR HTTP Error. Url:http://math.stackexchange.com/review HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,331 ERROR HTTP Error. Url:http://math.stackexchange.com/users/8269/gerry-myerson HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,331 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/90/deputy HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,337 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/proof-strategy HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,338 ERROR HTTP Error. Url:http://math.stackexchange.com/users/63009/unknown HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,352 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/37/disciplined HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,352 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/proof-writing HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,353 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/44/electorate HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,354 ERROR HTTP Error. Url:http://math.stackexchange.com/users/58401/andreas-caranti HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,357 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/19/enlightened HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,366 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308158/proving-b-n-n-1-infty-converges-given-a-n-n-1-infty-and-a-n/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,384 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/54/enthusiast HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,384 ERROR HTTP Error. Url:http://math.stackexchange.com/users/13854/robjohn HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,385 ERROR HTTP Error. Url:http://math.stackexchange.com/users/49087/cathrine HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,389 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/42/epic HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,392 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/fourier-analysis HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,390 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308263/help-with-some-fourier-series-questions HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,393 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/128/excavator HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,394 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/55/fanatic HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,414 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/fourier-series HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,414 ERROR HTTP Error. Url:http://math.stackexchange.com/users/50005/mark-hoffman HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,415 ERROR HTTP Error. Url:http://math.stackexchange.com/users/31254/donantonio HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,415 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/297807/good-examples-of-ansatze HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,416 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/33/favorite-question HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,430 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/21/good-question HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,431 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308260/fastest-way-to-compute-spectral-radius HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,432 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/15/generalist HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,434 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/25/great-answer HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,446 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/spectral-theory HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,455 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/22/great-question HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,456 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/big-list HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,456 ERROR HTTP Error. Url:http://math.stackexchange.com/users/17762/marvis HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,457 ERROR HTTP Error. Url:http://math.stackexchange.com/users/52967/ramy-al-zuhouri HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,457 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/terminology HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,467 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/297807/good-examples-of-ansatze/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,467 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/18/guru HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,474 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308256/number-of-unique-permutations-on-an-alternating-bitstring HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,478 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308255/is-eulers-lemma-of-fluid-mechanics-a-nonlinear-version-of-liouvilles-theorem-o HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,479 ERROR HTTP Error. Url:http://math.stackexchange.com/users/62864/dj HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,480 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/45/investor HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,480 ERROR HTTP Error. Url:http://math.stackexchange.com/users/6622/joriki HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,499 ERROR HTTP Error. Url:http://math.stackexchange.com/users/4594/jacob-black HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,502 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/43/legendary HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,507 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/fluid-dynamics HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,517 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/132/marshal HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,519 ERROR HTTP Error. Url:http://math.stackexchange.com/users/8157/giuseppe-negro HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,524 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308205/find-the-root-of-a-polynomial-of-degree-5 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,528 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/polynomials HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,529 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/41/mortarboard HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,541 ERROR HTTP Error. Url:http://math.stackexchange.com/users/30953/ittay-weiss HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,545 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308253/what-is-the-problem-in-happily-using-the-mclaurin-expansion-of-ex-with-eix HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,546 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/17/necromancer HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,575 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308205/find-the-root-of-a-polynomial-of-degree-5/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,577 ERROR HTTP Error. Url:http://math.stackexchange.com/users/63005/mephisto HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,578 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/roots HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,593 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/category-theory HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,594 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308250/using-clt-do-estimate-the-probability-that-s-n-ina-b-for-given-n-a-b HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,595 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/soft-question HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,595 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/23/nice-answer HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,596 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/20/nice-question HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,604 ERROR HTTP Error. Url:http://math.stackexchange.com/users/7933/thomas-andrews HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,638 ERROR HTTP Error. Url:http://www.tourneydollars.com/faq/ HTTP Error 500: Internal Server Error
+2013-02-19 13:07:33,655 ERROR HTTP Error. Url:http://www.tourneydollars.com/members/ HTTP Error 500: Internal Server Error
+2013-02-19 13:07:33,659 ERROR HTTP Error. Url:http://www.tourneydollars.com/contact/ HTTP Error 500: Internal Server Error
+2013-02-19 13:07:33,665 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/27/notable-question HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,665 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/307907/prove-that-sum-of-2010-vectors-is-neq-0-if-these-vector-create-a-set-with-len HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,666 ERROR HTTP Error. Url:http://math.stackexchange.com/users/21335/belgi HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,674 ERROR HTTP Error. Url:http://math.stackexchange.com/users/1650/martin-brandenburg HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,679 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/analytic-geometry HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,680 ERROR HTTP Error. Url:http://math.stackexchange.com/questions?pagesize=15&amp;sort=newest HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,680 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/89/outspoken HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,681 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/5/organizer HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,683 ERROR HTTP Error. Url:http://math.stackexchange.com/questions?pagesize=30&amp;sort=newest HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,716 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/contest-math HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,717 ERROR HTTP Error. Url:http://math.stackexchange.com/users/14366/henning-makholm HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,718 ERROR HTTP Error. Url:http://math.stackexchange.com/questions?pagesize=50&amp;sort=newest HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,731 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/38/peer-pressure HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,732 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/307907/prove-that-sum-of-2010-vectors-is-neq-0-if-these-vector-create-a-set-with-len/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,743 ERROR HTTP Error. Url:http://math.stackexchange.com/questions?page=2&sort=newest HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,747 ERROR HTTP Error. Url:http://math.stackexchange.com/users/11619/jyrki-lahtonen HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,752 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/307712/countable-or-uncountable HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,753 ERROR HTTP Error. Url:http://math.stackexchange.com/questions?page=3&sort=newest HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,753 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/39/populist HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,754 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/26/popular-question HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,784 ERROR HTTP Error. Url:http://math.stackexchange.com/questions?page=5&sort=newest HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,784 ERROR HTTP Error. Url:http://math.stackexchange.com/users/14972/hurkyl HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,785 ERROR HTTP Error. Url:http://area51.stackexchange.com/ HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,786 ERROR HTTP Error. Url:http://math.stackexchange.com/questions?page=4&sort=newest HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,787 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/76/precognitive HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,787 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/307712/countable-or-uncountable/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,816 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/46/promoter HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,816 ERROR HTTP Error. Url:http://math.stackexchange.com/users/11069/sasha HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,817 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308256/number-of-unique-permutations-on-an-alternating-bitstring/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,817 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/125/proofreader HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,818 ERROR HTTP Error. Url:http://math.stackexchange.com/questions?page=7176&sort=newest HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,819 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/306728/showing-that-cos-x-cos-2x-cdots-cos-2nx-geq-dfracn2-sqrt2 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,819 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/61/publicist HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,835 ERROR HTTP Error. Url:http://math.stackexchange.com/users/41488/berci HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,848 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/56/pundit HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,849 ERROR HTTP Error. Url:http://math.stackexchange.com/users/59379/achille-hui HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,849 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/306728/showing-that-cos-x-cos-2x-cdots-cos-2nx-geq-dfracn2-sqrt2/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,850 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/78/quorum HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,870 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/176/research-assistant HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,871 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308232/a-question-on-fundamental-matrices HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,871 ERROR HTTP Error. Url:http://math.stackexchange.com/users/27978/copper-hat HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,872 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/57/reversal HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,873 ERROR HTTP Error. Url:http://stackexchange.com/users/login?returnurl=%2f HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,885 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308232/a-question-on-fundamental-matrices/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,885 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/157/reviewer HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,886 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/68/revival HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,895 ERROR HTTP Error. Url:http://stackexchange.com/ HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,895 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/7896/subgroups-of-finitely-generated-groups-are-not-necessarily-finitely-generated HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,896 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308253/what-is-the-problem-in-happily-using-the-mclaurin-expansion-of-ex-with-eix/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,896 ERROR HTTP Error. Url:http://stackexchange.com/about HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,897 ERROR HTTP Error. Url:http://math.stackexchange.com/users/23500/math-gems HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,899 ERROR HTTP Error. Url:http://stackexchange.com/questions HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,902 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/10/scholar HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,916 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/14/self-learner HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,916 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/7896/subgroups-of-finitely-generated-groups-are-not-necessarily-finitely-generated/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,917 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/65/sportsmanship HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,917 ERROR HTTP Error. Url:http://stackexchange.com/leagues HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,928 ERROR HTTP Error. Url:http://stackexchange.com/newsletters HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,928 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/36/stellar-question HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,928 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/ring-theory HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,940 ERROR HTTP Error. Url:http://math.stackexchange.com/users/26857/yacp HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,941 ERROR HTTP Error. Url:http://math.stackexchange.com/users/12952/alexander-gruber HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,941 ERROR HTTP Error. Url:http://stackexchange.com/blogs HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,950 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308250/using-clt-do-estimate-the-probability-that-s-n-ina-b-for-given-n-a-b/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,952 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/12/strunk-white HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,953 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/228/steward HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,957 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/64/suffrage HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,957 ERROR HTTP Error. Url:http://math.stackexchange.com/tags/linear-algebra/info HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,958 ERROR HTTP Error. Url:http://math.stackexchange.com/users/18986/david-mitra HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,958 ERROR HTTP Error. Url:http://math.stackexchange.com/users/9176/n-s HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,958 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/6/supporter HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,961 ERROR HTTP Error. Url:http://math.stackexchange.com/users/33337/lab-bhattacharjee HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,968 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/linear-algebra?sort=newest&pagesize=15 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,997 ERROR HTTP Error. Url:http://math.stackexchange.com/tags/finite-groups/info HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,997 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308263/help-with-some-fourier-series-questions/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,997 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/finite-groups?sort=newest&pagesize=15 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,997 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/119/synonymizer HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,998 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/linear-algebra?sort=faq&pagesize=15 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:33,998 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/linear-algebra?sort=featured&pagesize=15 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,002 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/58/tag-editor HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,019 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/linear-algebra?sort=votes&pagesize=15 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,019 ERROR HTTP Error. Url:http://math.stackexchange.com/users/35472/mhenni-benghorbal HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,020 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/75/talkative HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,020 ERROR HTTP Error. Url:http://math.stackexchange.com/users/264/zev-chonoles HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,020 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/finite-groups?sort=faq&pagesize=15 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,028 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/11/taxonomist HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,028 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/linear-algebra?sort=active&pagesize=15 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,029 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308230/expectation-of-the-min-of-two-uncorrelated-random-variables HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,029 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/finite-groups?sort=votes&pagesize=15 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,048 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/linear-algebra?sort=unanswered&pagesize=15 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,049 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/finite-groups?sort=active&pagesize=15 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,059 ERROR HTTP Error. Url:http://math.stackexchange.com/users/59825/damien-l HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,059 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/1/teacher HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,060 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/finite-groups?sort=unanswered&pagesize=15 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,060 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/probability-distributions HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,075 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/random-variables HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,075 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/50/tenacious HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,082 ERROR HTTP Error. Url:http://math.stackexchange.com/tags/linear-algebra/topusers HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,087 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/40/tumbleweed HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,087 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308230/expectation-of-the-min-of-two-uncorrelated-random-variables/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,095 ERROR HTTP Error. Url:http://math.stackexchange.com/tags/finite-groups/topusers HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,102 ERROR HTTP Error. Url:http://math.stackexchange.com/tags/linear-algebra/synonyms HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,105 ERROR HTTP Error. Url:http://math.stackexchange.com/users/53153/5pm HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,105 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308192/complex-exponential-with-cosine-term HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,121 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/51/unsung-hero HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,495 ERROR Download Error. Url:http://math.stackexchange.com/about?mnu=1 timed out
+2013-02-19 13:07:34,532 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/pde HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,533 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308192/complex-exponential-with-cosine-term/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,533 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/307512/permutation-question-qpq-1-q-p-r-s-in-s-8 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,533 ERROR HTTP Error. Url:http://math.stackexchange.com/badges?tab=general&filter=gold HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,533 ERROR HTTP Error. Url:http://math.stackexchange.com/users/7530/user7530 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,534 ERROR HTTP Error. Url:http://math.stackexchange.com/users/59270/dan-h HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,534 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308246/linear-transformations-and-identity-matrix HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,534 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/13/yearling HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,534 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/306337/improper-integral-int-0-infty-frac5xex-e-x HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,535 ERROR HTTP Error. Url:http://math.stackexchange.com/tags/finite-groups/synonyms HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,535 ERROR HTTP Error. Url:http://math.stackexchange.com/badges/109/vox-populi HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,535 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308123/what-do-characteristic-polynomials-characterize HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,550 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/permutations HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,583 ERROR HTTP Error. Url:http://stackexchange.com/questions?tab=realtime HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,596 ERROR HTTP Error. Url:http://math.stackexchange.com/badges?tab=general&filter=silver HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,596 ERROR HTTP Error. Url:http://math.stackexchange.com/badges?tab=general&filter=bronze HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,597 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/improper-integrals HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,597 ERROR HTTP Error. Url:http://electronics.stackexchange.com/questions/58495/please-help-me-identify-this-pt-1k-ohm-resistors-packaging HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,597 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/306337/improper-integral-int-0-infty-frac5xex-e-x/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,597 ERROR HTTP Error. Url:http://math.stackexchange.com/users/33954/iuli HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,598 ERROR HTTP Error. Url:http://math.stackexchange.com/users/19811/hui-yu HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,602 ERROR HTTP Error. Url:http://math.stackexchange.com/users/274/mariano-suarez-alvarez HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,624 ERROR HTTP Error. Url:http://math.stackexchange.com/users/11667/michael-hardy HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,638 ERROR HTTP Error. Url:http://english.stackexchange.com/questions/6521/what-are-the-important-differences-between-canadian-and-american-usa-english HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,638 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/307370/equivalence-relation-in-a-subgroup HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,639 ERROR HTTP Error. Url:http://math.stackexchange.com/users/62984/bubblez775 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,657 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308113/practical-question-about-a-fixpoint HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,657 ERROR HTTP Error. Url:http://stackoverflow.com/questions/9909700/create-usercontrol-at-runtime HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,658 ERROR HTTP Error. Url:http://math.stackexchange.com/users/29811/joshua-bunce HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,690 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/307920/condition-on-existence-of-quillenization HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,695 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/irrational-numbers HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,732 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/306705/presentation-of-symmetric-group HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,733 ERROR HTTP Error. Url:http://gamedev.stackexchange.com/questions/49663/zoom-in-out-camera-to-show-whole-world HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,733 ERROR HTTP Error. Url:http://math.stackexchange.com/users/5887/ilya HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,740 ERROR HTTP Error. Url:http://math.stackexchange.com/users?page=2&amp;tab=reputation&amp;filter=month HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,787 ERROR HTTP Error. Url:http://math.stackexchange.com/users/44817/gmoss HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,814 ERROR HTTP Error. Url:http://superuser.com/questions/554267/compress-a-1gb-file-into-200-mb HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,819 ERROR HTTP Error. Url:http://math.stackexchange.com/users?page=3&amp;tab=reputation&amp;filter=month HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,832 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308051/prove-that-ahbh-bah HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,841 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308215/an-exercise-in-liu-regarding-a-sheaf-of-ideals-chapter-ii-3-4 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,860 ERROR HTTP Error. Url:http://math.stackexchange.com/users/33817/stefan HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,883 ERROR HTTP Error. Url:http://math.stackexchange.com/users?page=4&amp;tab=reputation&amp;filter=month HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,886 ERROR HTTP Error. Url:http://math.stackexchange.com/users/45099/user1709828 HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,906 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/schemes HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,908 ERROR HTTP Error. Url:http://askubuntu.com/questions/258315/usc-does-not-include-fresh-apps HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,926 ERROR HTTP Error. Url:http://math.stackexchange.com/users?page=5&amp;tab=reputation&amp;filter=month HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,945 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/sheaf-theory HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,968 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/306654/which-groups-have-the-property-that-hk-is-a-subgroup-for-all-noncyclic-subgrou HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,968 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/307974/linear-function-inverse HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,990 ERROR HTTP Error. Url:http://math.stackexchange.com/users?page=1081&amp;tab=reputation&amp;filter=month HTTP Error 503: Service Unavailable
+2013-02-19 13:07:34,991 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/308215/an-exercise-in-liu-regarding-a-sheaf-of-ideals-chapter-ii-3-4/?lastactivity HTTP Error 503: Service Unavailable
+2013-02-19 13:07:35,078 ERROR HTTP Error. Url:http://math.stackexchange.com/users/30436/babis HTTP Error 503: Service Unavailable
+2013-02-19 13:07:35,078 ERROR HTTP Error. Url:http://stackexchange.com/leagues/week/math HTTP Error 503: Service Unavailable
+2013-02-19 13:07:35,078 ERROR HTTP Error. Url:http://math.stackexchange.com/users/21110/jseaton HTTP Error 503: Service Unavailable
+2013-02-19 13:07:35,283 ERROR HTTP Error. Url:http://math.stackexchange.com/users/53776/samuel-handwich HTTP Error 503: Service Unavailable
+2013-02-19 13:07:35,283 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/306410/nontrivial-trivial-integrals HTTP Error 503: Service Unavailable
+2013-02-19 13:07:35,343 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/307960/is-e-alpha-logm-equal-to-m-alpha HTTP Error 503: Service Unavailable
+2013-02-19 13:07:43,496 ERROR Download Error. Url:http://www.tourneydollars.com/poker_blog/ <urlopen error timed out>
+2013-02-19 13:07:43,529 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/tagged/integration HTTP Error 503: Service Unavailable
+2013-02-19 13:07:43,568 ERROR HTTP Error. Url:http://math.stackexchange.com/questions/306017/a-multiple-choice-question-on-finite-group HTTP Error 503: Service Unavailable
+2013-02-19 13:07:44,464 ERROR Robot Error. Url:http://christianity.blogoverflow.com/2013/02/12/12φ-pope-declaratio-et-resignatio/ 'ascii' codec can't decode byte 0xcf in position 50: ordinal not in range(128)
+2013-02-19 13:07:44,689 ERROR HTTP Error. Url:http://christianity.blogoverflow.com/2013/02/12/12φ-pope-declaratio-et-resignatio/ HTTP Error 400: Bad request
+2013-02-19 13:09:17,494 ERROR HTTP Error. Url:http://www.poly.edu/accepted HTTP Error 403: Forbidden
+2013-02-19 13:09:17,495 ERROR HTTP Error. Url:http://www.poly.edu/admissions/undergraduate HTTP Error 403: Forbidden
+2013-02-19 13:09:17,495 ERROR HTTP Error. Url:http://www.poly.edu/academics/programs HTTP Error 403: Forbidden
+2013-02-19 13:09:17,496 ERROR HTTP Error. Url:http://www.poly.edu/academics HTTP Error 403: Forbidden
+2013-02-19 13:09:17,496 ERROR HTTP Error. Url:http://www.poly.edu/academics/departments HTTP Error 403: Forbidden
+2013-02-19 13:09:17,497 ERROR HTTP Error. Url:http://www.poly.edu/directory HTTP Error 403: Forbidden
+2013-02-19 13:09:17,498 ERROR HTTP Error. Url:http://www.poly.edu/academics/honors HTTP Error 403: Forbidden
+2013-02-19 13:09:17,549 ERROR HTTP Error. Url:http://www.poly.edu/academics/bsms HTTP Error 403: Forbidden
+2013-02-19 13:09:17,559 ERROR HTTP Error. Url:http://www.poly.edu/academics/study HTTP Error 403: Forbidden
+2013-02-19 13:09:17,565 ERROR HTTP Error. Url:http://www.poly.edu/academics/support HTTP Error 403: Forbidden
+2013-02-19 13:09:17,568 ERROR HTTP Error. Url:http://www.poly.edu/graduate-school HTTP Error 403: Forbidden
+2013-02-19 13:09:17,583 ERROR HTTP Error. Url:http://www.poly.edu/academics/class HTTP Error 403: Forbidden
+2013-02-19 13:09:17,586 ERROR HTTP Error. Url:http://www.poly.edu/academics/textbooks HTTP Error 403: Forbidden
+2013-02-19 13:09:17,607 ERROR HTTP Error. Url:http://www.poly.edu/life/student-resources/registrar/academic-calendar HTTP Error 403: Forbidden
+2013-02-19 13:09:17,608 ERROR HTTP Error. Url:http://www.poly.edu/academics/code-of-conduct HTTP Error 403: Forbidden
+2013-02-19 13:09:17,799 ERROR HTTP Error. Url:http://www.poly.edu/research HTTP Error 403: Forbidden
+2013-02-19 13:09:17,802 ERROR HTTP Error. Url:http://www.poly.edu/research/provosts-message HTTP Error 403: Forbidden
+2013-02-19 13:09:17,809 ERROR HTTP Error. Url:http://www.poly.edu/research/centers HTTP Error 403: Forbidden
+2013-02-19 13:09:17,809 ERROR HTTP Error. Url:http://www.poly.edu/research/sponsored-research HTTP Error 403: Forbidden
+2013-02-19 13:09:17,837 ERROR HTTP Error. Url:http://www.poly.edu/research/labs HTTP Error 403: Forbidden
+2013-02-19 13:09:18,184 ERROR HTTP Error. Url:http://www.poly.edu/research/cite HTTP Error 403: Forbidden
+2013-02-19 13:09:18,185 ERROR HTTP Error. Url:http://www.poly.edu/research/cross-institution HTTP Error 403: Forbidden
+2013-02-19 13:09:18,186 ERROR HTTP Error. Url:http://www.poly.edu/research/undergraduate HTTP Error 403: Forbidden
+2013-02-19 13:09:18,262 ERROR HTTP Error. Url:http://www.poly.edu/business HTTP Error 403: Forbidden
+2013-02-19 13:09:18,263 ERROR HTTP Error. Url:http://www.poly.edu/institutional-research HTTP Error 403: Forbidden
+2013-02-19 13:09:18,298 ERROR HTTP Error. Url:http://www.poly.edu/business/nyc-seed HTTP Error 403: Forbidden
+2013-02-19 13:09:18,404 ERROR HTTP Error. Url:http://www.poly.edu/enterprise-learning HTTP Error 403: Forbidden
+2013-02-19 13:09:18,407 ERROR HTTP Error. Url:http://www.poly.edu/business/powerbridgeny HTTP Error 403: Forbidden
+2013-02-19 13:09:18,408 ERROR HTTP Error. Url:http://www.poly.edu/k12stem HTTP Error 403: Forbidden
+2013-02-19 13:09:18,432 ERROR HTTP Error. Url:http://www.poly.edu/life HTTP Error 403: Forbidden
+2013-02-19 13:09:18,461 ERROR HTTP Error. Url:http://www.poly.edu/life/student HTTP Error 403: Forbidden
+2013-02-19 13:09:18,464 ERROR HTTP Error. Url:http://www.poly.edu/dining HTTP Error 403: Forbidden
+2013-02-19 13:09:18,523 ERROR HTTP Error. Url:http://www.poly.edu/life/campus-safety HTTP Error 403: Forbidden
+2013-02-19 13:09:18,536 ERROR HTTP Error. Url:http://www.poly.edu/life/graduate HTTP Error 403: Forbidden
+2013-02-19 13:09:18,561 ERROR HTTP Error. Url:http://www.poly.edu/life/health HTTP Error 403: Forbidden
+2013-02-19 13:09:18,576 ERROR HTTP Error. Url:http://www.poly.edu/international-students HTTP Error 403: Forbidden
+2013-02-19 13:09:18,593 ERROR HTTP Error. Url:http://www.poly.edu/life/orientation HTTP Error 403: Forbidden
+2013-02-19 13:09:18,620 ERROR HTTP Error. Url:http://www.poly.edu/life/studentactivities HTTP Error 403: Forbidden
+2013-02-19 13:09:18,650 ERROR HTTP Error. Url:http://www.poly.edu/disabilities HTTP Error 403: Forbidden
+2013-02-19 13:09:18,682 ERROR HTTP Error. Url:http://www.poly.edu/life/student-resources HTTP Error 403: Forbidden
+2013-02-19 13:09:18,754 ERROR HTTP Error. Url:http://www.poly.edu/about HTTP Error 403: Forbidden
+2013-02-19 13:09:18,824 ERROR HTTP Error. Url:http://www.poly.edu/about/leadership HTTP Error 403: Forbidden
+2013-02-19 13:09:18,888 ERROR HTTP Error. Url:http://www.poly.edu/about/mission HTTP Error 403: Forbidden
+2013-02-19 13:09:18,926 ERROR HTTP Error. Url:http://www.poly.edu/about/middle-states HTTP Error 403: Forbidden
+2013-02-19 13:09:18,957 ERROR HTTP Error. Url:http://www.poly.edu/about/affiliation HTTP Error 403: Forbidden
+2013-02-19 13:09:19,021 ERROR HTTP Error. Url:http://www.poly.edu/about/past-present-future HTTP Error 403: Forbidden
+2013-02-19 13:09:19,022 ERROR HTTP Error. Url:http://www.poly.edu/about/contacts HTTP Error 403: Forbidden
+2013-02-19 13:09:19,056 ERROR HTTP Error. Url:http://www.poly.edu/news/2013/02/04/collaboration-and-innovation-find-new-home-nyu-polys-greenhouse HTTP Error 403: Forbidden
+2013-02-19 13:09:19,123 ERROR HTTP Error. Url:http://www.poly.edu/news/2013/01/22/young-engineers-build-robotic-bridge-reach-seniors HTTP Error 403: Forbidden
+2013-02-19 13:09:19,144 ERROR HTTP Error. Url:http://www.poly.edu/news/2013/01/18/nyu-poly-students-lead-nyus-global-idea-exchange-challenge HTTP Error 403: Forbidden
+2013-02-19 13:09:19,193 ERROR HTTP Error. Url:http://www.poly.edu/news/2013/01/17/nyu-polys-online-engineering-degrees-ranked-top-10-us-news-world-report HTTP Error 403: Forbidden
+2013-02-19 13:09:19,214 ERROR HTTP Error. Url:http://www.poly.edu/press-release/2012/12/20/4-plus-1-raised-higher-power HTTP Error 403: Forbidden
+2013-02-19 13:09:19,260 ERROR HTTP Error. Url:http://www.poly.edu/news/2013/02/06/professor-shivendra-s-panwar-speaks-fcc-post-sandy-field-hearing HTTP Error 403: Forbidden
+2013-02-19 13:09:19,324 ERROR HTTP Error. Url:http://www.poly.edu/news/2013/02/02/dangers-too-much-java HTTP Error 403: Forbidden
+2013-02-19 13:09:19,325 ERROR HTTP Error. Url:http://www.poly.edu/events HTTP Error 403: Forbidden
+2013-02-19 13:09:19,325 ERROR HTTP Error. Url:http://www.poly.edu/news/2013/01/29/nyu-poly-mourns-loss-trustee-michael-hegel-kappaz HTTP Error 403: Forbidden
+2013-02-19 13:09:19,377 ERROR HTTP Error. Url:http://www.poly.edu/events/2013/02/19/tracking-reporting-clickers-faculty-workshop HTTP Error 403: Forbidden
+2013-02-19 13:09:19,404 ERROR HTTP Error. Url:http://www.poly.edu/events/2013/02/20/resumes-and-cover-letters-work-nyu-poly HTTP Error 403: Forbidden
+2013-02-19 13:09:19,405 ERROR HTTP Error. Url:http://www.poly.edu/events/2013/02/20/collaborating-groups-blackboard-faculty-workshop HTTP Error 403: Forbidden
+2013-02-19 13:09:22,349 ERROR HTTP Error. Url:http://www.thefreedictionary.com HTTP Error 403: Forbidden
+2013-02-19 13:09:27,316 ERROR Robot Error. Url:http://psdata.poly.edu [Errno socket error] timed out
+2013-02-19 13:09:37,318 ERROR Download Error. Url:http://psdata.poly.edu <urlopen error timed out>
+2013-02-19 13:10:22,559 ERROR Download Error. Url:http://www.rpi.edu/safetyreport/RPI_Safety2012.pdf MimeType is not Valid
+2013-02-19 13:10:25,589 ERROR HTTP Error. Url:http://www.zinch.cn/undergradschool/my-schools HTTP Error 403: Forbidden
+2013-02-19 13:10:25,937 ERROR HTTP Error. Url:http://www.zinch.cn/logout HTTP Error 403: Forbidden
+2013-02-19 13:10:26,443 ERROR Download Error. Url:http://www.polypm.com.cn/ <urlopen error timed out>
+2013-02-19 13:10:30,115 ERROR HTTP Error. Url:http://www.zinch.cn/zinch-talk HTTP Error 403: Forbidden
+2013-02-19 13:10:31,165 ERROR Download Error. Url:http://twitter.com/rpinews <urlopen error timed out>
+2013-02-19 13:10:31,356 ERROR HTTP Error. Url:http://financialaid.calpoly.edu/_finaid/coa1112.html HTTP Error 404: Not Found
+2013-02-19 13:10:42,001 ERROR HTTP Error. Url:http://eng.rpi.edu/chme/ HTTP Error 404: Not Found
+2013-02-19 13:10:43,260 ERROR Download Error. Url:http://www.rpi.edu/dept/hr/policy/2012HRPolicy%20_800-11rev%208-24-2012.pdf MimeType is not Valid
+2013-02-19 13:10:43,394 ERROR Download Error. Url:http://www.rpi.edu/dept/hr/Revised2012FCOICForm.pdf MimeType is not Valid
+2013-02-19 13:10:47,379 ERROR HTTP Error. Url:http://www.sts.rpi.edu/index.php?siteid=20&pageid=164 HTTP Error 404: Page Not Found
+2013-02-19 13:10:52,862 ERROR Download Error. Url:http://www.sts.rpi.edu/index.php <urlopen error timed out>
+2013-02-19 13:10:52,862 ERROR Download Error. Url:http://www.sts.rpi.edu/index.php?siteid=20&pageid=286 <urlopen error timed out>
+2013-02-19 13:10:52,863 ERROR Download Error. Url:http://www.sts.rpi.edu/pl/dual-degree-sustainability-studies <urlopen error timed out>
+2013-02-19 13:10:56,757 ERROR Download Error. Url:http://rpi.edu/tour/rpi_campus_map_2010.pdf MimeType is not Valid
+2013-02-19 13:11:01,674 ERROR Download Error. Url:http://www.gcl-poly.com.hk/uploadfiles/news/1355454789_vaWfjc2g1w.pdf MimeType is not Valid
+2013-02-19 13:11:02,093 ERROR HTTP Error. Url:http://ibooked.cn/hotel/a,e.rel= HTTP Error 404: Not Found
+2013-02-19 13:11:02,812 ERROR Download Error. Url:http://www.gcl-poly.com.hk/uploadfiles/news/1355454594_hD2kE3pgE1.pdf MimeType is not Valid
+2013-02-19 13:11:02,983 ERROR Download Error. Url:http://www.gcl-poly.com.hk/uploadfiles/news/1353998337_hkR9tB9Tvt.pdf MimeType is not Valid
+2013-02-19 13:11:04,618 ERROR Download Error. Url:http://www.61kids.com.cn/about/contact.aspx <urlopen error timed out>
+2013-02-19 13:11:04,642 ERROR Download Error. Url:http://www.61kids.com.cn/about/about.aspx timed out
+2013-02-19 13:11:04,696 ERROR Download Error. Url:http://www.61kids.com.cn/about/brand.aspx timed out
+2013-02-19 13:11:05,449 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/LargePhoto2/70/7039/7039665/Poly-White-Rose-Hotel-photos-Hotel.JPEG MimeType is not Valid
+2013-02-19 13:11:05,610 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/LargePhoto2/68/6879/6879060/Poly-White-Rose-Hotel-photos-Interior.JPEG MimeType is not Valid
+2013-02-19 13:11:05,710 ERROR Download Error. Url:http://i2.bookcdn.com/data/Photos/LargePhoto2/70/7039/7039670/Poly-White-Rose-Hotel-photos-Room.JPEG MimeType is not Valid
+2013-02-19 13:11:05,792 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/LargePhoto2/66/6631/6631905/Poly-White-Rose-Hotel-photos-Room.JPEG MimeType is not Valid
+2013-02-19 13:11:05,793 ERROR Download Error. Url:http://i1.bookcdn.com/data/Photos/LargePhoto2/68/6879/6879067/Poly-White-Rose-Hotel-photos-Room.JPEG MimeType is not Valid
+2013-02-19 13:11:05,824 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/LargePhoto2/68/6879/6879063/Poly-White-Rose-Hotel-photos-Facilities.JPEG MimeType is not Valid
+2013-02-19 13:11:05,847 ERROR Download Error. Url:http://i2.bookcdn.com/data/Photos/LargePhoto2/66/6631/6631904/Poly-White-Rose-Hotel-photos-Room.JPEG MimeType is not Valid
+2013-02-19 13:11:05,901 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/LargePhoto2/70/7039/7039674/Poly-White-Rose-Hotel-photos-Restaurant.JPEG MimeType is not Valid
+2013-02-19 13:11:05,927 ERROR Download Error. Url:http://i1.bookcdn.com/data/Photos/LargePhoto2/66/6631/6631912/Poly-White-Rose-Hotel-photos-Facilities.JPEG MimeType is not Valid
+2013-02-19 13:11:05,932 ERROR Download Error. Url:http://i2.bookcdn.com/data/Photos/LargePhoto2/66/6631/6631910/Poly-White-Rose-Hotel-photos-Facilities.JPEG MimeType is not Valid
+2013-02-19 13:11:05,962 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/LargePhoto2/70/7039/7039668/Poly-White-Rose-Hotel-photos-Restaurant.JPEG MimeType is not Valid
+2013-02-19 13:11:05,963 ERROR Download Error. Url:http://i1.bookcdn.com/data/Photos/LargePhoto2/66/6631/6631906/Poly-White-Rose-Hotel-photos-Room.JPEG MimeType is not Valid
+2013-02-19 13:11:05,965 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/LargePhoto2/66/6631/6631914/Poly-White-Rose-Hotel-photos-Facilities.JPEG MimeType is not Valid
+2013-02-19 13:11:05,978 ERROR Download Error. Url:http://i2.bookcdn.com/data/Photos/LargePhoto2/66/6631/6631913/Poly-White-Rose-Hotel-photos-Facilities.JPEG MimeType is not Valid
+2013-02-19 13:11:06,001 ERROR Download Error. Url:http://i1.bookcdn.com/data/Photos/LargePhoto2/66/6631/6631915/Poly-White-Rose-Hotel-photos-Facilities.JPEG MimeType is not Valid
+2013-02-19 13:11:06,066 ERROR Download Error. Url:http://i2.bookcdn.com/data/Photos/LargePhoto2/70/7039/7039673/Poly-White-Rose-Hotel-photos-Facilities.JPEG MimeType is not Valid
+2013-02-19 13:11:06,148 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/OriginalPhoto/70/7039/7039665/Poly-White-Rose-Hotel-photos-Hotel.JPEG MimeType is not Valid
+2013-02-19 13:11:06,173 ERROR Download Error. Url:http://i2.bookcdn.com/data/Photos/OriginalPhoto/66/6631/6631904/Poly-White-Rose-Hotel-photos-Room.JPEG MimeType is not Valid
+2013-02-19 13:11:06,193 ERROR Download Error. Url:http://i1.bookcdn.com/data/Photos/OriginalPhoto/66/6631/6631906/Poly-White-Rose-Hotel-photos-Room.JPEG MimeType is not Valid
+2013-02-19 13:11:06,202 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/OriginalPhoto/66/6631/6631905/Poly-White-Rose-Hotel-photos-Room.JPEG MimeType is not Valid
+2013-02-19 13:11:06,223 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/OriginalPhoto/68/6879/6879060/Poly-White-Rose-Hotel-photos-Interior.JPEG MimeType is not Valid
+2013-02-19 13:11:06,282 ERROR Download Error. Url:http://i2.bookcdn.com/data/Photos/OriginalPhoto/66/6631/6631910/Poly-White-Rose-Hotel-photos-Facilities.JPEG MimeType is not Valid
+2013-02-19 13:11:06,297 ERROR Download Error. Url:http://i1.bookcdn.com/data/Photos/OriginalPhoto/68/6879/6879067/Poly-White-Rose-Hotel-photos-Room.JPEG MimeType is not Valid
+2013-02-19 13:11:06,301 ERROR Download Error. Url:http://i1.bookcdn.com/data/Photos/OriginalPhoto/66/6631/6631912/Poly-White-Rose-Hotel-photos-Facilities.JPEG MimeType is not Valid
+2013-02-19 13:11:06,302 ERROR Download Error. Url:http://i2.bookcdn.com/data/Photos/OriginalPhoto/66/6631/6631913/Poly-White-Rose-Hotel-photos-Facilities.JPEG MimeType is not Valid
+2013-02-19 13:11:06,308 ERROR Download Error. Url:http://i2.bookcdn.com/data/Photos/OriginalPhoto/70/7039/7039670/Poly-White-Rose-Hotel-photos-Room.JPEG MimeType is not Valid
+2013-02-19 13:11:06,374 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/OriginalPhoto/70/7039/7039674/Poly-White-Rose-Hotel-photos-Restaurant.JPEG MimeType is not Valid
+2013-02-19 13:11:06,380 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/OriginalPhoto/68/6879/6879063/Poly-White-Rose-Hotel-photos-Facilities.JPEG MimeType is not Valid
+2013-02-19 13:11:06,395 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/OriginalPhoto/66/6631/6631914/Poly-White-Rose-Hotel-photos-Facilities.JPEG MimeType is not Valid
+2013-02-19 13:11:06,397 ERROR Download Error. Url:http://i1.bookcdn.com/data/Photos/OriginalPhoto/66/6631/6631915/Poly-White-Rose-Hotel-photos-Facilities.JPEG MimeType is not Valid
+2013-02-19 13:11:06,405 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/OriginalPhoto/129/12913/12913524/Poly-White-Rose-Hotel-photos-Room.JPEG MimeType is not Valid
+2013-02-19 13:11:06,440 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/OriginalPhoto/70/7039/7039668/Poly-White-Rose-Hotel-photos-Restaurant.JPEG MimeType is not Valid
+2013-02-19 13:11:06,552 ERROR Download Error. Url:http://i2.bookcdn.com/data/Photos/OriginalPhoto/70/7039/7039673/Poly-White-Rose-Hotel-photos-Facilities.JPEG MimeType is not Valid
+2013-02-19 13:11:06,552 ERROR Download Error. Url:http://i0.bookcdn.com/data/Photos/OriginalPhoto/129/12913/12913557/Poly-White-Rose-Hotel-photos-Room.JPEG MimeType is not Valid

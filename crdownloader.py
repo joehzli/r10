@@ -12,6 +12,7 @@ import zlib
 import StringIO
 import socket
 import threading
+import sys
 
 # Reference: http://www.pythonclub.org/python-network-application/observer-spider
 HTTP_TIMEOUT = 10
@@ -46,48 +47,54 @@ class Downloader:
 	def __init__(self, theMaxThread):
 		self.sema = threading.BoundedSemaphore(theMaxThread)
 		
-	def download(self, theUrl):
+	def download(self, theUrl, theDepth):
+		#print "Try go get thread sema.", theUrl
 		self.sema.acquire()
-		threading.Thread(target = self._threadDownload, args=(theUrl,)).start()
+		threading.Thread(target = self._threadDownload, args=(theUrl, theDepth,)).start()
 		
-	def _threadDownload(self, theUrl):
+	def _threadDownload(self, theUrl, theDepth):
 		summary = crsummary.CRSummary()
 		socket.setdefaulttimeout(HTTP_TIMEOUT)
 		robot = crrobot.CRRobot()
 		# to check if this url is allowed by robot.txt
 		if robot.CheckUrl(theUrl) is False:
+			self.sema.release()
 			return
-		print "downloading url: "+theUrl
+		#print "downloading url: "+theUrl
 		logger = crlogger.Logger()
 		crHttpHandler = CRHttpHandler
 		opener = urllib2.build_opener(crHttpHandler, urllib2.HTTPHandler)
 		try:
 			response = opener.open(theUrl)
+			pageData = response.read()
 		except urllib2.HTTPError, exp:
 			logger.error("HTTP Error. Url:"+theUrl+" "+str(exp))
-			summary.add(theUrl, "", 0, exp.getcode(), True)
+			summary.add(theUrl, theDepth, "", 0, exp.getcode(), True)
 		except Exception, exp:
 			logger.error("Download Error. Url:"+theUrl+" "+str(exp))
-			summary.add(theUrl, "", 0, "OTHER_EXCEPTION", False)
+			summary.add(theUrl, theDepth, "", 0, "OTHER_EXCEPTION", False)
 		else:
 			statusCode = response.getcode()
 			mimeType = response.info().getheader('Content-Type')
 			config = crconfig.Config()
-			isValidMimeType = config.checkMimeType(mimeType)
+			isValidMimeType = False
+			if mimeType is not None:
+				isValidMimeType = config.checkMimeType(mimeType)
 			if isValidMimeType is False:
 				logger.error("Download Error. Url:"+theUrl+" MimeType is not Valid")
-				summary.add(theUrl, "", 0, "OTHER_EXCEPTION", False)
+				summary.add(theUrl, theDepth, "", 0, "OTHER_EXCEPTION", False)
 			else:
-				pageData = response.read()
+				#pageData = response.read()
 				newPage = page.Page()
 				newPage.setData(pageData)
 				newPage.setUrl(theUrl)
 				newPage.setReturnCode(statusCode)
 				crdb.savePage(newPage)
-				summary.add(theUrl, newPage.getName(), newPage.getSize(), newPage.getReturnCode(), False)
+				summary.add(theUrl, theDepth, newPage.getName(), newPage.getSize(), newPage.getReturnCode(), False)
 				scheduler = crscheduler.Scheduler()
 				scheduler.setDownloaded(theUrl)
 				parser = crparser.Parser()
-				parser.parseHTMLWithReg(newPage)
+				parser.parseHTMLWithReg(newPage, theDepth)
 		finally:
 			self.sema.release()
+			#print "Release thread sema.", theUrl

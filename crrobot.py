@@ -21,10 +21,12 @@ class CRRobot:
             robot = robotparser.RobotFileParser()
             robot.set_url(robotUrl)
             robot.read()
+            #print "Lock robot."
             self.mutex.acquire()
             self.robots[domain] = robot
             result = robot
             self.mutex.release()
+            #print "Unlock robot."
         return result
               
     def CheckUrl(self, theUrl):

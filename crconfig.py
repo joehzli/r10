@@ -11,12 +11,16 @@ class Config:
 	_mimeSubTypeWhiteList = None
 	_suffixBlackList = None
 	_logFileName = ""
+	_maxThread = 0
+	_maxCrawlerSeed = 0
 
 	def __init__(self):
 		configParser = ConfigParser.ConfigParser()
 		configParser.read(CONFIGFILE)
 		try:
 			logFileName = configParser.get("CrawlerConfig", "LogFile")
+			maxThread = configParser.get("CrawlerConfig", "MaxThread")
+			maxCrawlerSeed = configParser.get("CrawlerConfig", "MaxCrawlerSeed")
 			mimeTypeBlackListStr = configParser.get("CrawlerConfig", "MimeTypeBlackList")
 			mimeSubTypeWhiteListStr = configParser.get("CrawlerConfig", "MimeSubTypeWhiteList")
 			mimeSubTypeBlackListStr = configParser.get("CrawlerConfig", "MimeSubTypeBlackList")
@@ -54,6 +58,9 @@ class Config:
 			self._initMimeSubTypeBlackList(mimeSubTypeBlackList)
 			self._initSuffixBlackList(suffixBlackList)
 			self._initLogFileName(logFileName)
+			self._initMaxThread(maxThread)
+			self._initMaxCrawlerSeed(maxCrawlerSeed)
+			
 
 	def _initMimeTypeBlackList(self, theBlackList):
 		self._mimeBlackList = theBlackList
@@ -69,6 +76,12 @@ class Config:
 
 	def _initLogFileName(self, theFileName):
 		self._logFileName = theFileName
+		
+	def _initMaxThread(self, theMaxThread):
+		self._maxThread = theMaxThread
+		
+	def _initMaxCrawlerSeed(self, theMaxCrawlerSeed):
+		self._maxCrawlerSeed = theMaxCrawlerSeed
 
 	def getMimeTypeBlackList(self):
 		return self._mimeBlackList
@@ -84,6 +97,12 @@ class Config:
 
 	def getLogFileName(self):
 		return self._logFileName
+	
+	def getMaxThread(self):
+		return self._maxThread
+	
+	def getMaxCrawlerSeed(self):
+		return self._maxCrawlerSeed
 	
 	def checkMimeType(self, theMimeType):
 		if theMimeType.strip().lower() in self._mimeSubTypeWhiteList:
