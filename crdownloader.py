@@ -54,4 +54,4 @@ class Downloader:
 		scheduler = crscheduler.Scheduler()
 		scheduler.setDownloaded(theUrl)
 		parser = crparser.Parser()
-		parser.parseHtml(newPage)
+		parser.parseHTMLWithReg(newPage)

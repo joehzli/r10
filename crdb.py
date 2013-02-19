@@ -3,10 +3,11 @@ import zipfile
 import crlogger
 
 def savePage(thePage):
+	subFolder = "htmlData/"
 	logger = crlogger.Logger()
 	if thePage.size > 0 and thePage.data is not None and len(thePage.name) > 0:
 		try:
-			zipFile = zipfile.ZipFile(thePage.name+".zip", mode="w")
+			zipFile = zipfile.ZipFile(subFolder+thePage.name+".zip", mode="w")
 			zipFile.writestr(thePage.name+".html", thePage.data)
 			zipFile.close()
 		except Exception, exp:
