@@ -1,11 +1,14 @@
-import crparser
 import crdownloader
 import crscheduler
+import crsummary
 import googleapi
 import argparse
 import urllib
+import time
+import threading
 
 GOOGLE_RESULT_LIMIT = 10
+MAX_THREADS = 10
 
 def initCrawlerSeed(theQuery, theLimit):
 	urls = googleapi.search(theQuery, theLimit)
@@ -35,12 +38,20 @@ def main():
 	maxDownload = userOptions["n"]
 	scheduler.setMaxDownload(maxDownload)
 	initCrawlerSeed(query, GOOGLE_RESULT_LIMIT)
-	downloader = crdownloader.Downloader()
+	downloader = crdownloader.Downloader(MAX_THREADS)
+	startTime = time.time()
 	while(scheduler.downloadedAmount() < maxDownload):
-		url = scheduler.get()
-		if url is not None:
-			downloader.download(url)
-
+		if scheduler.size() == 0 and threading.active_count() == 1:
+			break
+		if (threading.active_count()-1) < (maxDownload - scheduler.downloadedAmount()):		
+			url = scheduler.get()
+			if url is not None:
+				downloader.download(url)
+	endTime = time.time()
+	duration = endTime -startTime
+	summary = crsummary.CRSummary()
+	summary.saveSummary(urllib.unquote(query), maxDownload, duration)
+	print "Done."
 
 if __name__ == "__main__":
 	main()

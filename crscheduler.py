@@ -1,4 +1,3 @@
-import Queue
 import hashlib
 import threading
 from singleton import singleton
@@ -12,6 +11,7 @@ class CRQueue:
 	def put(self, item) :
 		self.mutex.acquire()
 		self.queue.append(item)
+		#print self.queue
 		self.size += 1
 		self.mutex.release()
 	def get(self) :
@@ -23,32 +23,46 @@ class CRQueue:
 			del self.queue[0]
 			self.size -= 1
 		self.mutex.release()
+		#print self.queue
 		return item
 	def qsize(self) :
 		self.mutex.acquire()
 		result = self.size
 		self.mutex.release()
 		return result
+	
+	def qprint(self):
+		print self.queue
+		
 
 @singleton
 class Scheduler:
 	_maxdownload = 0
+	_downloaded = 0
 
 	def __init__(self):
 		self.queue = CRQueue()
+		self.mutex = threading.Lock()
 		self.downloaded = {} # Python's dict is already thread-safe
 
 	def size(self):
 		return self.queue.qsize()
 
 	def put(self, theUrl):
-		if(self.downloaded.has_key(theUrl)):
+		self.mutex.acquire()
+		isDuplicated = self.downloaded.has_key(theUrl)
+		self.mutex.release()
+		if isDuplicated:
 			return
 		else:
 			self.queue.put(theUrl)
+			self.mutex.acquire()
+			self.downloaded[theUrl] = -1
+			self.mutex.release()
 
 	def get(self):
-		return self.queue.get()
+		result = self.queue.get()
+		return result
 
 	def setMaxDownload(self, theMax):
 		self._maxdownload = theMax
@@ -57,10 +71,16 @@ class Scheduler:
 		return self._maxdownload
 
 	def downloadedAmount(self):
-		return len(self.downloaded)
+		self.mutex.acquire()
+		result = self._downloaded
+		self.mutex.release()
+		return result
 
 	def setDownloaded(self, theUrl):
 		md5 = hashlib.md5()
 		md5.update(theUrl)
 		hashedUrl = md5.hexdigest()	# It's also the page name
+		self.mutex.acquire()
 		self.downloaded[theUrl] = hashedUrl
+		self._downloaded +=1
+		self.mutex.release()

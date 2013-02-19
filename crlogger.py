@@ -1,4 +1,5 @@
 import logging
+import crconfig
 
 LOGFILE = "crawler.log"
 class Logger(object):
@@ -6,7 +7,12 @@ class Logger(object):
 	def __new__(cls, *args, **kwargs):
 		if not cls._logger:
 			cls._logger = logging.getLogger()
-			handler = logging.FileHandler(LOGFILE)
+			logFileName = LOGFILE
+			config = crconfig.Config()
+			tmpFileName = config.getLogFileName()
+			if tmpFileName is not None and len(tmpFileName) > 0:
+				logFileName = tmpFileName
+			handler = logging.FileHandler(logFileName)
 			formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
 			handler.setFormatter(formatter)
 			cls._logger.addHandler(handler)

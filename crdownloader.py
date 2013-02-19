@@ -1,13 +1,20 @@
 import crscheduler
 import crparser
+import crlogger
+import crsummary
+import crconfig
+import crrobot
 import page
 import crdb
 import urllib2
 import gzip
 import zlib
 import StringIO
+import socket
+import threading
 
 # Reference: http://www.pythonclub.org/python-network-application/observer-spider
+HTTP_TIMEOUT = 10
 
 def deflate(data):
 	try:
@@ -36,22 +43,51 @@ class CRHttpHandler(urllib2.BaseHandler):
 		return response
 
 class Downloader:
+	def __init__(self, theMaxThread):
+		self.sema = threading.BoundedSemaphore(theMaxThread)
+		
 	def download(self, theUrl):
+		self.sema.acquire()
+		threading.Thread(target = self._threadDownload, args=(theUrl,)).start()
+		
+	def _threadDownload(self, theUrl):
+		summary = crsummary.CRSummary()
+		socket.setdefaulttimeout(HTTP_TIMEOUT)
+		robot = crrobot.CRRobot()
+		# to check if this url is allowed by robot.txt
+		if robot.CheckUrl(theUrl) is False:
+			return
 		print "downloading url: "+theUrl
+		logger = crlogger.Logger()
 		crHttpHandler = CRHttpHandler
 		opener = urllib2.build_opener(crHttpHandler, urllib2.HTTPHandler)
-		response = opener.open(theUrl)
-		statusCode = response.getcode()
-		pageData = response.read()
-		newPage = page.Page()
-		newPage.setData(pageData)
-		newPage.setUrl(theUrl)
-		newPage.setReturnCode(statusCode)
-		f = open("a.txt", "w")
-		f.write(pageData)
-		f.close()
-		crdb.savePage(newPage)
-		scheduler = crscheduler.Scheduler()
-		scheduler.setDownloaded(theUrl)
-		parser = crparser.Parser()
-		parser.parseHTMLWithReg(newPage)
+		try:
+			response = opener.open(theUrl)
+		except urllib2.HTTPError, exp:
+			logger.error("HTTP Error. Url:"+theUrl+" "+str(exp))
+			summary.add(theUrl, "", 0, exp.getcode(), True)
+		except Exception, exp:
+			logger.error("Download Error. Url:"+theUrl+" "+str(exp))
+			summary.add(theUrl, "", 0, "OTHER_EXCEPTION", False)
+		else:
+			statusCode = response.getcode()
+			mimeType = response.info().getheader('Content-Type')
+			config = crconfig.Config()
+			isValidMimeType = config.checkMimeType(mimeType)
+			if isValidMimeType is False:
+				logger.error("Download Error. Url:"+theUrl+" MimeType is not Valid")
+				summary.add(theUrl, "", 0, "OTHER_EXCEPTION", False)
+			else:
+				pageData = response.read()
+				newPage = page.Page()
+				newPage.setData(pageData)
+				newPage.setUrl(theUrl)
+				newPage.setReturnCode(statusCode)
+				crdb.savePage(newPage)
+				summary.add(theUrl, newPage.getName(), newPage.getSize(), newPage.getReturnCode(), False)
+				scheduler = crscheduler.Scheduler()
+				scheduler.setDownloaded(theUrl)
+				parser = crparser.Parser()
+				parser.parseHTMLWithReg(newPage)
+		finally:
+			self.sema.release()

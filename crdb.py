@@ -1,4 +1,3 @@
-import page
 import zipfile
 import crlogger
 

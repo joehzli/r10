@@ -7,6 +7,8 @@ APIURL = "https://www.googleapis.com/customsearch/v1?"
 CX = "014740285518625860143:-e2xdug0ta0"
 
 def search(theQuery, theLimit):
+    if theLimit < 1:
+        return []
     param = {"key":APIKEY, "cx":CX, "num":theLimit}
     url = APIURL + urllib.urlencode(param)
     url = url + "&q="+theQuery
