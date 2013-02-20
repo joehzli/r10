@@ -1,4 +1,5 @@
 Explain.txt
+Author: Hanzhou Li, PolyID 0490250
 
 Special features
 1. Use multi-thread to download and parse the pages, in order to accelerate the speed. The speed is around 10-30 pages per second with 20 threads and 10MB internet connection.
@@ -11,7 +12,7 @@ Special features
 8. Customize HttpHandler to add "gzip, deflate" as the "Accpet-Encoding", to reduce the download time if server supports.
 9. Customize HttpHandler to log all the http errors and it will not be stuck or crashed.
 10. Print the status as the progress bar.
-11. Use singleton pattern for some classes to improve memroy efficiency.
+11. Use singleton pattern for some classes to improve memroy efficiency used by mutlti-thread.
 12. Convert the relative url to absolute url and try to fix some malformed urls.
 13. Set timeout for download.
 14. Try best to deal with exceptions to make it stable.
