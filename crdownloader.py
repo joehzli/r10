@@ -23,8 +23,7 @@ def deflate(data):
 	except zlib.error:
 		return zlib.decompress(data)
 
-# to accept gzip/deflate encoding
-# handle http errors
+# To accept gzip/deflate encoding
 class CRHttpHandler(urllib2.BaseHandler):
 	def http_request(self, request):
 		request.add_header("Accept-Encoding", "gzip, deflate")
@@ -48,15 +47,19 @@ class Downloader:
 		self.sema = threading.BoundedSemaphore(theMaxThread)
 		
 	def download(self, theUrl, theDepth):
-		#print "Try go get thread sema.", theUrl
+		# Acquire the sema to control the total running threads.
 		self.sema.acquire()
 		threading.Thread(target = self._threadDownload, args=(theUrl, theDepth,)).start()
 		
 	def _threadDownload(self, theUrl, theDepth):
 		summary = crsummary.CRSummary()
+		
+		# Set timeout
 		socket.setdefaulttimeout(HTTP_TIMEOUT)
 		robot = crrobot.CRRobot()
-		# to check if this url is allowed by robot.txt
+		
+		# To check if this url is allowed by robot.txt
+		# Dont forget to release sema before return
 		if robot.CheckUrl(theUrl) is False:
 			self.sema.release()
 			return
@@ -67,14 +70,18 @@ class Downloader:
 		try:
 			response = opener.open(theUrl)
 			pageData = response.read()
+		# Deal with the Http Error
 		except urllib2.HTTPError, exp:
 			logger.error("HTTP Error. Url:"+theUrl+" "+str(exp))
 			summary.add(theUrl, theDepth, "", 0, exp.getcode(), True)
+		# Deal with other exceptions, such as timeout
 		except Exception, exp:
 			logger.error("Download Error. Url:"+theUrl+" "+str(exp))
 			summary.add(theUrl, theDepth, "", 0, "OTHER_EXCEPTION", False)
 		else:
 			statusCode = response.getcode()
+			
+			# Check the MimeType
 			mimeType = response.info().getheader('Content-Type')
 			config = crconfig.Config()
 			isValidMimeType = False
@@ -84,7 +91,6 @@ class Downloader:
 				logger.error("Download Error. Url:"+theUrl+" MimeType is not Valid")
 				summary.add(theUrl, theDepth, "", 0, "OTHER_EXCEPTION", False)
 			else:
-				#pageData = response.read()
 				newPage = page.Page()
 				newPage.setData(pageData)
 				newPage.setUrl(theUrl)
@@ -96,5 +102,5 @@ class Downloader:
 				parser = crparser.Parser()
 				parser.parseHTMLWithReg(newPage, theDepth)
 		finally:
+			# Must release it, otherwise the program will be stuck.
 			self.sema.release()
-			#print "Release thread sema.", theUrl

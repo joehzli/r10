@@ -2,6 +2,7 @@ import json
 import urllib
 import urllib2
 
+# Private stuff!!!
 APIKEY = "AIzaSyCyka6XVV4z9U_zvFqZF6vxj4NOyroPwWE"
 APIURL = "https://www.googleapis.com/customsearch/v1?"
 CX = "014740285518625860143:-e2xdug0ta0"

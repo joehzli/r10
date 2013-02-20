@@ -1,6 +1,7 @@
 import logging
 import crconfig
 
+# Define the default log file name
 LOGFILE = "crawler.log"
 class Logger(object):
 	_logger = None
