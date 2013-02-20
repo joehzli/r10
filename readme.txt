@@ -1,8 +1,11 @@
 Project source: 
 https://github.com/joelai85/crawler_cs6913
-Author: Hanzhou Li, PolyID 0490250
+Author: 
+Hanzhou Li
+PolyID 0490250
 
-File list:
+File list
+---------
 |- 2013-02-19_235450.log
 |- 2013-02-19_235545.log
 |- 2013-02-19_235749.log
@@ -25,8 +28,11 @@ File list:
 |- readme.txt Readme file of this program.
 |- htmlData The folder to save the downloaded pages. I do NOT put the downloaded pages here to reduce the package size.
 
-Usage:
+Usage
+------
 python crawler.py [-h] -q QUERY_STRING [QUERY_STRING ...] -n PAGES_NUMBER
-example: crawler.py -q poly nyu -n 500
-No limitation on the parameters when user inputs. If the parameter is not correct, the program will tell you.
+example: 
+python crawler.py -q poly nyu -n 500
+
+No limitation on the parameters user inputs. If the parameter is not correct, the program will tell you.
 

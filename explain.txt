@@ -1,7 +1,51 @@
 Explain.txt
-Author: Hanzhou Li, PolyID 0490250
+Author: 
+Hanzhou Li
+PolyID 0490250
+
+Description
+------------
+Configurable -
+The program uses configuration file to configure MaxThread, MaxCrawlerSeed and Mime filter, which makes the program more flexible.
+
+Downloader -
+This program uses multi-thread downloader to download the pages. The downloader uses Semaphore to control the amount of threads. The MAXTHREAD is configured in the configuration file.
+When to write the page to the hard disk, the program will compress it as zip file to save the space.
+Also, I customize the HttpHandler to support "gzip, deflate" encoded http transmission, which can reduce the download time if server supports.
+
+Scheduler -
+The program implements the scheduler in singleton pattern and thread-safe. The scheduler uses queue for the URLs waiting for download, and uses dictionary to eliminate the duplicated URLs and also holds the URL's depth.
+
+Page filter -
+The program filter the pages by their MIME types in the response header using white/black list. The filter is also configurable in configuration file.
+I define the white/black list in two levels, its major type and its subtype. The major type has a black list and the subtype has black and white list. For example,
+/---------- filter example -----------------------/ 
+MimeTypeBlackList:image, audio, video, application
+MimeSubTypeWhiteList:application/xhtml+xml
+MimeSubTypeBlackList:text/css, text/javascript
+SuffixBlackList:pdf, jpg, png, exe, rar
+/------------------------------------------------/
+This means all the major types in MimeTypeBlackList will be ignored unless it's in the MimeSubTypeWhiteList. If its major type is not in the MimeTypeBlackList but in the MimeSubTypeBlackList, it will be ignored as well.
+I do NOT use SuffixBlackList in this program at last.
+
+URL parser -
+The program uses urlparse to parse the URL. If it's a relative URL, it will be converted into absolute URL. And it also the fix the URL which misses the scheme.
+
+HTML parser -
+The program uses regular expression to match the links in the page instead of using HTMLParser, since it can get all the matched links even if the downloaded file is malformed, and its parsing speed is faster.
+
+HTTP Error handle -
+I customized the HttpHandler to catch all the Http Error and log them. The program will not be stuck by password-protected pages.
+
+Robots.txt handle -
+The program uses python's standard robot parser to parse the robots.txt. And it caches all the robot parser objects in a dictionary for all the domains, avoiding to download the robots.txt and parse for the same domain repeatlly.
+
+Exception handle -
+The program will log all the exception to the crawler log file.
+
 
 Special features
+----------------
 1. Use multi-thread to download and parse the pages, in order to accelerate the speed. The speed is around 10-30 pages per second with 20 threads and 10MB internet connection.
 2. Use configuration file to config the crawler. 
 3. The MIME type filter, MaxThread, MaxCrawlerSeed and log file name are configurable.
@@ -12,24 +56,27 @@ Special features
 8. Customize HttpHandler to add "gzip, deflate" as the "Accpet-Encoding", to reduce the download time if server supports.
 9. Customize HttpHandler to log all the http errors and it will not be stuck or crashed.
 10. Print the status as the progress bar.
-11. Use singleton pattern for some classes to improve memroy efficiency used by mutlti-thread.
+11. Use singleton pattern to implement some classes for mutlti-thread.
 12. Convert the relative url to absolute url and try to fix some malformed urls.
 13. Set timeout for download.
 14. Try best to deal with exceptions to make it stable.
 15. Well code-architecture so that it can be refactored and extended easily.
 
+
 Shortages
-1. Only parse <a href> style links.
-2. Doesn't deal with character encoding when saving the pages. So when open the downloaded pages some characters may be messed.
+---------
+1. Only parses <a href> style links.
+2. Doesn't deal with character-encoding when saving the pages. So when open the downloaded pages, some none-ascii characters may be messed.
 3. Doesn't save the current status when the program is forced to quit and it can't resume when restart.
 4. May be banned by some sites when using multi-thread.
-5. There is character encoding issue when parsing the urls.
+5. There is character-encoding issue when parsing the urls in some case.
 
 
 To be improved
-1. Improve the parser to deal with more cases.
-2. Checkthe encoding of the pages to encode it accordingly when saving the pages.
-3. Save the current status when forced quit and resume unfinished tasks.
+--------------
+1. Improve the parser to parse more cases.
+2. Check the encoding of the pages from its header and meta tag and encode it accordingly when saving the pages.
+3. Save the current status when forced quit and resume unfinished tasks at next start.
 4. Maintain a httpconnection pool to ease the side-effect of multi-thread.
-5. Check the url encoding and use correct code when parsing the urls.
+5. Check the url encoding and use correct codec when parsing the urls.
 6. Refactor to make it can run on distributed machines.

@@ -12,7 +12,7 @@ def savePage(thePage):
 		except Exception, exp:
 			logger.error("Can't save file:'"+thePage.name+"'.zip "+str(exp))
 
-# thePageName is the hashed URL, return page.data only
+# thePageName is the hashed URL, return page data only
 def getPage(thePageName):
 	data = ""
 	logger = crlogger.Logger()
