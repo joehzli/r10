@@ -1,12 +1,10 @@
-crawler_cs6913
-==============
+R10 - a web search engine
+=========================
 
-Assignment 1 of CS6913, a web crawler
+Assignment of CS6913
 
-Project source: 
-<br>https://github.com/joelai85/crawler_cs6913
 
-File List
+Crawler File List
 ---------
 <br>|- config.conf: The configuration file of this program.
 <br>|- crawler.log: The log file of this program. The log file name can be configured.
@@ -26,7 +24,7 @@ File List
 <br>|- readme.txt Readme file of this program.
 <br>|- htmlData The folder to save the downloaded pages. I do NOT put the downloaded pages here to reduce the package size.
 <br>
-<br>Usage
+<br>Crawler Usage
 ------
 <br>python crawler.py [-h] -q QUERY_STRING [QUERY_STRING ...] -n PAGES_NUMBER
 <br>example: 
