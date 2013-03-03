@@ -167,6 +167,12 @@ int parser(char* url, char* doc, char* buf, int blen)
 				continue;
 			}
             
+            if(intag == 0)
+            {
+                p++;
+                continue;
+            }
+            
 			*p = ' ';
 			ret = tag_parser(ptag+1, p-ptag, &back_tag);
 			switch (ret)
