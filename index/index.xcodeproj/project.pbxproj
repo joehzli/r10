@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D7A9B8816E3956F00F28BB5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7A9B8716E3956F00F28BB5 /* libz.dylib */; };
+		4D7A9B8B16E3A8B600F28BB5 /* Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D7A9B8916E3A8B600F28BB5 /* Utility.cpp */; };
 		4D7DC8D416E2A7D6009536B3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D7DC8D316E2A7D6009536B3 /* main.cpp */; };
 		4D7DC8D616E2A7D6009536B3 /* index.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D7DC8D516E2A7D6009536B3 /* index.1 */; };
 		4D7DC8DE16E2A7F9009536B3 /* urltable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D7DC8DC16E2A7F9009536B3 /* urltable.cpp */; };
 		4D7DC8EB16E2BB6A009536B3 /* invertedTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D7DC8E916E2BB6A009536B3 /* invertedTable.cpp */; };
+		4DC625A916E2BD4A009E16FA /* lexiconTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DC625A716E2BD4A009E16FA /* lexiconTable.cpp */; };
+		4DC625AC16E2E290009E16FA /* parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DC625AA16E2E290009E16FA /* parser.cpp */; };
+		4DC625AF16E2EBB2009E16FA /* data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DC625AD16E2EBB2009E16FA /* data.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +32,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D7A9B8716E3956F00F28BB5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4D7A9B8916E3A8B600F28BB5 /* Utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utility.cpp; sourceTree = "<group>"; };
+		4D7A9B8A16E3A8B600F28BB5 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		4D7DC8D016E2A7D6009536B3 /* index */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = index; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7DC8D316E2A7D6009536B3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4D7DC8D516E2A7D6009536B3 /* index.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = index.1; sourceTree = "<group>"; };
@@ -43,6 +51,12 @@
 		4D7DC8E816E2AF1C009536B3 /* safe_btree_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safe_btree_set.h; sourceTree = "<group>"; };
 		4D7DC8E916E2BB6A009536B3 /* invertedTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = invertedTable.cpp; sourceTree = "<group>"; };
 		4D7DC8EA16E2BB6A009536B3 /* invertedTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = invertedTable.h; sourceTree = "<group>"; };
+		4DC625A716E2BD4A009E16FA /* lexiconTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lexiconTable.cpp; sourceTree = "<group>"; };
+		4DC625A816E2BD4A009E16FA /* lexiconTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lexiconTable.h; sourceTree = "<group>"; };
+		4DC625AA16E2E290009E16FA /* parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parser.cpp; sourceTree = "<group>"; };
+		4DC625AB16E2E290009E16FA /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		4DC625AD16E2EBB2009E16FA /* data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = data.cpp; sourceTree = "<group>"; };
+		4DC625AE16E2EBB2009E16FA /* data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D7A9B8816E3956F00F28BB5 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +74,7 @@
 		4D7DC8C716E2A7D5009536B3 = {
 			isa = PBXGroup;
 			children = (
+				4D7A9B8716E3956F00F28BB5 /* libz.dylib */,
 				4D7DC8D216E2A7D6009536B3 /* index */,
 				4D7DC8D116E2A7D6009536B3 /* Products */,
 			);
@@ -78,10 +94,18 @@
 				4D7DC8DF16E2AF1C009536B3 /* btree */,
 				4D7DC8D316E2A7D6009536B3 /* main.cpp */,
 				4D7DC8D516E2A7D6009536B3 /* index.1 */,
-				4D7DC8DC16E2A7F9009536B3 /* urltable.cpp */,
-				4D7DC8DD16E2A7F9009536B3 /* urltable.h */,
 				4D7DC8E916E2BB6A009536B3 /* invertedTable.cpp */,
 				4D7DC8EA16E2BB6A009536B3 /* invertedTable.h */,
+				4DC625A716E2BD4A009E16FA /* lexiconTable.cpp */,
+				4DC625A816E2BD4A009E16FA /* lexiconTable.h */,
+				4D7DC8DC16E2A7F9009536B3 /* urltable.cpp */,
+				4D7DC8DD16E2A7F9009536B3 /* urltable.h */,
+				4DC625AA16E2E290009E16FA /* parser.cpp */,
+				4DC625AB16E2E290009E16FA /* parser.h */,
+				4DC625AD16E2EBB2009E16FA /* data.cpp */,
+				4DC625AE16E2EBB2009E16FA /* data.h */,
+				4D7A9B8916E3A8B600F28BB5 /* Utility.cpp */,
+				4D7A9B8A16E3A8B600F28BB5 /* Utility.h */,
 			);
 			path = index;
 			sourceTree = "<group>";
@@ -156,6 +180,10 @@
 				4D7DC8D416E2A7D6009536B3 /* main.cpp in Sources */,
 				4D7DC8DE16E2A7F9009536B3 /* urltable.cpp in Sources */,
 				4D7DC8EB16E2BB6A009536B3 /* invertedTable.cpp in Sources */,
+				4DC625A916E2BD4A009E16FA /* lexiconTable.cpp in Sources */,
+				4DC625AC16E2E290009E16FA /* parser.cpp in Sources */,
+				4DC625AF16E2EBB2009E16FA /* data.cpp in Sources */,
+				4D7A9B8B16E3A8B600F28BB5 /* Utility.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +280,7 @@
 				4D7DC8DB16E2A7D6009536B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

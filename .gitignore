@@ -1,3 +1,6 @@
+#data
+*.tar
+data/
 *.py[cod]
 
 # C extensions
