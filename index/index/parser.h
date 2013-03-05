@@ -1,6 +1,8 @@
 #ifndef _CS912_PARSER_H
 #define _CS912_PARSER_H
 
+#include "invertedTable.h"
+
 /***************************************************************
  
  function to parse urls and pages into words
@@ -20,5 +22,7 @@
  
  ***************************************************************/
 int parser(char*, char*, char*, int);
+
+RawPostingVector *GetPostingFromPage(char* page, char* url, int length, uint32_t docID);
 
 #endif

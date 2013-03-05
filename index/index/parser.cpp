@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <locale>
+#include "parser.h"
 
 #define PTAG_B	1
 #define PTAG_I	2
@@ -296,4 +297,61 @@ int parser(char* url, char* doc, char* buf, int blen)
     
 	*pbuf = '\0';
 	return pbuf-buf;
+}
+
+RawPostingVector *GetPostingFromPage(char* page, char* url, int length, uint32_t docID)
+{
+    //std::cout<<page<<std::endl;
+    RawPostingVector *postingVector = new RawPostingVector;
+    char *parsedBuf = new char[length];
+    parser(url, page, parsedBuf, length);
+    //std::cout<<parsedBuf<<std::endl;
+    size_t parsedBufLength = strlen(parsedBuf);
+    char* pagePointer = parsedBuf;
+    int counter = 1;
+    while(1) {
+        RawPosting *posting = new RawPosting;
+        int nRead;
+        char context;
+        char* word = new char[parsedBufLength];
+        int ret = sscanf(pagePointer, "%s %c%n", word, &context, &nRead);
+        if(ret == 2) {
+            posting->docID = docID;
+            posting->word=word;
+            delete word;
+            switch(context) {
+                case 'P':
+                    posting->context = 0;
+                    break;
+                case 'B':
+                    posting->context = 1;
+                    break;
+                case 'H':
+                    posting->context = 2;
+                    break;
+                case 'I':
+                    posting->context = 3;
+                    break;
+                case 'T':
+                    posting->context = 4;
+                    break;
+                case 'U':
+                    posting->context = 5;
+                    break;
+                default:
+                    posting->context = 10;
+                    break;
+            }
+            posting->post = counter;
+            pagePointer +=nRead;
+            counter ++;
+            postingVector->push_back(posting);
+        }
+        else {
+            delete posting;
+            break;
+        }
+    }
+
+    return postingVector;
 }
