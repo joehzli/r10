@@ -22,7 +22,7 @@ typedef struct{
     uint32_t docID; // doc id
     uint16_t fileID; // the number of data file containing this page
     uint32_t startIndex;   // pointer to the start point in the data file
-    uint16_t pageRank; // page rank value
+    uint32_t length; // length of the doc
     uint16_t urlLen; // length of the url
     std::string url; // url
 } URLItem;

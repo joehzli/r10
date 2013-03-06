@@ -1,6 +1,7 @@
 #data
 *.tar
 data/
+tmp/
 *.py[cod]
 
 # C extensions

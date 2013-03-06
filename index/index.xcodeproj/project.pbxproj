@@ -93,19 +93,19 @@
 			children = (
 				4D7DC8DF16E2AF1C009536B3 /* btree */,
 				4D7DC8D316E2A7D6009536B3 /* main.cpp */,
-				4D7DC8D516E2A7D6009536B3 /* index.1 */,
+				4DC625AD16E2EBB2009E16FA /* data.cpp */,
+				4DC625AE16E2EBB2009E16FA /* data.h */,
 				4D7DC8E916E2BB6A009536B3 /* invertedTable.cpp */,
 				4D7DC8EA16E2BB6A009536B3 /* invertedTable.h */,
 				4DC625A716E2BD4A009E16FA /* lexiconTable.cpp */,
 				4DC625A816E2BD4A009E16FA /* lexiconTable.h */,
 				4D7DC8DC16E2A7F9009536B3 /* urltable.cpp */,
 				4D7DC8DD16E2A7F9009536B3 /* urltable.h */,
-				4DC625AA16E2E290009E16FA /* parser.cpp */,
-				4DC625AB16E2E290009E16FA /* parser.h */,
-				4DC625AD16E2EBB2009E16FA /* data.cpp */,
-				4DC625AE16E2EBB2009E16FA /* data.h */,
 				4D7A9B8916E3A8B600F28BB5 /* Utility.cpp */,
 				4D7A9B8A16E3A8B600F28BB5 /* Utility.h */,
+				4DC625AA16E2E290009E16FA /* parser.cpp */,
+				4DC625AB16E2E290009E16FA /* parser.h */,
+				4D7DC8D516E2A7D6009536B3 /* index.1 */,
 			);
 			path = index;
 			sourceTree = "<group>";

@@ -23,6 +23,6 @@
  ***************************************************************/
 int parser(char*, char*, char*, int);
 
-RawPostingVector *GetPostingFromPage(char* page, char* url, int length, uint32_t docID);
+int GetPostingFromPage(RawPostingVector *vector, char* page, char* url, int length, uint32_t docID);
 
 #endif

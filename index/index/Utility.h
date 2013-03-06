@@ -13,6 +13,11 @@
 #include <vector>
 #include <string>
 
+#define FILEMODE_ASCII 0
+#define FILEMODE_BIN 1
+
+typedef int FILEMODE;
+
 typedef std::vector<char*> CStringVector;
 typedef std::vector<std::string> StringVector;
 

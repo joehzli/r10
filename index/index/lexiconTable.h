@@ -11,20 +11,21 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+#include "Utility.h"
+
+#define LEXICON_FILE "data/lexicon.index"
 
 typedef struct {
     std::string word;
     uint32_t num;   // number of docs containing the word
-    uint16_t invertedID;    // the ID of the file containing the invertd index
+    uint16_t fileID;    // the ID of the file containing the invertd index
     uint32_t invertedPointer;   //pointer to the inverted index
-    uint32_t length;    // the length of this inverted record
+    uint32_t invertedPointerEnd;
 } LexiconItem;
 
-class LexiconTable
-{
-private:
-    
-    
-};
+typedef std::vector<LexiconItem *> LexiconTable;
+
+void WriteLexiconTable(LexiconTable *lexiconTable, FILEMODE mode);
 
 #endif /* defined(__index__lexiconTable__) */
