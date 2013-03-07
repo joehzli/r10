@@ -1,7 +1,7 @@
 Hanzhou Li
 PolyID: 0490250
 
-Steps of Indexing for Inverted Index
+Steps of Generating Inverted Index
 1. List all the files recursively in the data folder to get all the files' names.
 2. Read each index file 
 
