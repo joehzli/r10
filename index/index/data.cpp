@@ -11,6 +11,7 @@
 #include "data.h"
 #include "lexiconTable.h"
 #include "invertedTable.h"
+#include "urltable.h"
 #include "parser.h"
 
 using namespace std;
@@ -78,7 +79,7 @@ char *ReadGZFile(const char *filePath)
 }
 
 vector<IndexRecord *> *ParseIndex(char *indexBuf)
-{
+{   
     IndexRecordVector *indexArray = new IndexRecordVector;
     char* indexPointer = indexBuf;
     while(1) {
@@ -125,7 +126,9 @@ void GenerateTmpIndex()
 {
     StringVector *fileList = GetDataFileList("data");
     uint32_t docID = 0;
+    uint32_t fileID = 0;
     RawPostingVector *postingVector = new RawPostingVector;
+    URLTable urlTable = URLTable();
     for(int i = 0; i < fileList->size(); i++) {
         string fileName = (*fileList)[i];
         if(fileName.substr(fileName.length()-5, 5) == "index")
@@ -140,11 +143,21 @@ void GenerateTmpIndex()
             delete dataFileBuf;
             delete indexFileBuf;
             // deal with each page
-            for(int j=1;j<pages->size();j++) {
+            uint32_t urlPointer = 0;
+            for(int j=0;j<pages->size();j++) {
                 char *page = (*pages)[j];
                 int pageLength = (*indexArray)[j]->length;
                 char *url = (*indexArray)[j]->url;
                 GetPostingFromPage(postingVector, page, url, pageLength, docID);
+                
+                URLItem *urlItem = new URLItem;
+                urlItem->docID = docID;
+                urlItem->fileID= fileID;
+                urlItem->startIndex=urlPointer;
+                urlItem->url= (*indexArray)[j]->url;
+                urlItem->length = (*indexArray)[j]->length;
+                urlPointer+=urlItem->length;
+                urlTable.Add(urlItem);
                 docID++;
                 if(postingVector->size() > MAX_POSTING_PER_TMP_INDEX) {
                     char tmpIndexFileName[128];
@@ -153,6 +166,8 @@ void GenerateTmpIndex()
                     freeRawPostingVector(postingVector);
                 }
             }
+            
+            fileID++;
         }
     }
     
@@ -163,6 +178,7 @@ void GenerateTmpIndex()
         freeRawPostingVector(postingVector);
     }
     
+    urlTable.Write(FILEMODE_ASCII);
 }
 
 void MergeTmpIndex()

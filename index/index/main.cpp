@@ -7,36 +7,35 @@
 //
 
 #include <iostream>
-#include <sstream>
-#include <string>
-#include <queue>
 #include "invertedTable.h"
 #include "lexiconTable.h"
 #include "urltable.h"
 #include "data.h"
-#include "parser.h"
-#include "Utility.h"
+#include<time.h>
 
 using namespace std;
 
 int main(int argc, const char * argv[])
 {
-    //GenerateTmpIndex();
-    // MergeTmpIndex();
+    clock_t start, middle;
+    start = clock();
+    middle = clock();
+    
+    cout<<"Start to generate temporary index files and URLTable."<<endl;
+    GenerateTmpIndex();
+    cout << "Runtime: " << ((double)((clock()- middle))/CLOCKS_PER_SEC)/60.0 << " Minutes." << endl;
+    middle = clock();
+    
+    cout<<"Start to merge temporary index files."<<endl;
+    MergeTmpIndex();
+    cout << "Runtime: " << ((double)((clock()- middle))/CLOCKS_PER_SEC)/60.0 << " Minutes." << endl;
+    middle = clock();
+    
+    cout<<"Start to generate final inverted index files and LexiconTable."<<endl;
     GenerateInvertedIndexFile();
-    
-//    URLTable urlTable = URLTable();
-//    for (int i = 0; i< 100; i++) {
-//        URLItem *urlItem = new URLItem;
-//        urlItem->docID = i;
-//        urlItem->fileID= 1;
-//        urlItem->startIndex=111;
-//        urlItem->url= "http://www.google.com";
-//        urlItem->urlLen = 132;
-//        urlTable.Add(urlItem);
-//    }
-    
-    //cout <<urlTable.Get(1)->url <<endl;
+    cout << "Runtime: " << ((double)((clock()- middle))/CLOCKS_PER_SEC)/60.0 << " Minutes." << endl;
+    cout<<"All Done!"<<endl;
+    cout << "Total Runtime: " << ((double)((clock()- middle))/CLOCKS_PER_SEC)/60.0 << " Minutes." << endl;
     return 0;
 }
 

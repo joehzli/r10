@@ -10,32 +10,33 @@
 
 URLTable::URLTable()
 {
-    _urlTable = new URLMap;
+    _urlTable = new URLVector;
 }
 
 URLTable::~URLTable()
 {
+    for(int i=0;i<_urlTable->size();i++) {
+        delete (*_urlTable)[i];
+    }
     _urlTable->clear();
     delete _urlTable;
     _urlTable = NULL;
 }
 
-URLItem* URLTable::Get(uint32_t docID)
-{
-    URLMap::const_iterator it = _urlTable->find(docID);
-    if(it != _urlTable->end()) {
-        return it->second;
-    }
-    
-    return NULL;
-}
-
 void URLTable::Add(URLItem* urlitem)
 {
-    URLMap::const_iterator it = _urlTable->find(urlitem->docID);
-    if (it != _urlTable->end()) {
-        return;
+    _urlTable->push_back(urlitem);
+}
+
+void URLTable::Write(FILEMODE mode)
+{
+    if(mode == FILEMODE_ASCII) {
+        FILE *fp = fopen(URL_FILE, "w+");
+        for(int i=0;i<_urlTable->size();i++) {
+            URLItem *urlitem =(*_urlTable)[i];
+            fprintf(fp,"%d %d %d %d\n", urlitem->docID, urlitem->fileID, urlitem->startIndex, urlitem->length);
+        }
+        
+        fclose(fp);
     }
-    
-    _urlTable->insert(std::make_pair(urlitem->docID, urlitem));
 }

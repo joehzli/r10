@@ -12,7 +12,10 @@
 #include <iostream>
 #include <map>
 #include <string>
-#include "btree/btree_map.h"
+#include <vector>
+#include "Utility.h"
+
+#define URL_FILE "data/url.index"
 
 // Header is docID(4 bytes) + fileID(2 bytes) + startIndex(4 bytes) + pageRank(2 bytes) + urlLen(2 bytes)
 static const int uHeaderSize = 4 + 2 + 4 + 2 + 2;
@@ -20,28 +23,24 @@ static const int uBlockSize = 32768;
 
 typedef struct{
     uint32_t docID; // doc id
-    uint16_t fileID; // the number of data file containing this page
+    uint32_t fileID; // the number of data file containing this page
     uint32_t startIndex;   // pointer to the start point in the data file
     uint32_t length; // length of the doc
-    uint16_t urlLen; // length of the url
     std::string url; // url
 } URLItem;
 
-typedef btree::btree_map<uint32_t, URLItem*> URLMap;
+typedef std::vector<URLItem*> URLVector;
 
 class URLTable
 {
 private:
     uint32_t _totalURL;
-    URLMap *_urlTable;
+    URLVector *_urlTable;
 public:
     URLTable();
     ~URLTable();
     void Add(URLItem* urlitem);
-    URLItem* Get(uint32_t docID);
-    int Load(FILE* file);
-    int Write(FILE* file);
-
+    void Write(FILEMODE mode);
 };
 
 #endif /* defined(__index__urltable__) */
