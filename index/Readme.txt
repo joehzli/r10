@@ -53,9 +53,10 @@ Compress
 What Can be Configured
 MAX_POSTING_PER_TMP_INDEX - The maximum items in each temporary index file. Over this number will write to a new file.
 MAX_FILE_SIZE - Max size of final inverted index file. Over this number will write to a new file.
+FILE_MODE - Write the output files in binary mode or ascii mode.
 
 Result and Performance
-Use the nz2.tar as the test data set. (I only own a MacbookAir and its remaining disk space is very small, so I haven't tested the full data set yet.)
+Use the nz2.tar as the test data set. (I only own a MacbookAir and its remaining disk space is very small(about 5GBytes), so I haven't tested the full data set yet. I will find another machine to test it.)
 Size of inverted index: 271MB
 Cost time: 3.5 minutes
 
