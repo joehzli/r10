@@ -350,7 +350,7 @@ int GetPostingFromPage(RawPostingVector *vector, char* page, char* url, int leng
                     posting->context = 10;
                     break;
             }
-            posting->post = counter;
+            posting->pos = counter;
             pagePointer +=nRead;
             counter ++;
             vector->push_back(posting);

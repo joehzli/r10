@@ -51,6 +51,7 @@
 		4D7DC8E816E2AF1C009536B3 /* safe_btree_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safe_btree_set.h; sourceTree = "<group>"; };
 		4D7DC8E916E2BB6A009536B3 /* invertedTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = invertedTable.cpp; sourceTree = "<group>"; };
 		4D7DC8EA16E2BB6A009536B3 /* invertedTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = invertedTable.h; sourceTree = "<group>"; };
+		4D8ACCAA16E81B0B00ED48BE /* GlobalConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalConfig.h; sourceTree = "<group>"; };
 		4DC625A716E2BD4A009E16FA /* lexiconTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lexiconTable.cpp; sourceTree = "<group>"; };
 		4DC625A816E2BD4A009E16FA /* lexiconTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lexiconTable.h; sourceTree = "<group>"; };
 		4DC625AA16E2E290009E16FA /* parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parser.cpp; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				4D7DC8DF16E2AF1C009536B3 /* btree */,
+				4D8ACCAA16E81B0B00ED48BE /* GlobalConfig.h */,
 				4D7DC8D316E2A7D6009536B3 /* main.cpp */,
 				4DC625AD16E2EBB2009E16FA /* data.cpp */,
 				4DC625AE16E2EBB2009E16FA /* data.h */,

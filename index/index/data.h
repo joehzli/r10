@@ -14,13 +14,7 @@
 #include <vector>
 #include <dirent.h>
 #include "Utility.h"
-
-#define INDEX_CHUNK 409600 //50KB
-#define DATA_CHUNK 20971520 //2.5MB
-#define TMP_INDEX_PATH "./tmp/merge.index"
-#define MERGE_SORT_COMMAND "sort -m -k 2f,2f -k 1n,1n ./tmp/*.tmp -o  ./tmp/merge.index"
-#define CLEAR_TMP_COMMAND "rm -rf ./tmp/*.tmp"
-#define MAX_POSTING_PER_TMP_INDEX 10000000 // 10 million
+#include "GlobalConfig.h"
 
 typedef struct {
     char url[2083]; // max url lenth in IE

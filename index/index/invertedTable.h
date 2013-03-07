@@ -13,26 +13,29 @@
 #include <string>
 #include <vector>
 #include "Utility.h"
+#include "GlobalConfig.h"
 
-#define MAX_FILE_SIZE 4*1000*1000 // about 4MB
-
-typedef struct {
-    uint32_t pos;   // 12-bit is enough
-    uint16_t context;   //3-bit is enough
-} Posting;
-
+// Used in temporary index
 typedef struct {
     uint32_t docID;
     std::string word;
-    uint32_t post;
+    uint32_t pos;
     uint16_t context;
 } RawPosting;
+
+// Used in inverted index
+typedef struct {
+    uint32_t actualPos;
+    uint32_t pos;   // 12-bit is enough
+    uint16_t context;
+} Posting;
 
 typedef std::vector<RawPosting *> RawPostingVector;
 typedef std::vector<Posting *> PostingVector;
 
 typedef struct {
-    uint32_t docID; //27-bit is enough
+    uint32_t docID;
+    uint32_t actualDocID;
     PostingVector posArray;
 } DocTuple;
 

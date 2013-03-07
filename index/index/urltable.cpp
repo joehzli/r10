@@ -34,9 +34,22 @@ void URLTable::Write(FILEMODE mode)
         FILE *fp = fopen(URL_FILE, "w+");
         for(int i=0;i<_urlTable->size();i++) {
             URLItem *urlitem =(*_urlTable)[i];
-            fprintf(fp,"%d %d %d %d\n", urlitem->docID, urlitem->fileID, urlitem->startIndex, urlitem->length);
+            fprintf(fp,"%s %d %d\n", urlitem->url.data(), urlitem->fileID, urlitem->startIndex);
         }
         
+        fclose(fp);
+    }
+    
+    if(mode == FILEMODE_BIN) {
+        FILE *fp = fopen(URL_FILE, "wb+");
+        for(int i=0;i<_urlTable->size();i++) {
+            URLItem *urlitem =(*_urlTable)[i];
+            uint16_t urlLength = urlitem->url.length();
+            fwrite(&urlLength, sizeof(uint16_t),1, fp);
+            fwrite(urlitem->url.data(), sizeof(char), urlLength, fp);
+            fwrite(&urlitem->fileID, sizeof(uint16_t), 1, fp);
+            fwrite(&urlitem->startIndex, sizeof(uint32_t), 1, fp);
+        }
         fclose(fp);
     }
 }

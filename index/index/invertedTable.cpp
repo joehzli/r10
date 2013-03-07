@@ -11,7 +11,7 @@
 
 InvertedTable::InvertedTable()
 {
-    _mode = FILEMODE_ASCII;
+    _mode = CURRENT_FILEMODE;
     _fileID=0;
     sprintf(_outputPath, "data/inverted_%d.index", _fileID);
     _counter = 0;
@@ -59,6 +59,30 @@ void InvertedTable::write()
         _counter += fprintf(fp, "\n");
         fclose(fp);
     }
+    
+    if(_mode == FILEMODE_BIN) {
+        if(_counter > MAX_FILE_SIZE) {
+            _fileID++;
+            sprintf(_outputPath, "data/inverted_%d.index", _fileID);
+            _counter = 0;
+        }
+        _DocNumLastWord = _invertedList.size();
+        FILE *fp = fopen(_outputPath, "ab");
+        for(int j=0;j<_invertedList.size();j++) {
+            DocTuple *docTuple =_invertedList[j];
+            uint32_t docListLength =docTuple->posArray.size();
+            _counter += sizeof(uint32_t) * fwrite(&docTuple->docID, sizeof(uint32_t), 1, fp);
+            _counter += sizeof(uint32_t) * fwrite(&docListLength, sizeof(uint32_t),1,fp);
+            for(int i=0;i<docTuple->posArray.size();i++) {
+                _counter += sizeof(uint32_t) * fwrite(&docTuple->posArray[i]->pos, sizeof(uint32_t), 1, fp);
+                _counter += sizeof(uint16_t) * fwrite(&docTuple->posArray[i]->context, sizeof(uint16_t), 1, fp);
+                delete docTuple->posArray[i];
+            }
+            docTuple->posArray.clear();
+            delete docTuple;
+        }
+        fclose(fp);
+    }
 }
 
 int InvertedTable::WriteOutstanding()
@@ -75,9 +99,11 @@ int InvertedTable::Insert(RawPosting *rawPosting)
         _word = rawPosting->word;
         DocTuple * docTuple = new DocTuple;
         _lastDocID = rawPosting->docID;
+        docTuple->actualDocID = rawPosting->docID;
         docTuple->docID = rawPosting->docID;
         Posting *posting = new Posting;
-        posting->pos = rawPosting->post;
+        posting->actualPos = rawPosting->pos;
+        posting->pos = rawPosting->pos;
         posting->context = rawPosting->context;
         docTuple->posArray.push_back(posting);
         _invertedList.push_back(docTuple);
@@ -85,31 +111,41 @@ int InvertedTable::Insert(RawPosting *rawPosting)
         //write and free the memory
         write();
         _invertedList.clear();
+        
         _word = rawPosting->word;
         DocTuple * docTuple = new DocTuple;
         _lastDocID = rawPosting->docID;
+        docTuple->actualDocID = rawPosting->docID;
         docTuple->docID = rawPosting->docID;
+        
         Posting *posting = new Posting;
-        posting->pos = rawPosting->post;
+        posting->actualPos = rawPosting->pos;
+        posting->pos = rawPosting->pos;
         posting->context = rawPosting->context;
         docTuple->posArray.push_back(posting);
         _invertedList.push_back(docTuple);
 
         return _counter;
-    } else {
-        //insert post
+    } else {//insert same word
+        // The same doc, compress position
         if(rawPosting->docID == _lastDocID) {
             DocTuple * docTuple = _invertedList.back();
             Posting *posting = new Posting;
-            posting->pos = rawPosting->post;
+            posting->actualPos = rawPosting->pos;
+            // compress the position
+            posting->pos = (rawPosting->pos - docTuple->posArray.back()->actualPos);
             posting->context = rawPosting->context;
             docTuple->posArray.push_back(posting);
         } else {
+            // Different doc, compress the docID
             DocTuple * docTuple = new DocTuple;
             _lastDocID = rawPosting->docID;
-            docTuple->docID = rawPosting->docID;
+            docTuple->actualDocID = rawPosting->docID;
+            // compress docID
+            docTuple->docID = (rawPosting->docID-_invertedList.back()->actualDocID);
             Posting *posting = new Posting;
-            posting->pos = rawPosting->post;
+            posting->actualPos = rawPosting->pos;
+            posting->pos = rawPosting->pos;
             posting->context = rawPosting->context;
             docTuple->posArray.push_back(posting);
             _invertedList.push_back(docTuple);
@@ -139,7 +175,7 @@ void WriteRawPostingToFile(RawPostingVector *vector, const char* filePath, FILEM
         std::stable_sort(vector->begin(), vector->end(), CompareRawPostingWord);
         for(int i=0; i<vector->size();i++) {
             RawPosting *posting = (*vector)[i];
-            fprintf(fp, "%d %s %d %d\n", posting->docID, posting->word.c_str(), posting->post, posting->context);
+            fprintf(fp, "%d %s %d %d\n", posting->docID, posting->word.c_str(), posting->pos, posting->context);
         }
         fclose(fp);
     }
@@ -154,7 +190,7 @@ int WriteRawPostingToBuffer(char* buffer, RawPostingVector *vector, const char* 
     for(int i=0; i<vector->size();i++) {
         RawPosting *posting = (*vector)[i];
         int nRead = 0;
-        nRead = sprintf(buffer, "%d %s %d %d\n", posting->docID, posting->word.c_str(), posting->post, posting->context);
+        nRead = sprintf(buffer, "%d %s %d %d\n", posting->docID, posting->word.c_str(), posting->pos, posting->context);
         count +=nRead;
         buffer += nRead;
     }

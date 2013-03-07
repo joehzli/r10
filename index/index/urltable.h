@@ -14,8 +14,7 @@
 #include <string>
 #include <vector>
 #include "Utility.h"
-
-#define URL_FILE "data/url.index"
+#include "GlobalConfig.h"
 
 // Header is docID(4 bytes) + fileID(2 bytes) + startIndex(4 bytes) + pageRank(2 bytes) + urlLen(2 bytes)
 static const int uHeaderSize = 4 + 2 + 4 + 2 + 2;
@@ -25,7 +24,6 @@ typedef struct{
     uint32_t docID; // doc id
     uint32_t fileID; // the number of data file containing this page
     uint32_t startIndex;   // pointer to the start point in the data file
-    uint32_t length; // length of the doc
     std::string url; // url
 } URLItem;
 

@@ -155,8 +155,7 @@ void GenerateTmpIndex()
                 urlItem->fileID= fileID;
                 urlItem->startIndex=urlPointer;
                 urlItem->url= (*indexArray)[j]->url;
-                urlItem->length = (*indexArray)[j]->length;
-                urlPointer+=urlItem->length;
+                urlPointer+=(*indexArray)[j]->length;
                 urlTable.Add(urlItem);
                 docID++;
                 if(postingVector->size() > MAX_POSTING_PER_TMP_INDEX) {
@@ -178,7 +177,7 @@ void GenerateTmpIndex()
         freeRawPostingVector(postingVector);
     }
     
-    urlTable.Write(FILEMODE_ASCII);
+    urlTable.Write(CURRENT_FILEMODE);
 }
 
 void MergeTmpIndex()
@@ -186,7 +185,6 @@ void MergeTmpIndex()
     //merge sort the index
     system(MERGE_SORT_COMMAND);
     system(CLEAR_TMP_COMMAND);
-    cout<<"merge done.\n";
 }
 
 void GenerateInvertedIndexFile()
@@ -208,7 +206,7 @@ void GenerateInvertedIndexFile()
         delete invertedWord;
         invertedWord = new char[1024];
         posting->context = invertedContext;
-        posting->post = invertedPost;
+        posting->pos = invertedPost;
         
         // first time
         if(lastWord == "") {
@@ -224,7 +222,6 @@ void GenerateInvertedIndexFile()
         // count > 0 means meet new word and there is data written
         if(count > 0) {
             LexiconItem *lexiconItem = lexiconTable.back();
-            lexiconItem->invertedPointerEnd = count;
             lexiconItem->fileID = invertedTable.GetFileID();
             lexiconItem->num = invertedTable.GetDocNumLastWord();
             if(count < lastCounter) {
@@ -242,12 +239,11 @@ void GenerateInvertedIndexFile()
     }
     
     int count = invertedTable.WriteOutstanding();
-    lexiconTable.back()->invertedPointerEnd = count;
     lexiconTable.back()->fileID = invertedTable.GetFileID();
     lexiconTable.back()->num = invertedTable.GetDocNumLastWord();
     if(count < lastCounter) {
         lexiconTable.back()->invertedPointer = 0;
     }
     
-    WriteLexiconTable(&lexiconTable, FILEMODE_ASCII);
+    WriteLexiconTable(&lexiconTable, CURRENT_FILEMODE);
 }
