@@ -231,7 +231,7 @@ void GenerateInvertedIndexFile()
             lexiconItem = new LexiconItem;
             lexiconItem->word = posting->word;
             lastWord = posting->word;
-            lexiconItem->invertedPointer = count+1;
+            lexiconItem->invertedPointer = count;
             lexiconTable.push_back(lexiconItem);
             lastCounter = count;
         }
