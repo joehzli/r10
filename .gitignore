@@ -2,6 +2,7 @@
 *.tar
 data/
 tmp/
+asciidata/
 *.py[cod]
 
 # C extensions
