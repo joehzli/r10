@@ -305,63 +305,84 @@ int parser(char* url, char* doc, char* buf, int blen)
 
 int GetPostingFromPage(RawPostingVector *vector, char* page, char* url, int length, uint32_t docID)
 {
-    //std::cout<<page<<std::endl;
-    //RawPostingVector *postingVector = new RawPostingVector;
-    char *parsedBuf = new char[length];
-    parser(url, page, parsedBuf, length);
-    //std::cout<<parsedBuf<<std::endl;
-    if(parsedBuf == NULL || strlen(parsedBuf) == 0) {
-        return 1;
+    char *parsedBuf = new char[length*2];
+    bzero(parsedBuf, length*2);
+    int ret = parser(url, page, parsedBuf, length*2);
+    if(ret == 0||parsedBuf == NULL || strlen(parsedBuf) == 0) {
+        delete parsedBuf;
+        parsedBuf = NULL;
+        return 0;
+    }
+    if(ret < 0) {
+        std::cout<<"ret < 0:"<<docID<<std::endl;
+        delete parsedBuf;
+        parsedBuf = NULL;
+        return 0;
     }
     
     size_t parsedBufLength = strlen(parsedBuf);
     char* pagePointer = parsedBuf;
     int counter = 1;
-    while(1) {
+    while((*pagePointer) != 0) {
         RawPosting *posting = new RawPosting;
-        int nRead;
         char context;
         char* word = new char[parsedBufLength];
-        int ret = sscanf(pagePointer, "%s %c%n", word, &context, &nRead);
-        if(ret == 2) {
-            posting->docID = docID;
-            posting->word=word;
-            std::transform(posting->word.begin(), posting->word.end(), posting->word.begin(), ::tolower);
-            switch(context) {
-                case 'P':
-                    posting->context = 0;
-                    break;
-                case 'B':
-                    posting->context = 1;
-                    break;
-                case 'H':
-                    posting->context = 2;
-                    break;
-                case 'I':
-                    posting->context = 3;
-                    break;
-                case 'T':
-                    posting->context = 4;
-                    break;
-                case 'U':
-                    posting->context = 5;
-                    break;
-                default:
-                    posting->context = 10;
-                    break;
-            }
-            posting->pos = counter;
-            pagePointer +=nRead;
-            counter ++;
-            vector->push_back(posting);
-            delete word;
+        int i = 0;
+        while((*pagePointer)!=' ') {
+            word[i] = (*pagePointer);
+            i++;
+            pagePointer++;
         }
-        else {
-            delete word;
-            delete posting;
+        word[i] = 0;
+        
+        while((*pagePointer) == ' ') {
+            pagePointer++;
+        }
+        
+        context = (*pagePointer);
+        posting->docID = docID;
+        posting->word=word;
+        std::transform(posting->word.begin(), posting->word.end(), posting->word.begin(), ::tolower);
+        switch(context) {
+            case 'P':
+                posting->context = 0;
+                break;
+            case 'B':
+                posting->context = 1;
+                break;
+            case 'H':
+                posting->context = 2;
+                break;
+            case 'I':
+                posting->context = 3;
+                break;
+            case 'T':
+                posting->context = 4;
+                break;
+            case 'U':
+                posting->context = 5;
+                break;
+            default:
+                posting->context = 10;
+                break;
+        }
+        posting->pos = counter;
+        counter++;
+        pagePointer++;
+        vector->push_back(posting);
+        delete word;
+        word= NULL;
+
+        while((*pagePointer) != '\n' && (*pagePointer) != 0) {
+            pagePointer++;
+        }
+        if((*pagePointer) == 0) {
             break;
+        } else {
+            pagePointer++;
         }
     }
-
+    delete parsedBuf;
+    parsedBuf = NULL;
     return 1;
 }

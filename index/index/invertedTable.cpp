@@ -15,10 +15,11 @@ InvertedTable::InvertedTable()
     _fileID=0;
     sprintf(_outputPath, "data/inverted_%d.index", _fileID);
     _counter = 0;
+    _fp = fopen(_outputPath, "a");
 }
 InvertedTable::~InvertedTable()
 {
-    
+    fclose(_fp);
 }
 
 void InvertedTable::SetFileMode(FILEMODE mode)
@@ -40,24 +41,25 @@ void InvertedTable::write()
 {
     if(_mode == FILEMODE_ASCII) {
         if(_counter > MAX_FILE_SIZE) {
+            // close current file and open a new file
+            fclose(_fp);
             _fileID++;
             sprintf(_outputPath, "data/inverted_%d.index", _fileID);
+            _fp = fopen(_outputPath, "a");
             _counter = 0;
         }
-        _DocNumLastWord = _invertedList.size();
-        FILE *fp = fopen(_outputPath, "a");
+        _DocNumLastWord = (uint32_t)_invertedList.size();
         for(int j=0;j<_invertedList.size();j++) {
             DocTuple *docTuple =_invertedList[j];
-            _counter += fprintf(fp,"%u %lu ", docTuple->docID, docTuple->posArray.size());
+            _counter += fprintf(_fp,"%u %lu ", docTuple->docID, docTuple->posArray.size());
             for(int i=0;i<docTuple->posArray.size();i++) {
-                _counter += fprintf(fp,"%d %d ", docTuple->posArray[i]->pos, docTuple->posArray[i]->context);
+                _counter += fprintf(_fp,"%d %d ", docTuple->posArray[i]->pos, docTuple->posArray[i]->context);
                 delete docTuple->posArray[i];
             }
             docTuple->posArray.clear();
             delete docTuple;
         }
-        _counter += fprintf(fp, "\n");
-        fclose(fp);
+        _counter += fprintf(_fp, "\n");
     }
     
     if(_mode == FILEMODE_BIN) {
@@ -66,11 +68,11 @@ void InvertedTable::write()
             sprintf(_outputPath, "data/inverted_%d.index", _fileID);
             _counter = 0;
         }
-        _DocNumLastWord = _invertedList.size();
+        _DocNumLastWord = (uint32_t)_invertedList.size();
         FILE *fp = fopen(_outputPath, "ab");
         for(int j=0;j<_invertedList.size();j++) {
             DocTuple *docTuple =_invertedList[j];
-            uint32_t docListLength =docTuple->posArray.size();
+            uint32_t docListLength =(uint32_t)docTuple->posArray.size();
             _counter += sizeof(uint32_t) * fwrite(&docTuple->docID, sizeof(uint32_t), 1, fp);
             _counter += sizeof(uint32_t) * fwrite(&docListLength, sizeof(uint32_t),1,fp);
             for(int i=0;i<docTuple->posArray.size();i++) {

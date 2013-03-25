@@ -82,18 +82,79 @@ vector<IndexRecord *> *ParseIndex(char *indexBuf)
 {   
     IndexRecordVector *indexArray = new IndexRecordVector;
     char* indexPointer = indexBuf;
-    while(1) {
+    while((*indexPointer) != 0) {
         IndexRecord *indexRecord = new IndexRecord;
-        //std::cout<<indexPointer<<std::endl;
-        int nRead = 0;
-        int ret = sscanf(indexPointer, "%s %d %d %d %s %d %s%n", indexRecord->url, &indexRecord->depth, &indexRecord->unknown, &indexRecord->length, indexRecord->IP, &indexRecord->port, indexRecord->status, &nRead);
-        if(ret == 7) {
-            indexArray->push_back(indexRecord);
-            indexPointer +=nRead;
+        int i = 0;
+        while((*indexPointer)!=' ') {
+            indexRecord->url[i] = (*indexPointer);
+            i++;
+            indexPointer++;
         }
-        else {
-            delete indexRecord;
+        indexRecord->url[i] = 0;
+        
+        while((*indexPointer) == ' ') {
+            indexPointer++;
+        }
+        
+        indexRecord->depth = atoi(indexPointer);
+        while((*indexPointer) != ' ') {
+            indexPointer++;
+        }
+        while((*indexPointer) == ' ') {
+            indexPointer++;
+        }
+        
+        indexRecord->unknown = atoi(indexPointer);
+        while((*indexPointer) != ' ') {
+            indexPointer++;
+        }
+        while((*indexPointer) == ' ') {
+            indexPointer++;
+        }
+        
+        indexRecord->length = atoi(indexPointer);
+        while((*indexPointer) != ' ') {
+            indexPointer++;
+        }
+        while((*indexPointer) == ' ') {
+            indexPointer++;
+        }
+        
+        i=0;
+        while((*indexPointer)!=' ') {
+            indexRecord->IP[i] = (*indexPointer);
+            i++;
+            indexPointer++;
+        }
+        indexRecord->IP[i] = 0;
+        
+        while((*indexPointer) == ' ') {
+            indexPointer++;
+        }
+        
+        indexRecord->port = atoi(indexPointer);
+        while((*indexPointer) != ' ') {
+            indexPointer++;
+        }
+        while((*indexPointer) == ' ') {
+            indexPointer++;
+        }
+        
+        i=0;
+        while((*indexPointer)!=' ' && (*indexPointer) != '\n'&& (*indexPointer) != 0) {
+            indexRecord->status[i] = (*indexPointer);
+            i++;
+            indexPointer++;
+        }
+        indexRecord->status[i] = '\0';
+        indexArray->push_back(indexRecord);
+        while((*indexPointer) != '\n' && (*indexPointer) != 0) {
+            indexPointer++;
+        }
+        if((*indexPointer) == 0) {
             break;
+        } else {
+            indexPointer++;
         }
     }
     
@@ -169,7 +230,9 @@ void GenerateTmpIndex()
             fileID++;
         }
     }
-    
+    fileList->clear();
+    delete fileList;
+    fileList = NULL;
     if(postingVector->size() > 0) {
         char tmpIndexFileName[128];
         sprintf(tmpIndexFileName, "tmp/%d.index.tmp", docID);

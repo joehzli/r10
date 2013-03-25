@@ -51,6 +51,7 @@ private:
     uint32_t _counter;
     uint16_t _fileID;
     uint32_t _DocNumLastWord;
+    FILE *_fp;
     void write();
 public:
     InvertedTable();
