@@ -174,7 +174,7 @@ void WriteRawPostingToFile(RawPostingVector *vector, const char* filePath, FILEM
 {
     FILE *fp = fopen(filePath, "w+");
     if(fp != NULL) {
-        std::sort(vector->begin(), vector->end(), CompareRawPostingDocID);
+        std::stable_sort(vector->begin(), vector->end(), CompareRawPostingDocID);
         // must use stable sort in the second round
         std::stable_sort(vector->begin(), vector->end(), CompareRawPostingWord);
         for(int i=0; i<vector->size();i++) {
