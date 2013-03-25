@@ -9,6 +9,8 @@
 #include "invertedTable.h"
 #include "stdio.h"
 
+using namespace std;
+
 InvertedTable::InvertedTable()
 {
     _mode = CURRENT_FILEMODE;
@@ -64,26 +66,26 @@ void InvertedTable::write()
     
     if(_mode == FILEMODE_BIN) {
         if(_counter > MAX_FILE_SIZE) {
+            fclose(_fp);
             _fileID++;
             sprintf(_outputPath, "data/inverted_%d.index", _fileID);
+            _fp = fopen(_outputPath, "a");
             _counter = 0;
         }
         _DocNumLastWord = (uint32_t)_invertedList.size();
-        FILE *fp = fopen(_outputPath, "ab");
         for(int j=0;j<_invertedList.size();j++) {
             DocTuple *docTuple =_invertedList[j];
             uint32_t docListLength =(uint32_t)docTuple->posArray.size();
-            _counter += sizeof(uint32_t) * fwrite(&docTuple->docID, sizeof(uint32_t), 1, fp);
-            _counter += sizeof(uint32_t) * fwrite(&docListLength, sizeof(uint32_t),1,fp);
+            _counter += sizeof(uint32_t) * fwrite(&docTuple->docID, sizeof(uint32_t), 1, _fp);
+            _counter += sizeof(uint32_t) * fwrite(&docListLength, sizeof(uint32_t),1,_fp);
             for(int i=0;i<docTuple->posArray.size();i++) {
-                _counter += sizeof(uint32_t) * fwrite(&docTuple->posArray[i]->pos, sizeof(uint32_t), 1, fp);
-                _counter += sizeof(uint16_t) * fwrite(&docTuple->posArray[i]->context, sizeof(uint16_t), 1, fp);
+                _counter += sizeof(uint32_t) * fwrite(&docTuple->posArray[i]->pos, sizeof(uint32_t), 1, _fp);
+                _counter += sizeof(uint16_t) * fwrite(&docTuple->posArray[i]->context, sizeof(uint16_t), 1, _fp);
                 delete docTuple->posArray[i];
             }
             docTuple->posArray.clear();
             delete docTuple;
         }
-        fclose(fp);
     }
 }
 
