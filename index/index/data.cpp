@@ -38,6 +38,7 @@ vector<string> *GetDataFileList(const char *path)
                 char *fullPath = new char[128];
                 sprintf(fullPath, "%s/%s", path, de->d_name);
                 fileList->push_back(fullPath);
+                delete fullPath;
             }
             else if(de->d_type == DT_DIR && strlen(de->d_name) > 0 && de->d_name[0] != '.') {
                 char *fullPath = new char[128];
@@ -74,6 +75,7 @@ char *ReadGZFile(const char *filePath)
         }
     }
     buffer[count] = '\0';
+    gzclose(gzfile);
     return buffer;
     
 }
@@ -225,8 +227,16 @@ void GenerateTmpIndex()
                     WriteRawPostingToFile(postingVector, tmpIndexFileName, FILEMODE_ASCII);
                     freeRawPostingVector(postingVector);
                 }
+                delete page;
             }
-            
+            pages->clear();
+            delete pages;
+            for(int i=0;i<indexArray->size();i++) {
+                IndexRecord *indexRecord = (*indexArray)[i];
+                delete indexRecord;
+            }
+            indexArray->clear();
+            delete indexArray;
             fileID++;
         }
     }
