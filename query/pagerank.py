@@ -5,6 +5,7 @@ import urllib2
 import httplib
 import re
 import xml.etree.ElementTree
+from singleton import singleton
 
 class RankProvider(object):
     """Abstract class for obtaining the page rank (popularity)
@@ -34,7 +35,7 @@ class RankProvider(object):
 
         """
         raise NotImplementedError("You must override get_rank()")
-@singleton
+
 class GooglePageRank(RankProvider):
     """ Get the google page rank figure using the toolbar API.
     Credits to the author of the WWW::Google::PageRank CPAN package
@@ -141,3 +142,22 @@ GoogleToolbar 2.0.111-big; Windows XP 5.1)")]
     @staticmethod
     def _wsub(a, b):
         return (a - b) % 4294967296
+
+@singleton
+class PageRank:
+    def __init__(self):
+        self.cache = {}
+    def getRank(self, url):
+        if self.cache.has_key(url):
+            return self.cache[url]
+        else:
+            pagerank = GooglePageRank()
+            try:
+                pr = pagerank.get_rank(url)
+            except:
+                pr = None
+            if pr is None:
+                pr = 0
+            self.cache[url] = pr
+            return pr
+

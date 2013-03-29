@@ -12,6 +12,7 @@ class Lexicon:
 class LexiconTable:
 	def __init__(self):
 		self.dict = {}
+		self.LoadData()
 
 	def __getitem__(self, word):
 		if(self.dict.has_key(word)):
@@ -36,12 +37,11 @@ class LexiconTable:
 
 	def Length(self):
 		return len(self.dict)
-b = LexiconTable()
-b.LoadData()
+
 def test():
 	a = LexiconTable()
 	print a.Length()
-	litem = a["fuck"]
+	litem = a["8  s"]
 	print litem.fileID, litem.pointer, litem.occurence
 
-test()
+#test()
