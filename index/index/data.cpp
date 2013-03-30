@@ -264,33 +264,38 @@ void GenerateInvertedIndexFile()
 {
     //convert it into inverted index
     FILE *mergedIndex = fopen(TMP_INDEX_PATH, "r");
-    RawPosting *posting = new RawPosting;
-    char* invertedWord = new char[1024];
+    RawPosting posting;
+    char invertedWord[MAX_WORD_LENGTH];
     uint32_t invertedContext;
     uint32_t invertedDocID;
     uint32_t invertedPost;
     InvertedTable invertedTable;
     LexiconTable lexiconTable;
     string lastWord = "";
-    int lastCounter = 0;
+    uint32_t lastCounter = 0;
+    uint32_t count = 0;
     while(fscanf(mergedIndex, "%d %s %d %d\n", &invertedDocID, invertedWord, &invertedPost, &invertedContext) != EOF) {
-        posting->docID = invertedDocID;
-        posting->word=invertedWord;
-        delete invertedWord;
-        invertedWord = new char[1024];
-        posting->context = invertedContext;
-        posting->pos = invertedPost;
+        if(strlen(invertedWord) > MAX_WORD_LENGTH) {
+            cout<<invertedWord<<endl;
+            cout<<strlen(invertedWord)<<endl;
+            exit(1);
+        }
+        posting.docID = invertedDocID;
+        posting.word=invertedWord;
+        bzero(invertedWord, MAX_WORD_LENGTH);
+        posting.context = invertedContext;
+        posting.pos = invertedPost;
         
         // first time
         if(lastWord == "") {
-            lastWord = posting->word;
+            lastWord = posting.word;
             LexiconItem *lexiconItem = new LexiconItem;
-            lexiconItem->word = posting->word;
+            lexiconItem->word = posting.word;
             lexiconItem->invertedPointer = 0;
             lexiconTable.push_back(lexiconItem);
         }
         
-        int count = invertedTable.Insert(posting);
+        count = invertedTable.Insert(&posting);
         
         // count > 0 means meet new word and there is data written
         if(count > 0) {
@@ -302,8 +307,8 @@ void GenerateInvertedIndexFile()
             }
             
             lexiconItem = new LexiconItem;
-            lexiconItem->word = posting->word;
-            lastWord = posting->word;
+            lexiconItem->word = posting.word;
+            lastWord = posting.word;
             lexiconItem->invertedPointer = count;
             lexiconTable.push_back(lexiconItem);
             lastCounter = count;
@@ -311,10 +316,10 @@ void GenerateInvertedIndexFile()
         
     }
     
-    int count = invertedTable.WriteOutstanding();
+    count = invertedTable.WriteOutstanding();
     lexiconTable.back()->fileID = invertedTable.GetFileID();
     lexiconTable.back()->num = invertedTable.GetDocNumLastWord();
-    if(count < lastCounter) {
+    if(count > 0 && count < lastCounter) {
         lexiconTable.back()->invertedPointer = 0;
     }
     

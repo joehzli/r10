@@ -57,15 +57,15 @@ public:
     InvertedTable();
     ~InvertedTable();
     void SetFileMode(FILEMODE mode);
-    int Insert(RawPosting *rawPosting);
-    int WriteOutstanding();
+    uint32_t Insert(const RawPosting *rawPosting);
+    uint32_t WriteOutstanding();
     uint16_t GetFileID();
     uint32_t GetDocNumLastWord();
 };
 
 void freeRawPostingVector(RawPostingVector *vector);
 void WriteRawPostingToFile(RawPostingVector *vector, const char* filePath, FILEMODE mode);
-int WriteRawPostingToBuffer(char* buffer, RawPostingVector *vector, const char* filePath, FILEMODE mode);
+uint32_t WriteRawPostingToBuffer(char* buffer, RawPostingVector *vector, const char* filePath, FILEMODE mode);
 bool CompareRawPostingDocID(RawPosting *posting1, RawPosting *posting2);
 bool CompareRawPostingWord(RawPosting *posting1, RawPosting *posting2);
 

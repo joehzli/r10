@@ -84,19 +84,24 @@ void InvertedTable::write()
                 delete docTuple->posArray[i];
             }
             docTuple->posArray.clear();
+            PostingVector tmp;
+            docTuple->posArray.swap(tmp);
             delete docTuple;
         }
+        _invertedList.clear();
+        vector<DocTuple *> tmp;
+        _invertedList.swap(tmp);
     }
 }
 
-int InvertedTable::WriteOutstanding()
+uint32_t InvertedTable::WriteOutstanding()
 {
     write();
     _invertedList.clear();
     return _counter;
 }
 
-int InvertedTable::Insert(RawPosting *rawPosting)
+uint32_t InvertedTable::Insert(const RawPosting *rawPosting)
 {
     // first insert, new word;
     if(_invertedList.size() == 0) {
@@ -113,9 +118,7 @@ int InvertedTable::Insert(RawPosting *rawPosting)
         _invertedList.push_back(docTuple);
     } else if (_word != rawPosting->word){
         //write and free the memory
-        write();
-        _invertedList.clear();
-        
+        write();        
         _word = rawPosting->word;
         DocTuple * docTuple = new DocTuple;
         _lastDocID = rawPosting->docID;
@@ -156,8 +159,8 @@ int InvertedTable::Insert(RawPosting *rawPosting)
         }
         
     }
-    // -1 means no data written
-    return -1;
+    // 0 means no data written
+    return 0;
 }
 
 void freeRawPostingVector(RawPostingVector *vector)
@@ -185,9 +188,9 @@ void WriteRawPostingToFile(RawPostingVector *vector, const char* filePath, FILEM
     }
 }
 
-int WriteRawPostingToBuffer(char* buffer, RawPostingVector *vector, const char* filePath, FILEMODE mode)
+uint32_t WriteRawPostingToBuffer(char* buffer, RawPostingVector *vector, const char* filePath, FILEMODE mode)
 {
-    int count = 0;
+    uint32_t count = 0;
     std::sort(vector->begin(), vector->end(), CompareRawPostingDocID);
     // must use stable sort in the second round
     std::stable_sort(vector->begin(), vector->end(), CompareRawPostingWord);

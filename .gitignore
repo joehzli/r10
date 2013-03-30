@@ -1,6 +1,7 @@
 #data
 *.tar
 data/
+rawdata/
 tmp/
 asciidata/
 *.py[cod]

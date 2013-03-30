@@ -19,6 +19,7 @@
 #define MERGE_SORT_COMMAND "sort -m -k 2f,2f -k 1n,1n ./tmp/*.tmp -o  ./tmp/merge.index"
 #define CLEAR_TMP_COMMAND "rm -rf ./tmp/*.tmp"
 #define MAX_POSTING_PER_TMP_INDEX 10000000 // 10 million
+#define MAX_WORD_LENGTH 4096    //single word buffer
 #define MAX_FILE_SIZE 4*1000*1000*1000 // Max size of final inverted index file
 #define LEXICON_FILE "data/lexicon.index"
 #define URL_FILE "data/url.index"
