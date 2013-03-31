@@ -2,12 +2,13 @@ from urltable import URLTable
 from lexicon import LexiconTable
 from index import IndexTable
 from singleton import singleton
-#import parser
+import time
 from readpage import PageReader
 import bm25
-from pagerank import PageRank
+#from pagerank import PageRank
 from operator import itemgetter, attrgetter
 import cgi
+import config
 
 class ResultItem:
 	def __init__(self):
@@ -82,6 +83,7 @@ class Query:
 		lexiconTable = LexiconTable()
 		urlTable = URLTable()
 		words = self.parseQuery(query)
+		begin = time.clock()
 		sets = []
 		indexMap = {}
 		for word in words:
@@ -92,8 +94,11 @@ class Query:
 			indexMap[word] = index
 			sets.append(docset)
 		resultset = set.intersection(*sets)
-		pagerank = PageRank()
+		print "get result set time:",str(time.clock()-begin)
+		#pagerank = PageRank()
 		resultSize = len(resultset)
+		print "result size:",resultSize
+		begin = time.clock()
 		if start > resultSize-1:
 			return []
 		queryResult = []
@@ -105,18 +110,22 @@ class Query:
 			for word in words:
 				bm25Score += bm25.getBM25(indexMap[word][docID].occurence, lexiconTable[word.lower()].occurence, urlTable.N, urlTable[docID].pagesize, urlTable.avgdl)
 			resultItem.bm25 = bm25Score
-			#resultItem.pagerank = pagerank.getRank(url.lower())
-			resultItem.score = resultItem.bm25#*0.8 + resultItem.pagerank*0.2
+			resultItem.score = resultItem.bm25
 			queryResult.append(resultItem)
+		print "BM25 time:",str(time.clock()-begin)
+		begin = time.clock()
 		queryResult = sorted(queryResult, key=attrgetter('score'), reverse=True)
+		print "sort BM25 time:",str(time.clock()-begin)
+		begin = time.clock()
 		startIndex = 0 if start < 0 else start
 		endIndex = startIndex + limit
 		endIndex = resultSize if endIndex > resultSize else endIndex
-		print startIndex, endIndex
+		print "start index & end index:", startIndex, endIndex
 		queryResult = queryResult[startIndex:endIndex]
 		for item in queryResult:
 			item.snippet = cgi.escape(self.getSnippet(item.docID, item.url, words))
-		return queryResult
+		print "snippet time:",str(time.clock()-begin)
+		return queryResult, resultSize
 
 def Test():
 	words = "fuck china"

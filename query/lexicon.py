@@ -21,6 +21,7 @@ class LexiconTable:
 			return None
 
 	def LoadData(self):
+		print "start loading lexicon..."
 		fileName = config.LexiconFile
 		with open(fileName, "rb") as fb:
 			while True:
@@ -31,7 +32,9 @@ class LexiconTable:
 				word =str(fb.read(wordLen))
 				lexicon = Lexicon()
 				(lexicon.occurence,lexicon.fileID, lexicon.pointer) = struct.unpack("=IHI", fb.read(struct.calcsize('=IHI')))
+				#print word
 				self.dict[word] = lexicon
+		print "lexicon size:", len(self.dict)
 	def GetLexicon(self, word):
 		return self.dict[word]
 
@@ -41,7 +44,5 @@ class LexiconTable:
 def test():
 	a = LexiconTable()
 	print a.Length()
-	litem = a["8  s"]
-	print litem.fileID, litem.pointer, litem.occurence
-
-#test()
+	#litem = a["new"]
+	#print litem.fileID, litem.pointer, litem.occurence

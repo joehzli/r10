@@ -14,4 +14,8 @@ def getBM25(f, n, N, dl, avgdl):
 	score = idf * (f*(k+1)/(f+k*(1-b+b*dl/avgdl)))
 	return score
 
-#print getBM25(10,10,100,55,40)
+def test():
+	for i in range (1000000):
+		getBM25(10,10,100,55,40)
+
+test()

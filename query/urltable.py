@@ -21,6 +21,7 @@ class URLTable:
 		return self.array[docID]
 
 	def LoadData(self):
+		print "start loading urltable..."
 		fileName = config.URLFile
 		totalSize = 0
 		missedTotal = 0
@@ -45,6 +46,7 @@ class URLTable:
 				self.array.append(urlItem)
 		self.avgdl = totalSize/(len(self.array)-missedTotal)*1000
 		self.N = len(self.array)
+		print "urltable size:",self.N
 
 	def GetDoc(self, docID):
 		return self.array[docID]
