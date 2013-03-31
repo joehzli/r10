@@ -24,6 +24,7 @@ typedef struct{
     uint32_t docID; // doc id
     uint32_t fileID; // the number of data file containing this page
     uint32_t startIndex;   // pointer to the start point in the data file
+    uint32_t dl;    //number of words
     std::string url; // url
 } URLItem;
 

@@ -20,7 +20,6 @@
 typedef struct {
     uint32_t actualPos;
     uint32_t pos;   // 12-bit is enough
-    uint16_t context;
 } Posting;
 
 typedef std::vector<Posting *> PostingVector;
