@@ -86,7 +86,7 @@ void GenerateTmpIndex()
         WriteRawPostingToFile(postingVector, tmpIndexFileName, FILEMODE_ASCII);
         freeRawPostingVector(postingVector);
     }
-    
+    delete postingVector;
     urlTable.Write(CURRENT_FILEMODE);
 }
 
@@ -114,25 +114,28 @@ int GetPostingFromPage(RawPostingVector *vector, char* page, const char* url, in
         return 0;
     }
     
-    size_t parsedBufLength = strlen(parsedBuf);
     char* pagePointer = parsedBuf;
     int counter = 1;
+    char* word = new char[MAX_WORD_LENGTH];
     while((*pagePointer) != 0) {
-        RawPosting *posting = new RawPosting;
         char context;
-        char* word = new char[parsedBufLength];
         int i = 0;
         while((*pagePointer)!=' ') {
             word[i] = (*pagePointer);
             i++;
             pagePointer++;
         }
-        word[i] = 0;
-        
+        word[i] = '\0';
+        if(i > MAX_WORD_LENGTH) {
+            cout<<word<<endl;
+            cout<<i<<endl;
+            exit(1);
+        }
         while((*pagePointer) == ' ') {
             pagePointer++;
         }
         
+        RawPosting *posting = new RawPosting;
         context = (*pagePointer);
         posting->docID = docID;
         posting->word=word;
@@ -164,8 +167,6 @@ int GetPostingFromPage(RawPostingVector *vector, char* page, const char* url, in
         counter++;
         pagePointer++;
         vector->push_back(posting);
-        delete word;
-        word= NULL;
         
         while((*pagePointer) != '\n' && (*pagePointer) != 0) {
             pagePointer++;
@@ -176,6 +177,8 @@ int GetPostingFromPage(RawPostingVector *vector, char* page, const char* url, in
             pagePointer++;
         }
     }
+    delete []word;
+    word= NULL;
     delete []parsedBuf;
     parsedBuf = NULL;
     return 1;
