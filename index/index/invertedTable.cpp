@@ -8,6 +8,7 @@
 
 #include "invertedTable.h"
 #include "stdio.h"
+#include "lexiconTable.h"
 
 using namespace std;
 
@@ -15,7 +16,7 @@ InvertedTable::InvertedTable()
 {
     _mode = CURRENT_FILEMODE;
     _fileID=0;
-    sprintf(_outputPath, "data/inverted_%d.index", _fileID);
+    sprintf(_outputPath, INVERTEDINDEX_FILE, _fileID);
     _counter = 0;
     _fp = fopen(_outputPath, "a");
 }
@@ -46,7 +47,7 @@ void InvertedTable::write()
             // close current file and open a new file
             fclose(_fp);
             _fileID++;
-            sprintf(_outputPath, "data/inverted_%d.index", _fileID);
+            sprintf(_outputPath, INVERTEDINDEX_FILE, _fileID);
             _fp = fopen(_outputPath, "a");
             _counter = 0;
         }
@@ -57,18 +58,23 @@ void InvertedTable::write()
             for(int i=0;i<docTuple->posArray.size();i++) {
                 _counter += fprintf(_fp,"%d %d ", docTuple->posArray[i]->pos, docTuple->posArray[i]->context);
                 delete docTuple->posArray[i];
+                docTuple->posArray[i] = NULL;
             }
             docTuple->posArray.clear();
             delete docTuple;
+            _invertedList[j] = NULL;
         }
         _counter += fprintf(_fp, "\n");
+        _invertedList.clear();
+        vector<DocTuple *> tmp;
+        _invertedList.swap(tmp);
     }
     
     if(_mode == FILEMODE_BIN) {
         if(_counter > MAX_FILE_SIZE) {
             fclose(_fp);
             _fileID++;
-            sprintf(_outputPath, "data/inverted_%d.index", _fileID);
+            sprintf(_outputPath, INVERTEDINDEX_FILE, _fileID);
             _fp = fopen(_outputPath, "a");
             _counter = 0;
         }
@@ -82,11 +88,13 @@ void InvertedTable::write()
                 _counter += sizeof(uint32_t) * fwrite(&docTuple->posArray[i]->pos, sizeof(uint32_t), 1, _fp);
                 _counter += sizeof(uint16_t) * fwrite(&docTuple->posArray[i]->context, sizeof(uint16_t), 1, _fp);
                 delete docTuple->posArray[i];
+                docTuple->posArray[i] = NULL;
             }
             docTuple->posArray.clear();
             PostingVector tmp;
             docTuple->posArray.swap(tmp);
             delete docTuple;
+            _invertedList[j] = NULL;
         }
         _invertedList.clear();
         vector<DocTuple *> tmp;
@@ -163,53 +171,69 @@ uint32_t InvertedTable::Insert(const RawPosting *rawPosting)
     return 0;
 }
 
-void freeRawPostingVector(RawPostingVector *vector)
+
+void GenerateInvertedIndexFile()
 {
-    for(int i=0;i<vector->size();i++) {
-        RawPosting *posting = (*vector)[i];
-        delete posting;
+    //convert it into inverted index
+    FILE *mergedIndex = fopen(TMP_INDEX_PATH, "r");
+    RawPosting posting;
+    char invertedWord[MAX_WORD_LENGTH];
+    uint32_t invertedContext;
+    uint32_t invertedDocID;
+    uint32_t invertedPost;
+    InvertedTable invertedTable;
+    LexiconTable lexiconTable;
+    string lastWord = "";
+    uint32_t lastCounter = 0;
+    uint32_t count = 0;
+    while(fscanf(mergedIndex, "%d %s %d %d\n", &invertedDocID, invertedWord, &invertedPost, &invertedContext) != EOF) {
+        if(strlen(invertedWord) > MAX_WORD_LENGTH) {
+            cout<<invertedWord<<endl;
+            cout<<strlen(invertedWord)<<endl;
+            exit(1);
+        }
+        posting.docID = invertedDocID;
+        posting.word=invertedWord;
+        bzero(invertedWord, MAX_WORD_LENGTH);
+        posting.context = invertedContext;
+        posting.pos = invertedPost;
+        
+        // first time
+        if(lastWord == "") {
+            lastWord = posting.word;
+            LexiconItem *lexiconItem = new LexiconItem;
+            lexiconItem->word = posting.word;
+            lexiconItem->invertedPointer = 0;
+            lexiconTable.push_back(lexiconItem);
+        }
+        
+        count = invertedTable.Insert(&posting);
+        
+        // count > 0 means meet new word and there is data written
+        if(count > 0) {
+            LexiconItem *lexiconItem = lexiconTable.back();
+            lexiconItem->fileID = invertedTable.GetFileID();
+            lexiconItem->num = invertedTable.GetDocNumLastWord();
+            if(count < lastCounter) {
+                lexiconItem->invertedPointer = 0;
+            }
+            
+            lexiconItem = new LexiconItem;
+            lexiconItem->word = posting.word;
+            lastWord = posting.word;
+            lexiconItem->invertedPointer = count;
+            lexiconTable.push_back(lexiconItem);
+            lastCounter = count;
+        }
+        
     }
     
-    vector->clear();
-}
-
-void WriteRawPostingToFile(RawPostingVector *vector, const char* filePath, FILEMODE mode)
-{
-    FILE *fp = fopen(filePath, "w+");
-    if(fp != NULL) {
-        std::stable_sort(vector->begin(), vector->end(), CompareRawPostingDocID);
-        // must use stable sort in the second round
-        std::stable_sort(vector->begin(), vector->end(), CompareRawPostingWord);
-        for(int i=0; i<vector->size();i++) {
-            RawPosting *posting = (*vector)[i];
-            fprintf(fp, "%d %s %d %d\n", posting->docID, posting->word.c_str(), posting->pos, posting->context);
-        }
-        fclose(fp);
+    count = invertedTable.WriteOutstanding();
+    lexiconTable.back()->fileID = invertedTable.GetFileID();
+    lexiconTable.back()->num = invertedTable.GetDocNumLastWord();
+    if(count > 0 && count < lastCounter) {
+        lexiconTable.back()->invertedPointer = 0;
     }
-}
-
-uint32_t WriteRawPostingToBuffer(char* buffer, RawPostingVector *vector, const char* filePath, FILEMODE mode)
-{
-    uint32_t count = 0;
-    std::sort(vector->begin(), vector->end(), CompareRawPostingDocID);
-    // must use stable sort in the second round
-    std::stable_sort(vector->begin(), vector->end(), CompareRawPostingWord);
-    for(int i=0; i<vector->size();i++) {
-        RawPosting *posting = (*vector)[i];
-        int nRead = 0;
-        nRead = sprintf(buffer, "%d %s %d %d\n", posting->docID, posting->word.c_str(), posting->pos, posting->context);
-        count +=nRead;
-        buffer += nRead;
-    }
-    return count;
-}
-
-bool CompareRawPostingDocID(RawPosting *posting1, RawPosting *posting2)
-{
-    return posting1->docID < posting2->docID;
-}
-
-bool CompareRawPostingWord(RawPosting *posting1, RawPosting *posting2)
-{
-    return posting1->word < posting2->word;
+    
+    WriteLexiconTable(&lexiconTable, CURRENT_FILEMODE);
 }

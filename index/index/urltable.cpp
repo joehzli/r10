@@ -17,6 +17,7 @@ URLTable::~URLTable()
 {
     for(int i=0;i<_urlTable->size();i++) {
         delete (*_urlTable)[i];
+        (*_urlTable)[i] = NULL;
     }
     _urlTable->clear();
     delete _urlTable;

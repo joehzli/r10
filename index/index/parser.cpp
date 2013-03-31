@@ -111,10 +111,11 @@ int tag_parser(char* tag, int len, char* back_tag)
 #define xlbit_unset(__b1, __b2)	((__b1) &= ~(__b2))
 #define xlbit_check(__b1, __b2) ((__b1)&(__b2))
 
-int parser(char* url, char* doc, char* buf, int blen)
+int parser(const char* url, char* doc, char* buf, int blen)
 {
-	char *p, *purl, *word, *ptag, *pbuf;
-	char ch, back_tag, intag, inscript;
+	char *p, *word, *ptag, *pbuf;
+    size_t ulen = strlen(url);
+   	char ch, back_tag, intag, inscript;
 	unsigned tag_flag;
 	int ret;
     
@@ -124,7 +125,10 @@ int parser(char* url, char* doc, char* buf, int blen)
 	pbuf = buf;
     
     /* parsing URL */
-	purl = url;
+    char *urlBuff = new char[ulen+1];
+    char *purl = urlBuff;
+    strcpy(purl, url);
+    purl[ulen] = '\0';
 	while (*purl != '\0')
 	{
 		if (!xl_isindexable(*purl))
@@ -144,13 +148,18 @@ int parser(char* url, char* doc, char* buf, int blen)
 		ch = *purl;
 		*purl = '\0';
         
-		if (pbuf-buf+purl-word+3 > blen-1)
+		if (pbuf-buf+purl-word+3 > blen-1) {
+            delete []purl;
+            purl = NULL;
 			return -1;
+        }
 		sprintf(pbuf, "%s U\n", word);
 		pbuf += (purl-word)+3;
         
 		*purl = ch;
 	}
+    delete []urlBuff;
+    urlBuff = NULL;
     
     /* parsing page */
 	tag_flag = 0;
@@ -179,7 +188,7 @@ int parser(char* url, char* doc, char* buf, int blen)
             }
             
 			*p = ' ';
-			ret = tag_parser(ptag+1, p-ptag, &back_tag);
+			ret = tag_parser(ptag+1, (int)(p-ptag), &back_tag);
 			switch (ret)
 			{
 				case PTAG_B:
@@ -300,89 +309,5 @@ int parser(char* url, char* doc, char* buf, int blen)
 	}
     
 	*pbuf = '\0';
-	return pbuf-buf;
-}
-
-int GetPostingFromPage(RawPostingVector *vector, char* page, char* url, int length, uint32_t docID)
-{
-    char *parsedBuf = new char[length*2];
-    bzero(parsedBuf, length*2);
-    int ret = parser(url, page, parsedBuf, length*2);
-    if(ret == 0||parsedBuf == NULL || strlen(parsedBuf) == 0) {
-        delete parsedBuf;
-        parsedBuf = NULL;
-        return 0;
-    }
-    if(ret < 0) {
-        std::cout<<"ret < 0:"<<docID<<std::endl;
-        delete parsedBuf;
-        parsedBuf = NULL;
-        return 0;
-    }
-    
-    size_t parsedBufLength = strlen(parsedBuf);
-    char* pagePointer = parsedBuf;
-    int counter = 1;
-    while((*pagePointer) != 0) {
-        RawPosting *posting = new RawPosting;
-        char context;
-        char* word = new char[parsedBufLength];
-        int i = 0;
-        while((*pagePointer)!=' ') {
-            word[i] = (*pagePointer);
-            i++;
-            pagePointer++;
-        }
-        word[i] = 0;
-        
-        while((*pagePointer) == ' ') {
-            pagePointer++;
-        }
-        
-        context = (*pagePointer);
-        posting->docID = docID;
-        posting->word=word;
-        std::transform(posting->word.begin(), posting->word.end(), posting->word.begin(), ::tolower);
-        switch(context) {
-            case 'P':
-                posting->context = 0;
-                break;
-            case 'B':
-                posting->context = 1;
-                break;
-            case 'H':
-                posting->context = 2;
-                break;
-            case 'I':
-                posting->context = 3;
-                break;
-            case 'T':
-                posting->context = 4;
-                break;
-            case 'U':
-                posting->context = 5;
-                break;
-            default:
-                posting->context = 10;
-                break;
-        }
-        posting->pos = counter;
-        counter++;
-        pagePointer++;
-        vector->push_back(posting);
-        delete word;
-        word= NULL;
-
-        while((*pagePointer) != '\n' && (*pagePointer) != 0) {
-            pagePointer++;
-        }
-        if((*pagePointer) == 0) {
-            break;
-        } else {
-            pagePointer++;
-        }
-    }
-    delete parsedBuf;
-    parsedBuf = NULL;
-    return 1;
+	return (int)(pbuf-buf);
 }

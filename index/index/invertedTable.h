@@ -14,14 +14,7 @@
 #include <vector>
 #include "Utility.h"
 #include "GlobalConfig.h"
-
-// Used in temporary index
-typedef struct {
-    uint32_t docID;
-    std::string word;
-    uint32_t pos;
-    uint16_t context;
-} RawPosting;
+#include "tmpindex.h"
 
 // Used in inverted index
 typedef struct {
@@ -30,7 +23,6 @@ typedef struct {
     uint16_t context;
 } Posting;
 
-typedef std::vector<RawPosting *> RawPostingVector;
 typedef std::vector<Posting *> PostingVector;
 
 typedef struct {
@@ -63,10 +55,10 @@ public:
     uint32_t GetDocNumLastWord();
 };
 
-void freeRawPostingVector(RawPostingVector *vector);
-void WriteRawPostingToFile(RawPostingVector *vector, const char* filePath, FILEMODE mode);
-uint32_t WriteRawPostingToBuffer(char* buffer, RawPostingVector *vector, const char* filePath, FILEMODE mode);
-bool CompareRawPostingDocID(RawPosting *posting1, RawPosting *posting2);
-bool CompareRawPostingWord(RawPosting *posting1, RawPosting *posting2);
+/****************************************************
+ Generate the final inverted index files from the
+ temporary index files.
+ ****************************************************/
+void GenerateInvertedIndexFile();
 
 #endif /* defined(__index__invertedTable__) */

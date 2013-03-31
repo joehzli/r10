@@ -21,8 +21,6 @@
  4) length of buffer
  
  ***************************************************************/
-int parser(char*, char*, char*, int);
-
-int GetPostingFromPage(RawPostingVector *vector, char* page, char* url, int length, uint32_t docID);
+int parser(const char* url, char* doc, char* buf, int blen);
 
 #endif

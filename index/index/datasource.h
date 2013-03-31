@@ -17,7 +17,7 @@
 #include "GlobalConfig.h"
 
 typedef struct {
-    char url[2083]; // max url lenth in IE
+    std::string url; // max url lenth in IE
     int depth;
     int unknown;
     int length;
@@ -36,11 +36,6 @@ typedef std::vector<IndexRecord *> IndexRecordVector;
  ***************************************************/
 StringVector *GetDataFileList(const char *path);
 
-/****************************************************
- Return the uncompress content of the GZipped file.
- @filePath: The path of the compressed file.
- ****************************************************/
-char *ReadGZFile(const char *filePath);
 
 /****************************************************
  Return a vector of the index file of the data set.
@@ -57,17 +52,5 @@ IndexRecordVector *ParseIndex(char *indexBuf);
  ****************************************************/
 CStringVector *GetPages(char* dataBuf, IndexRecordVector* indexArray);
 
-void GenerateTmpIndex();
-
-/****************************************************
- Merge the generated temporary index files.
- ****************************************************/
-void MergeTmpIndex();
-
-/****************************************************
- Generate the final inverted index files from the
- temporary index files.
- ****************************************************/
-void GenerateInvertedIndexFile();
 
 #endif /* defined(__index__data__) */
