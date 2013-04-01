@@ -2,6 +2,7 @@ import config
 import struct
 from lexicon import LexiconTable
 from singleton import singleton
+from vbyte import decode
 
 class Posting:
 	def __init__(self):
@@ -22,7 +23,7 @@ class IndexTable:
 	def __init__(self):
 		self.files = {}
 
-	def GetIndex(self, fileID, pointer, occurence):
+	def GetIndex(self, fileID, pointer, length, occurence):
 		fileName = config.IndexFile
 		if self.files.has_key(fileID) is False:
 			fb = open(fileName%(fileID), "rb")
@@ -31,9 +32,17 @@ class IndexTable:
 		fb.seek(pointer)
 		invertedList = []
 		lastDocID = 0
+		bytes = fb.read(length)
+		numbers = decode(bytes)
+		print "len, occurence, len of num:", length, occurence, len(numbers)
+		if len(numbers) != occurence *3:
+			print "error decoding"
+			return []
 		for i in range(occurence):
 			posting = Posting()
-			(posting.docID, posting.freq, posting.pos) = struct.unpack("=III", fb.read(4+4+4))
+			posting.docID = numbers[i*3+0]
+			posting.freq = numbers[i*3+1]
+			posting.pos = numbers[i*3+2]
 			if i == 0:
 				lastDocID = posting.docID
 			else:

@@ -47,7 +47,7 @@ class Query:
 		if lexicon is None:
 			return None
 		indexTable = IndexTable()
-		index = indexTable.GetIndex(lexicon.fileID, lexicon.pointer,lexicon.occurence)
+		index = indexTable.GetIndex(lexicon.fileID, lexicon.pointer, lexicon.size, lexicon.occurence)
 		self.indexCache[word] = index
 		return index
 

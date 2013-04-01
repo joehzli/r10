@@ -9,6 +9,7 @@
 #include "invertedTable.h"
 #include "stdio.h"
 #include "lexiconTable.h"
+#include "vbyte.h"
 
 using namespace std;
 
@@ -75,9 +76,30 @@ void InvertedTable::write()
         _DocNumLastWord = (uint32_t)_invertedList.size();
         for(int j=0;j<_invertedList.size();j++) {
             DocTuple *docTuple =_invertedList[j];
-            _counter += sizeof(uint32_t) * fwrite(&docTuple->docID, sizeof(uint32_t), 1, _fp);
-            _counter += sizeof(uint32_t) * fwrite(&docTuple->freq, sizeof(uint32_t),1,_fp);
-            _counter += sizeof(uint32_t) * fwrite(&docTuple->pos, sizeof(uint32_t),1,_fp);
+            uint32_t n;
+            uint32_t *np;
+            char buf[5];
+            
+            char *p = buf;
+            n = (uint32_t)docTuple->docID;
+            np = &n;
+            ZVBCODE(np, p);
+            int size = (int)(p-buf);
+            _counter += sizeof(uint8_t) * fwrite((uint8_t*)buf, sizeof(uint8_t), size, _fp);
+            
+            p = buf;
+            n = (uint32_t)docTuple->freq;
+            np = &n;
+            ZVBCODE(np, p);
+            size = (int)(p-buf);
+            _counter += sizeof(uint8_t) * fwrite((uint8_t*)buf, sizeof(uint8_t),size,_fp);
+            
+            p = buf;
+            n = (uint32_t)docTuple->pos;
+            np = &n;
+            ZVBCODE(np, p);
+            size = (int)(p-buf);
+            _counter += sizeof(uint8_t) * fwrite((uint8_t*)buf, sizeof(uint8_t),size,_fp);
             delete docTuple;
             _invertedList[j] = NULL;
         }
