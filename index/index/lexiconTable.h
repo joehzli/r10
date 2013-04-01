@@ -18,8 +18,8 @@
 typedef struct {
     std::string word;
     uint32_t num;   // number of docs containing the word
-    uint16_t fileID;    // the ID of the file containing the invertd index
-    uint32_t invertedPointer;   //pointer to the inverted index
+    uint32_t blockID;   //id of the block, 32 bit can represent 281TB index data
+    uint16_t listID;     //id of the list in the block, the block size if 64KB
 } LexiconItem;
 
 typedef std::vector<LexiconItem *> LexiconTable;

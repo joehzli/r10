@@ -16,28 +16,41 @@
 #include "GlobalConfig.h"
 #include "tmpindex.h"
 
-// Used in inverted index
+using namespace std;
+
 typedef struct {
-    uint32_t actualPos;
-    uint32_t pos;   // 12-bit is enough
+    uint32_t docID; // the diff of the docID
+    uint32_t actualDocID;
+    uint32_t freq;
+    uint32_t pos; // we only record one position for one word in one doc, just for snippet
 } Posting;
 
-typedef std::vector<Posting *> PostingVector;
+typedef struct {
+    vector<uint32_t> zipDocID; //compressed docID for 128 posting
+    vector<uint32_t> zipFreq;   //compressed Freq for 128 posting
+    vector<uint32_t> zipPos;    //compressed Position for 128 posting
+}Chunk;
 
 typedef struct {
-    uint32_t docID;
-    uint32_t actualDocID;
-    PostingVector posArray;
-} DocTuple;
-
+    uint16_t listLength;    // how many list in this block
+    uint16_t chunkLenght;   // how many chunk in this block
+    vector<uint16_t> listIndex; // position of each list start
+    vector<uint16_t> chunkSize; //size of each chunk
+    vector<uint32_t> lastDocID; // last docID of each chunk
+    vector<Chunk*> chunks;  // the chunk
+    uint16_t blockSize; //current block size, this attribute is not written to file
+}Block;
 
 class InvertedTable
 {
 private:
     FILEMODE _mode;
-    std::string _word;
+    string _word;
     char _outputPath[128];
-    std::vector<DocTuple *> _invertedList;
+    char _blockBuf[BLOCK_SIZE];
+    Block _block;
+    
+    vector<Posting *> _invertedList;
     uint32_t _lastDocID;
     uint32_t _counter;
     uint16_t _fileID;
@@ -50,8 +63,10 @@ public:
     void SetFileMode(FILEMODE mode);
     uint32_t Insert(const RawPosting *rawPosting);
     uint32_t WriteOutstanding();
-    uint16_t GetFileID();
     uint32_t GetDocNumLastWord();
+    
+    uint32_t blockID;
+    uint16_t listID;
 };
 
 /****************************************************
