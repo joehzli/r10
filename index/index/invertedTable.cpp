@@ -184,7 +184,7 @@ void GenerateInvertedIndexFile()
             if(count < lastCounter) {
                 lexiconItem->invertedPointer = 0;
             }
-            
+            lexiconItem->size = count - lexiconItem->invertedPointer;
             lexiconItem = new LexiconItem;
             lexiconItem->word = posting.word;
             lastWord = posting.word;
@@ -201,6 +201,7 @@ void GenerateInvertedIndexFile()
     if(count > 0 && count < lastCounter) {
         lexiconTable.back()->invertedPointer = 0;
     }
+    lexiconTable.back()->size = count - lexiconTable.back()->invertedPointer;
     
     WriteLexiconTable(&lexiconTable, CURRENT_FILEMODE);
 }

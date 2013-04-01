@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D5294721709113100F270C8 /* vbyte.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D5294701709113100F270C8 /* vbyte.cpp */; };
 		4D7A9B8816E3956F00F28BB5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7A9B8716E3956F00F28BB5 /* libz.dylib */; };
 		4D7A9B8B16E3A8B600F28BB5 /* Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D7A9B8916E3A8B600F28BB5 /* Utility.cpp */; };
 		4D7DC8D416E2A7D6009536B3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D7DC8D316E2A7D6009536B3 /* main.cpp */; };
@@ -34,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D5294701709113100F270C8 /* vbyte.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vbyte.cpp; sourceTree = "<group>"; };
+		4D5294711709113100F270C8 /* vbyte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbyte.h; sourceTree = "<group>"; };
 		4D7A9B8716E3956F00F28BB5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4D7A9B8916E3A8B600F28BB5 /* Utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utility.cpp; sourceTree = "<group>"; };
 		4D7A9B8A16E3A8B600F28BB5 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				4DA0BC821708AE6C00090187 /* gzfile.h */,
 				4DA0BC841708AE8000090187 /* tmpindex.cpp */,
 				4DA0BC851708AE8100090187 /* tmpindex.h */,
+				4D5294701709113100F270C8 /* vbyte.cpp */,
+				4D5294711709113100F270C8 /* vbyte.h */,
 			);
 			path = index;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 				4D7A9B8B16E3A8B600F28BB5 /* Utility.cpp in Sources */,
 				4DA0BC831708AE6D00090187 /* gzfile.cpp in Sources */,
 				4DA0BC861708AE8100090187 /* tmpindex.cpp in Sources */,
+				4D5294721709113100F270C8 /* vbyte.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
