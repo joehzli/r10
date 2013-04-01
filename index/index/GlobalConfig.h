@@ -17,7 +17,7 @@
 #define DATA_CHUNK 20971520 //2.5MB
 #define MAX_PATH_LENGTH 128 //Max length of file path
 #define MAX_URL_LENGTH  4096    //Max length of URL
-#define MAX_WORD_LENGTH 4096    //single word buffer
+#define MAX_WORD_LENGTH 32768    //single word buffer
 #define TMP_INDEX_PATH "./tmp/merge.index"
 #define MERGE_SORT_COMMAND "sort -S 1G -m -k 2f,2f -k 1n,1n ./tmp/*.tmp -o  ./tmp/merge.index"
 #define CLEAR_TMP_COMMAND "rm -rf ./tmp/*.tmp"

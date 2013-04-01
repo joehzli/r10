@@ -150,8 +150,9 @@ int parser(const char* url, char* doc, RawPostingVector *vector, uint32_t docID)
 		ch = *purl;
 		*purl = '\0';
         if(strlen(word) > MAX_WORD_LENGTH) {
-            std::cout<<"word to long"<<std::endl;
-            exit(1);
+            std::cout<<"word to long"<<strlen(word)<<std::endl;
+            *purl = ch;
+            continue;
         }
         strcpy(wordBuf, word);
         RawPosting *rawPosting = new RawPosting;
@@ -260,8 +261,9 @@ int parser(const char* url, char* doc, RawPostingVector *vector, uint32_t docID)
 		*p = '\0';
         
         if(strlen(word) > MAX_WORD_LENGTH) {
-            std::cout<<"word to long"<<std::endl;
-            exit(1);
+            std::cout<<"word to long"<<strlen(word)<<std::endl;
+            *p = ch;
+            continue;
         }
 		strcpy(wordBuf, word);
         RawPosting *rawPosting = new RawPosting;
