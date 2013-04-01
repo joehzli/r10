@@ -184,7 +184,7 @@ void GenerateInvertedIndexFile()
         }
         posting.docID = invertedDocID;
         posting.word=invertedWord;
-        bzero(invertedWord, MAX_WORD_LENGTH);
+        //bzero(invertedWord, MAX_WORD_LENGTH);
         posting.pos = invertedPost;
         
         // first time
