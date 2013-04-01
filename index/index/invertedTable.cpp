@@ -54,13 +54,7 @@ void InvertedTable::write()
         _DocNumLastWord = (uint32_t)_invertedList.size();
         for(int j=0;j<_invertedList.size();j++) {
             DocTuple *docTuple =_invertedList[j];
-            _counter += fprintf(_fp,"%u %lu ", docTuple->docID, docTuple->posArray.size());
-            for(int i=0;i<docTuple->posArray.size();i++) {
-                _counter += fprintf(_fp,"%d ", docTuple->posArray[i]->pos);
-                delete docTuple->posArray[i];
-                docTuple->posArray[i] = NULL;
-            }
-            docTuple->posArray.clear();
+            _counter += fprintf(_fp,"%u %u %u ", docTuple->docID, docTuple->freq, docTuple->pos);
             delete docTuple;
             _invertedList[j] = NULL;
         }
@@ -81,17 +75,9 @@ void InvertedTable::write()
         _DocNumLastWord = (uint32_t)_invertedList.size();
         for(int j=0;j<_invertedList.size();j++) {
             DocTuple *docTuple =_invertedList[j];
-            uint32_t docListLength =(uint32_t)docTuple->posArray.size();
             _counter += sizeof(uint32_t) * fwrite(&docTuple->docID, sizeof(uint32_t), 1, _fp);
-            _counter += sizeof(uint32_t) * fwrite(&docListLength, sizeof(uint32_t),1,_fp);
-            for(int i=0;i<docTuple->posArray.size();i++) {
-                _counter += sizeof(uint32_t) * fwrite(&docTuple->posArray[i]->pos, sizeof(uint32_t), 1, _fp);
-                delete docTuple->posArray[i];
-                docTuple->posArray[i] = NULL;
-            }
-            docTuple->posArray.clear();
-            PostingVector tmp;
-            docTuple->posArray.swap(tmp);
+            _counter += sizeof(uint32_t) * fwrite(&docTuple->freq, sizeof(uint32_t),1,_fp);
+            _counter += sizeof(uint32_t) * fwrite(&docTuple->pos, sizeof(uint32_t),1,_fp);
             delete docTuple;
             _invertedList[j] = NULL;
         }
@@ -117,10 +103,8 @@ uint32_t InvertedTable::Insert(const RawPosting *rawPosting)
         _lastDocID = rawPosting->docID;
         docTuple->actualDocID = rawPosting->docID;
         docTuple->docID = rawPosting->docID;
-        Posting *posting = new Posting;
-        posting->actualPos = rawPosting->pos;
-        posting->pos = rawPosting->pos;
-        docTuple->posArray.push_back(posting);
+        docTuple->freq =1;
+        docTuple->pos = rawPosting->pos;
         _invertedList.push_back(docTuple);
     } else if (_word != rawPosting->word){
         //write and free the memory
@@ -130,23 +114,15 @@ uint32_t InvertedTable::Insert(const RawPosting *rawPosting)
         _lastDocID = rawPosting->docID;
         docTuple->actualDocID = rawPosting->docID;
         docTuple->docID = rawPosting->docID;
-        
-        Posting *posting = new Posting;
-        posting->actualPos = rawPosting->pos;
-        posting->pos = rawPosting->pos;
-        docTuple->posArray.push_back(posting);
+        docTuple->freq=1;
+        docTuple->pos = rawPosting->pos;
         _invertedList.push_back(docTuple);
-
         return _counter;
     } else {//insert same word
         // The same doc, compress position
         if(rawPosting->docID == _lastDocID) {
             DocTuple * docTuple = _invertedList.back();
-            Posting *posting = new Posting;
-            posting->actualPos = rawPosting->pos;
-            // compress the position
-            posting->pos = (rawPosting->pos - docTuple->posArray.back()->actualPos);
-            docTuple->posArray.push_back(posting);
+            docTuple->freq++;
         } else {
             // Different doc, compress the docID
             DocTuple * docTuple = new DocTuple;
@@ -154,10 +130,8 @@ uint32_t InvertedTable::Insert(const RawPosting *rawPosting)
             docTuple->actualDocID = rawPosting->docID;
             // compress docID
             docTuple->docID = (rawPosting->docID-_invertedList.back()->actualDocID);
-            Posting *posting = new Posting;
-            posting->actualPos = rawPosting->pos;
-            posting->pos = rawPosting->pos;
-            docTuple->posArray.push_back(posting);
+            docTuple->freq =1;
+            docTuple->pos = rawPosting->pos;
             _invertedList.push_back(docTuple);
         }
         

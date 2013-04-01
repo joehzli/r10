@@ -18,16 +18,10 @@
 
 // Used in inverted index
 typedef struct {
-    uint32_t actualPos;
-    uint32_t pos;   // 12-bit is enough
-} Posting;
-
-typedef std::vector<Posting *> PostingVector;
-
-typedef struct {
     uint32_t docID;
     uint32_t actualDocID;
-    PostingVector posArray;
+    uint32_t freq;
+    uint32_t pos;
 } DocTuple;
 
 
