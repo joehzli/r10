@@ -127,45 +127,48 @@ int parser(const char* url, char* doc, RawPostingVector *vector, uint32_t docID)
     
     /* parsing URL */
     size_t ulen = strlen(url);
-    char *urlBuff = new char[ulen+1];
-    char *purl = urlBuff;
-    strcpy(purl, url);
-    purl[ulen] = '\0';
-	while (*purl != '\0')
-	{
-		if (!xl_isindexable(*purl))
-		{
-			purl++;
-			continue;
-		}
-        
-		word = purl;
-		while (xl_isindexable(*purl))
-		{
-			if (xl_isupper(*purl))
-				xl_tolower(*purl);
-			purl++;
-		}
-        
-		ch = *purl;
-		*purl = '\0';
-        if(strlen(word) > MAX_WORD_LENGTH) {
-            std::cout<<"word to long"<<strlen(word)<<std::endl;
+    if (ulen > MAX_URL_LENGTH) {
+        std::cout<<"URL length is incorrect:"<<ulen<<std::endl;
+    } else {
+        char *urlBuff = new char[ulen+1];
+        char *purl = urlBuff;
+        strcpy(purl, url);
+        purl[ulen] = '\0';
+        while (*purl != '\0')
+        {
+            if (!xl_isindexable(*purl))
+            {
+                purl++;
+                continue;
+            }
+            
+            word = purl;
+            while (xl_isindexable(*purl))
+            {
+                if (xl_isupper(*purl))
+                    xl_tolower(*purl);
+                purl++;
+            }
+            
+            ch = *purl;
+            *purl = '\0';
+            if(strlen(word) > MAX_WORD_LENGTH) {
+                std::cout<<"word to long"<<strlen(word)<<std::endl;
+                *purl = ch;
+                continue;
+            }
+            strcpy(wordBuf, word);
+            RawPosting *rawPosting = new RawPosting;
+            rawPosting->docID = docID;
+            rawPosting->word = wordBuf;
+            rawPosting->pos = 0; // we never extract words from header, so we can use 0 to indicate the word is in URL
+            vector->push_back(rawPosting);
+            wordCount++;
             *purl = ch;
-            continue;
         }
-        strcpy(wordBuf, word);
-        RawPosting *rawPosting = new RawPosting;
-        rawPosting->docID = docID;
-        rawPosting->word = wordBuf;
-        rawPosting->pos = 0; // we never extract words from header, so we can use 0 to indicate the word is in URL
-		vector->push_back(rawPosting);
-        wordCount++;
-		*purl = ch;
-	}
-    delete []urlBuff;
-    urlBuff = NULL;
-    
+        delete []urlBuff;
+        urlBuff = NULL;
+    }
     /* parsing page */
 	tag_flag = 0;
 	intag = 0;

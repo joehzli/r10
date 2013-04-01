@@ -30,7 +30,17 @@ void GenerateTmpIndex()
             string indexFilePath = fileName;
             string dataFilePath = fileName.substr(0, fileName.length()-5)+"data";
             char *dataFileBuf = ReadGZFile(dataFilePath.data());
+            if (dataFileBuf == NULL) {
+                fileID++;
+                continue;
+            }
             char *indexFileBuf = ReadGZFile(indexFilePath.data());
+            if (dataFileBuf == NULL) {
+                free(dataFileBuf);
+                dataFileBuf = NULL;
+                fileID++;
+                continue;
+            }
             IndexRecordVector *indexArray = ParseIndex(indexFileBuf);
             CStringVector *pages = GetPages(dataFileBuf, indexArray);
             // free the datafile buffer

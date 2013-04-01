@@ -149,9 +149,14 @@ CStringVector *GetPages(char* dataBuf, IndexRecordVector* indexArray)
     for(int i=0;i<indexArray->size();i++) {
         IndexRecord *indexRecord = (*indexArray)[i];
         int pageLength= indexRecord->length;
-        if(strcmp(indexRecord->status, "ok") != 0)
-            continue;
-        else {
+        if (pageLength < 0 || pageLength > MAX_PAGE_LENGTH) {
+            cout<<"Page length is incorrect, drop the whole file:"<<pageLength<<endl;
+            cout<<indexRecord->url<<endl;
+            return pages;
+        }
+        if(strcmp(indexRecord->status, "ok") != 0) {
+            cout<<"stat is not ok"<<endl;
+        }else {
             int pageLength= indexRecord->length;
             char *page = new char[pageLength+1];
             strncpy(page, dataPointer, pageLength);
