@@ -122,18 +122,16 @@ class Query:
 		num = len(words)
 		print "nlist:", num
 		lp = []
-		begin = time.clock()
+		openListStart = time.clock()
 		for i in range(num):
 			lp.append(self.openList(words[i]))
-		print "openlist time:",str(time.clock()-begin)
-		begin = time.clock()
-		resultTime = 0
+		print "openlist time:",str(time.clock()-openListStart)
+		sortStart = time.clock()
 		bm25Time = 0
 		lp.sort(key=attrgetter('size'))
 		did = 0
-		print "sort list time:",str(time.clock()-begin)
+		print "sort list time:",str(time.clock()-sortStart)
 		while did < config.MAXDID:
-			begin = time.clock()
 			did = self.nextGEQ(lp[0] ,did)
 			if did == config.MAXDID:
 				break
@@ -144,25 +142,23 @@ class Query:
 					break
 			if d is not None and d > did:
 				did = d
-				resultTime += time.clock()-begin
 			else:
-				resultTime += time.clock()-begin
-				begin = time.clock()
 				resultItem = ResultItem()
 				resultItem.docID = did
 				resultItem.url = urlTable[did].url
 				score =0
+				bm25Start = time.clock()
 				for i in range(num):
 					freq = self.getFreq(lp[i], did)
 					score += bm25.getBM25(freq, lp[i].size, urlTable.N, urlTable[did].dl, urlTable.avgdl)
 					pos = self.getPos(lp[i], did)
 					resultItem.pos.append(pos)
-				bm25Time += time.clock()-begin
+				bm25Time += time.clock()-bm25Start
 				resultItem.bm25 = score
 				resultItem.score = resultItem.bm25
 				queryResult.append(resultItem)
 				did+=1
-		print "result time & bm25time: ", resultTime, bm25Time
+		print "bm25time: ", bm25Time
 		return queryResult
 
 
@@ -173,7 +169,7 @@ class Query:
 		words = self.parseQuery(query)
 		begin = time.clock()
 		queryResult = self.daatQuery(words)
-		print "get result & score time:",str(time.clock()-begin)
+		print "get result & bm25 time:",str(time.clock()-begin)
 		resultSize = len(queryResult)
 		print "result size:",resultSize
 		if start > resultSize-1:
