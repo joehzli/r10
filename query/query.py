@@ -199,7 +199,7 @@ class Query:
 		return queryResult, resultSize
 
 def Test():
-	words = "fuck china"
+	words = "hello world"
 	q = Query()
 	result, size = q.queryWords(words, 0, 10)
 	print size
