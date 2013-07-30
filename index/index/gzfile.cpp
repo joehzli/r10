@@ -10,6 +10,7 @@
 #include "stdlib.h"
 #include "GlobalConfig.h"
 #include <zlib.h>
+#include <iostream>
 
 char *ReadGZFile(const char *filePath)
 {
@@ -26,6 +27,13 @@ char *ReadGZFile(const char *filePath)
         {
             oldSize=size;
             size*=2;
+            if (size > MAX_GZFILE_LENGTH) {
+                std::cout<<"gzip file incorrect:"<<size<<std::endl;
+                gzclose(gzfile);
+                free(buffer);
+                return NULL;
+            }
+            
             buffer=(char *)realloc(buffer,size);
         }
     }

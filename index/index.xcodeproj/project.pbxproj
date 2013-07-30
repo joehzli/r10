@@ -34,6 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D5294711709113100F270C8 /* vbyte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vbyte.h; sourceTree = "<group>"; };
 		4D7A9B8716E3956F00F28BB5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4D7A9B8916E3A8B600F28BB5 /* Utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utility.cpp; sourceTree = "<group>"; };
 		4D7A9B8A16E3A8B600F28BB5 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 				4DA0BC821708AE6C00090187 /* gzfile.h */,
 				4DA0BC841708AE8000090187 /* tmpindex.cpp */,
 				4DA0BC851708AE8100090187 /* tmpindex.h */,
+				4D5294711709113100F270C8 /* vbyte.h */,
 			);
 			path = index;
 			sourceTree = "<group>";

@@ -7,6 +7,7 @@ class Lexicon:
 		self.occurence = 0
 		self.fileID = 0
 		self.pointer = 0
+		self.size = 0
 
 @singleton
 class LexiconTable:
@@ -31,8 +32,7 @@ class LexiconTable:
 				(wordLen,) = struct.unpack("=H", bytes)
 				word =str(fb.read(wordLen))
 				lexicon = Lexicon()
-				(lexicon.occurence,lexicon.fileID, lexicon.pointer) = struct.unpack("=IHI", fb.read(struct.calcsize('=IHI')))
-				#print word
+				(lexicon.occurence,lexicon.fileID, lexicon.pointer, lexicon.size) = struct.unpack("=IHII", fb.read(struct.calcsize('=IHII')))
 				self.dict[word] = lexicon
 		print "lexicon size:", len(self.dict)
 	def GetLexicon(self, word):

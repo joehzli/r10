@@ -30,7 +30,17 @@ void GenerateTmpIndex()
             string indexFilePath = fileName;
             string dataFilePath = fileName.substr(0, fileName.length()-5)+"data";
             char *dataFileBuf = ReadGZFile(dataFilePath.data());
+            if (dataFileBuf == NULL) {
+                fileID++;
+                continue;
+            }
             char *indexFileBuf = ReadGZFile(indexFilePath.data());
+            if (dataFileBuf == NULL) {
+                free(dataFileBuf);
+                dataFileBuf = NULL;
+                fileID++;
+                continue;
+            }
             IndexRecordVector *indexArray = ParseIndex(indexFileBuf);
             CStringVector *pages = GetPages(dataFileBuf, indexArray);
             // free the datafile buffer
@@ -38,19 +48,21 @@ void GenerateTmpIndex()
             dataFileBuf = NULL;
             free(indexFileBuf);
             indexFileBuf = NULL;
+            
             // deal with each page
             uint32_t urlPointer = 0;
             for(int j=0;j<pages->size();j++) {
                 char *page = (*pages)[j];
                 int pageLength = (*indexArray)[j]->length;
                 const char *url = (*indexArray)[j]->url.c_str();
-                GetPostingFromPage(postingVector, page, url, pageLength, docID);
+                uint32_t wordCount = GetPostingFromPage(postingVector, page, url, pageLength, docID);
                 
                 URLItem *urlItem = new URLItem;
                 urlItem->docID = docID;
                 urlItem->fileID= fileID;
                 urlItem->startIndex=urlPointer;
-                urlItem->url= (*indexArray)[j]->url;
+                urlItem->url= (*indexArray)[j]->url.c_str();
+                urlItem->dl = wordCount;
                 urlPointer+=(*indexArray)[j]->length;
                 urlTable.Add(urlItem);
                 docID++;
@@ -86,7 +98,7 @@ void GenerateTmpIndex()
         WriteRawPostingToFile(postingVector, tmpIndexFileName, FILEMODE_ASCII);
         freeRawPostingVector(postingVector);
     }
-    
+    delete postingVector;
     urlTable.Write(CURRENT_FILEMODE);
 }
 
@@ -99,86 +111,14 @@ void MergeTmpIndex()
 
 int GetPostingFromPage(RawPostingVector *vector, char* page, const char* url, int length, uint32_t docID)
 {
-    char *parsedBuf = new char[length*2];
-    bzero(parsedBuf, length*2);
-    int ret = parser(url, page, parsedBuf, length*2);
-    if(ret == 0||parsedBuf == NULL || strlen(parsedBuf) == 0) {
-        delete []parsedBuf;
-        parsedBuf = NULL;
-        return 0;
-    }
+    // call parser
+    int ret = parser(url, page, vector, docID);
     if(ret < 0) {
-        std::cout<<"ret < 0:"<<docID<<std::endl;
-        delete []parsedBuf;
-        parsedBuf = NULL;
+        // page has errors
         return 0;
     }
     
-    size_t parsedBufLength = strlen(parsedBuf);
-    char* pagePointer = parsedBuf;
-    int counter = 1;
-    while((*pagePointer) != 0) {
-        RawPosting *posting = new RawPosting;
-        char context;
-        char* word = new char[parsedBufLength];
-        int i = 0;
-        while((*pagePointer)!=' ') {
-            word[i] = (*pagePointer);
-            i++;
-            pagePointer++;
-        }
-        word[i] = 0;
-        
-        while((*pagePointer) == ' ') {
-            pagePointer++;
-        }
-        
-        context = (*pagePointer);
-        posting->docID = docID;
-        posting->word=word;
-        std::transform(posting->word.begin(), posting->word.end(), posting->word.begin(), ::tolower);
-        switch(context) {
-            case 'P':
-                posting->context = 0;
-                break;
-            case 'B':
-                posting->context = 1;
-                break;
-            case 'H':
-                posting->context = 2;
-                break;
-            case 'I':
-                posting->context = 3;
-                break;
-            case 'T':
-                posting->context = 4;
-                break;
-            case 'U':
-                posting->context = 5;
-                break;
-            default:
-                posting->context = 10;
-                break;
-        }
-        posting->pos = counter;
-        counter++;
-        pagePointer++;
-        vector->push_back(posting);
-        delete word;
-        word= NULL;
-        
-        while((*pagePointer) != '\n' && (*pagePointer) != 0) {
-            pagePointer++;
-        }
-        if((*pagePointer) == 0) {
-            break;
-        } else {
-            pagePointer++;
-        }
-    }
-    delete []parsedBuf;
-    parsedBuf = NULL;
-    return 1;
+    return ret; //it's also the word count
 }
 
 void freeRawPostingVector(RawPostingVector *vector)
@@ -201,26 +141,10 @@ void WriteRawPostingToFile(RawPostingVector *vector, const char* filePath, FILEM
         std::stable_sort(vector->begin(), vector->end(), CompareRawPostingWord);
         for(int i=0; i<vector->size();i++) {
             RawPosting *posting = (*vector)[i];
-            fprintf(fp, "%d %s %d %d\n", posting->docID, posting->word.c_str(), posting->pos, posting->context);
+            fprintf(fp, "%d %s %d\n", posting->docID, posting->word.c_str(), posting->pos);
         }
         fclose(fp);
     }
-}
-
-uint32_t WriteRawPostingToBuffer(char* buffer, RawPostingVector *vector, const char* filePath, FILEMODE mode)
-{
-    uint32_t count = 0;
-    std::sort(vector->begin(), vector->end(), CompareRawPostingDocID);
-    // must use stable sort in the second round
-    std::stable_sort(vector->begin(), vector->end(), CompareRawPostingWord);
-    for(int i=0; i<vector->size();i++) {
-        RawPosting *posting = (*vector)[i];
-        int nRead = 0;
-        nRead = sprintf(buffer, "%d %s %d %d\n", posting->docID, posting->word.c_str(), posting->pos, posting->context);
-        count +=nRead;
-        buffer += nRead;
-    }
-    return count;
 }
 
 bool CompareRawPostingDocID(RawPosting *posting1, RawPosting *posting2)

@@ -19,7 +19,6 @@ typedef struct {
     uint32_t docID;
     std::string word;
     uint32_t pos;
-    uint16_t context;
 } RawPosting;
 
 typedef std::vector<RawPosting *> RawPostingVector;
@@ -33,7 +32,6 @@ void MergeTmpIndex();
 int GetPostingFromPage(RawPostingVector *vector, char* page, const char* url, int length, uint32_t docID);
 void freeRawPostingVector(RawPostingVector *vector);
 void WriteRawPostingToFile(RawPostingVector *vector, const char* filePath, FILEMODE mode);
-uint32_t WriteRawPostingToBuffer(char* buffer, RawPostingVector *vector, const char* filePath, FILEMODE mode);
 bool CompareRawPostingDocID(RawPosting *posting1, RawPosting *posting2);
 bool CompareRawPostingWord(RawPosting *posting1, RawPosting *posting2);
 #endif /* defined(__index__tmpindex__) */

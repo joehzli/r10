@@ -9,6 +9,7 @@
 #include "invertedTable.h"
 #include "stdio.h"
 #include "lexiconTable.h"
+#include "vbyte.h"
 
 using namespace std;
 
@@ -54,13 +55,7 @@ void InvertedTable::write()
         _DocNumLastWord = (uint32_t)_invertedList.size();
         for(int j=0;j<_invertedList.size();j++) {
             DocTuple *docTuple =_invertedList[j];
-            _counter += fprintf(_fp,"%u %lu ", docTuple->docID, docTuple->posArray.size());
-            for(int i=0;i<docTuple->posArray.size();i++) {
-                _counter += fprintf(_fp,"%d %d ", docTuple->posArray[i]->pos, docTuple->posArray[i]->context);
-                delete docTuple->posArray[i];
-                docTuple->posArray[i] = NULL;
-            }
-            docTuple->posArray.clear();
+            _counter += fprintf(_fp,"%u %u %u ", docTuple->docID, docTuple->freq, docTuple->pos);
             delete docTuple;
             _invertedList[j] = NULL;
         }
@@ -81,18 +76,30 @@ void InvertedTable::write()
         _DocNumLastWord = (uint32_t)_invertedList.size();
         for(int j=0;j<_invertedList.size();j++) {
             DocTuple *docTuple =_invertedList[j];
-            uint32_t docListLength =(uint32_t)docTuple->posArray.size();
-            _counter += sizeof(uint32_t) * fwrite(&docTuple->docID, sizeof(uint32_t), 1, _fp);
-            _counter += sizeof(uint32_t) * fwrite(&docListLength, sizeof(uint32_t),1,_fp);
-            for(int i=0;i<docTuple->posArray.size();i++) {
-                _counter += sizeof(uint32_t) * fwrite(&docTuple->posArray[i]->pos, sizeof(uint32_t), 1, _fp);
-                _counter += sizeof(uint16_t) * fwrite(&docTuple->posArray[i]->context, sizeof(uint16_t), 1, _fp);
-                delete docTuple->posArray[i];
-                docTuple->posArray[i] = NULL;
-            }
-            docTuple->posArray.clear();
-            PostingVector tmp;
-            docTuple->posArray.swap(tmp);
+            uint32_t n;
+            uint32_t *np;
+            char buf[5];
+            
+            char *p = buf;
+            n = (uint32_t)docTuple->docID;
+            np = &n;
+            ZVBCODE(np, p);
+            int size = (int)(p-buf);
+            _counter += sizeof(uint8_t) * fwrite((uint8_t*)buf, sizeof(uint8_t), size, _fp);
+            
+            p = buf;
+            n = (uint32_t)docTuple->freq;
+            np = &n;
+            ZVBCODE(np, p);
+            size = (int)(p-buf);
+            _counter += sizeof(uint8_t) * fwrite((uint8_t*)buf, sizeof(uint8_t),size,_fp);
+            
+            p = buf;
+            n = (uint32_t)docTuple->pos;
+            np = &n;
+            ZVBCODE(np, p);
+            size = (int)(p-buf);
+            _counter += sizeof(uint8_t) * fwrite((uint8_t*)buf, sizeof(uint8_t),size,_fp);
             delete docTuple;
             _invertedList[j] = NULL;
         }
@@ -118,11 +125,8 @@ uint32_t InvertedTable::Insert(const RawPosting *rawPosting)
         _lastDocID = rawPosting->docID;
         docTuple->actualDocID = rawPosting->docID;
         docTuple->docID = rawPosting->docID;
-        Posting *posting = new Posting;
-        posting->actualPos = rawPosting->pos;
-        posting->pos = rawPosting->pos;
-        posting->context = rawPosting->context;
-        docTuple->posArray.push_back(posting);
+        docTuple->freq =1;
+        docTuple->pos = rawPosting->pos;
         _invertedList.push_back(docTuple);
     } else if (_word != rawPosting->word){
         //write and free the memory
@@ -132,25 +136,15 @@ uint32_t InvertedTable::Insert(const RawPosting *rawPosting)
         _lastDocID = rawPosting->docID;
         docTuple->actualDocID = rawPosting->docID;
         docTuple->docID = rawPosting->docID;
-        
-        Posting *posting = new Posting;
-        posting->actualPos = rawPosting->pos;
-        posting->pos = rawPosting->pos;
-        posting->context = rawPosting->context;
-        docTuple->posArray.push_back(posting);
+        docTuple->freq=1;
+        docTuple->pos = rawPosting->pos;
         _invertedList.push_back(docTuple);
-
         return _counter;
     } else {//insert same word
         // The same doc, compress position
         if(rawPosting->docID == _lastDocID) {
             DocTuple * docTuple = _invertedList.back();
-            Posting *posting = new Posting;
-            posting->actualPos = rawPosting->pos;
-            // compress the position
-            posting->pos = (rawPosting->pos - docTuple->posArray.back()->actualPos);
-            posting->context = rawPosting->context;
-            docTuple->posArray.push_back(posting);
+            docTuple->freq++;
         } else {
             // Different doc, compress the docID
             DocTuple * docTuple = new DocTuple;
@@ -158,11 +152,8 @@ uint32_t InvertedTable::Insert(const RawPosting *rawPosting)
             docTuple->actualDocID = rawPosting->docID;
             // compress docID
             docTuple->docID = (rawPosting->docID-_invertedList.back()->actualDocID);
-            Posting *posting = new Posting;
-            posting->actualPos = rawPosting->pos;
-            posting->pos = rawPosting->pos;
-            posting->context = rawPosting->context;
-            docTuple->posArray.push_back(posting);
+            docTuple->freq =1;
+            docTuple->pos = rawPosting->pos;
             _invertedList.push_back(docTuple);
         }
         
@@ -178,7 +169,6 @@ void GenerateInvertedIndexFile()
     FILE *mergedIndex = fopen(TMP_INDEX_PATH, "r");
     RawPosting posting;
     char invertedWord[MAX_WORD_LENGTH];
-    uint32_t invertedContext;
     uint32_t invertedDocID;
     uint32_t invertedPost;
     InvertedTable invertedTable;
@@ -186,7 +176,7 @@ void GenerateInvertedIndexFile()
     string lastWord = "";
     uint32_t lastCounter = 0;
     uint32_t count = 0;
-    while(fscanf(mergedIndex, "%d %s %d %d\n", &invertedDocID, invertedWord, &invertedPost, &invertedContext) != EOF) {
+    while(fscanf(mergedIndex, "%d %s %d\n", &invertedDocID, invertedWord, &invertedPost) != EOF) {
         if(strlen(invertedWord) > MAX_WORD_LENGTH) {
             cout<<invertedWord<<endl;
             cout<<strlen(invertedWord)<<endl;
@@ -194,8 +184,7 @@ void GenerateInvertedIndexFile()
         }
         posting.docID = invertedDocID;
         posting.word=invertedWord;
-        bzero(invertedWord, MAX_WORD_LENGTH);
-        posting.context = invertedContext;
+        //bzero(invertedWord, MAX_WORD_LENGTH);
         posting.pos = invertedPost;
         
         // first time
@@ -217,7 +206,7 @@ void GenerateInvertedIndexFile()
             if(count < lastCounter) {
                 lexiconItem->invertedPointer = 0;
             }
-            
+            lexiconItem->size = count - lexiconItem->invertedPointer;
             lexiconItem = new LexiconItem;
             lexiconItem->word = posting.word;
             lastWord = posting.word;
@@ -234,6 +223,7 @@ void GenerateInvertedIndexFile()
     if(count > 0 && count < lastCounter) {
         lexiconTable.back()->invertedPointer = 0;
     }
+    lexiconTable.back()->size = count - lexiconTable.back()->invertedPointer;
     
     WriteLexiconTable(&lexiconTable, CURRENT_FILEMODE);
 }

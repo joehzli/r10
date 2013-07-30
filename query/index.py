@@ -1,55 +1,62 @@
 import config
 import struct
+from lexicon import LexiconTable
 from singleton import singleton
+from vbyte import decode
 
-class PosItem:
-	def __init__(self):
-		self.pos = -1
-		self.context = -1
-
-class HitItem:
+class Posting:
 	def __init__(self):
 		self.docID = -1
-		self.occurence = -1
+		self.freq = -1
+		self.pos = -1
 		#self.poslist = []
+	def __cmp__(self, other):
+		if self.docID < other:
+			return -1
+		elif self.docID == other:
+			return 0
+		elif self.docID > other:
+			return 1
 
 @singleton
 class IndexTable:
 	def __init__(self):
 		self.files = {}
 
-	def GetIndex(self, fileID, pointer, occurence):
+	def GetIndex(self, fileID, pointer, length, occurence):
 		fileName = config.IndexFile
 		if self.files.has_key(fileID) is False:
 			fb = open(fileName%(fileID), "rb")
 			self.files[fileID] = fb
 		fb = self.files[fileID]
 		fb.seek(pointer)
-		hitMap = {}
+		invertedList = []
 		lastDocID = 0
+		bytes = fb.read(length)
+		numbers = decode(bytes)
+		print "len, occurence, len of num:", length, occurence, len(numbers)
+		if len(numbers) != occurence *3:
+			print "error decoding"
+			return []
 		for i in range(occurence):
-			hitItem = HitItem()
-			(hitItem.docID, hitItem.occurence) = struct.unpack("=II", fb.read(4+4))
+			posting = Posting()
+			posting.docID = numbers[i*3+0]
+			posting.freq = numbers[i*3+1]
+			posting.pos = numbers[i*3+2]
 			if i == 0:
-				lastDocID = hitItem.docID
+				lastDocID = posting.docID
 			else:
-				hitItem.docID = hitItem.docID+lastDocID
-				lastDocID = hitItem.docID
+				posting.docID = posting.docID+lastDocID
+				lastDocID = posting.docID
 			#print "docID, occurence:", hitItem.docID, hitItem.occurence
-			fb.seek(hitItem.occurence*6,1)	#skip position
-
-			#IGNORE POSITION
-			# for j in range(hitItem.occurence):
-			# 	posItem = PosItem()
-			# 	(posItem.pos, posItem.context) = struct.unpack("<IH", fb.read(4+2))
-			# 	hitItem.poslist.append(posItem)
-				#print "pos, context:", posItem.pos, posItem.context
-			hitMap[hitItem.docID] = hitItem
-		return hitMap
+			invertedList.append(posting)
+		return invertedList
 def test():
-	a = IndexTable()
-	l = a.GetIndex(0, 97964104,361)
+	lexiconTable = LexiconTable()
+	lexicon = lexiconTable["hello"]
+	indexTable = IndexTable()
+	l = indexTable.GetIndex(lexicon.fileID, lexicon.pointer,lexicon.occurence)
 	print len(l)
-	print l[51459].docID, l[51459].occurence
+	print l[0].docID, l[0].freq, l[0].pos
 
 #test()

@@ -18,4 +18,4 @@ def test():
 	for i in range (1000000):
 		getBM25(10,10,100,55,40)
 
-test()
+#test()

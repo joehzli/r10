@@ -21,6 +21,6 @@
  4) length of buffer
  
  ***************************************************************/
-int parser(const char* url, char* doc, char* buf, int blen);
+int parser(const char* url, char* doc, RawPostingVector *vector, uint32_t docID);
 
 #endif

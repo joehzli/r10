@@ -111,61 +111,68 @@ int tag_parser(char* tag, int len, char* back_tag)
 #define xlbit_unset(__b1, __b2)	((__b1) &= ~(__b2))
 #define xlbit_check(__b1, __b2) ((__b1)&(__b2))
 
-int parser(const char* url, char* doc, char* buf, int blen)
+int parser(const char* url, char* doc, RawPostingVector *vector, uint32_t docID)
 {
-	char *p, *word, *ptag, *pbuf;
-    size_t ulen = strlen(url);
+	char *p, *word, *ptag;
    	char ch, back_tag, intag, inscript;
 	unsigned tag_flag;
 	int ret;
-    
+    uint32_t wordCount = 0;
 	p = parser_init(doc);
-	if (p == NULL)
-		return 0;
-	pbuf = buf;
+	if (p == NULL) {
+		return -1;
+    }
+    
+    char wordBuf[MAX_WORD_LENGTH];
     
     /* parsing URL */
-    char *urlBuff = new char[ulen+1];
-    char *purl = urlBuff;
-    strcpy(purl, url);
-    purl[ulen] = '\0';
-	while (*purl != '\0')
-	{
-		if (!xl_isindexable(*purl))
-		{
-			purl++;
-			continue;
-		}
-        
-		word = purl;
-		while (xl_isindexable(*purl))
-		{
-			if (xl_isupper(*purl))
-				xl_tolower(*purl);
-			purl++;
-		}
-        
-		ch = *purl;
-		*purl = '\0';
-        
-		if (pbuf-buf+purl-word+3 > blen-1) {
-            delete []purl;
-            purl = NULL;
-			return -1;
+    size_t ulen = strlen(url);
+    if (ulen > MAX_URL_LENGTH) {
+        std::cout<<"URL length is incorrect:"<<ulen<<std::endl;
+    } else {
+        char *urlBuff = new char[ulen+1];
+        char *purl = urlBuff;
+        strcpy(purl, url);
+        purl[ulen] = '\0';
+        while (*purl != '\0')
+        {
+            if (!xl_isindexable(*purl))
+            {
+                purl++;
+                continue;
+            }
+            
+            word = purl;
+            while (xl_isindexable(*purl))
+            {
+                if (xl_isupper(*purl))
+                    xl_tolower(*purl);
+                purl++;
+            }
+            
+            ch = *purl;
+            *purl = '\0';
+            if(strlen(word) > MAX_WORD_LENGTH) {
+                std::cout<<"word to long"<<strlen(word)<<std::endl;
+                *purl = ch;
+                continue;
+            }
+            strcpy(wordBuf, word);
+            RawPosting *rawPosting = new RawPosting;
+            rawPosting->docID = docID;
+            rawPosting->word = wordBuf;
+            rawPosting->pos = 0; // we never extract words from header, so we can use 0 to indicate the word is in URL
+            vector->push_back(rawPosting);
+            wordCount++;
+            *purl = ch;
         }
-		sprintf(pbuf, "%s U\n", word);
-		pbuf += (purl-word)+3;
-        
-		*purl = ch;
-	}
-    delete []urlBuff;
-    urlBuff = NULL;
-    
+        delete []urlBuff;
+        urlBuff = NULL;
+    }
     /* parsing page */
 	tag_flag = 0;
 	intag = 0;
 	inscript = 0;
-    
 	while (*p != '\0')
 	{
 		if (!xl_isindexable(*p))
@@ -256,58 +263,19 @@ int parser(const char* url, char* doc, char* buf, int blen)
 		ch = *p;
 		*p = '\0';
         
-		if (pbuf-buf+p-word+1 > blen-1)
-			return -1;
-		sprintf(pbuf, "%s ", word);
-		pbuf += (p-word)+1;
-        
-		if (xlbit_check(tag_flag, _B_TAG))
-		{
-			if (pbuf-buf+1> blen-1)
-				return -1;
-			*pbuf = 'B';
-			pbuf++;
-		}
-        
-		if (xlbit_check(tag_flag, _H_TAG))
-		{
-			if (pbuf-buf+1> blen-1)
-				return -1;
-			*pbuf = 'H';
-			pbuf++;
-		}
-        
-		if (xlbit_check(tag_flag, _I_TAG))
-		{
-			if (pbuf-buf+1> blen-1)
-				return -1;
-			*pbuf = 'I';
-			pbuf++;
-		}
-        
-		if (xlbit_check(tag_flag, _TITLE_TAG))
-		{
-			if (pbuf-buf+1> blen-1)
-				return -1;
-			*pbuf = 'T';
-			pbuf++;
-		}
-        
-		if (tag_flag == 0)
-		{
-			if (pbuf-buf+1> blen-1)
-				return -1;
-			*pbuf = 'P';
-			pbuf++;
-		}
-        
-		if (pbuf-buf+1> blen-1)
-			return -1;
-		*pbuf = '\n';
-		pbuf++;
+        if(strlen(word) > MAX_WORD_LENGTH) {
+            std::cout<<"word to long"<<strlen(word)<<std::endl;
+            *p = ch;
+            continue;
+        }
+		strcpy(wordBuf, word);
+        RawPosting *rawPosting = new RawPosting;
+        rawPosting->docID = docID;
+        rawPosting->word = wordBuf;
+        rawPosting->pos = (uint32_t)(word-doc);
+		vector->push_back(rawPosting);
+        wordCount++;
 		*p = ch;
 	}
-    
-	*pbuf = '\0';
-	return (int)(pbuf-buf);
+	return wordCount;
 }

@@ -8,6 +8,7 @@ class URLItem:
 		self.fileID = -1
 		self.pointer = -1
 		self.pagesize = -1  # -1 means read until the end of the datafile
+		self.dl = -1
 
 @singleton
 class URLTable:
@@ -23,8 +24,7 @@ class URLTable:
 	def LoadData(self):
 		print "start loading urltable..."
 		fileName = config.URLFile
-		totalSize = 0
-		missedTotal = 0
+		totalWordCount = 0
 		with open(fileName, "rb") as fb:
 			while True:
 				bytes = fb.read(struct.calcsize('=H'))
@@ -33,18 +33,16 @@ class URLTable:
 				(wordLen,) = struct.unpack("=H", bytes)
 				urlItem = URLItem()
 				urlItem.url = str(fb.read(wordLen))
-				(urlItem.fileID,urlItem.pointer) = struct.unpack("=HI", fb.read(struct.calcsize('=HI')))
+				(urlItem.fileID, urlItem.pointer, urlItem.dl) = struct.unpack("=HII", fb.read(struct.calcsize('=HII')))
 				length = len(self.array)
 				if(length > 0):
 					lastItem = self.array[length-1]
 					lastItem.pagesize = urlItem.pointer - lastItem.pointer
 					if lastItem.pagesize < 0:
 						lastItem.pagesize = -1
-						missedTotal+=1
-					else:
-						totalSize+=lastItem.pagesize/1000.0
+				totalWordCount+=urlItem.dl
 				self.array.append(urlItem)
-		self.avgdl = totalSize/(len(self.array)-missedTotal)*1000
+		self.avgdl = totalWordCount/len(self.array)
 		self.N = len(self.array)
 		print "urltable size:",self.N
 
