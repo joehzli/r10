@@ -1,0 +1,64 @@
+Performance
+nlist: the number of lists we need to open
+size of list: how many numbers in the list
+openlist time: the time spent on open the lists
+sort list time: the time spent on sort the opened lists with their length
+bm25time: the time spent on bm25 calculation
+get result &bm25 time: the time spent on searching the common docID and bm25 calculation, also includes the openlist time
+sort bm25 time: the time spent on sorting the result list with their bm25 score
+snippet time: the time spent on getting the snippet
+
+query word: web search engine
+Before cache
+Total: 4766.10ms
+nlist: 3
+size of list: 910326
+size of list: 1749192
+size of list: 150774
+openlist time: 4.036113
+sort list time: 0.000105000000005
+bm25time:  0.0793970000003
+get result & bm25 time: 4.282904
+result size: 18712
+sort BM25 time: 0.017872
+start index & end index: 0 10
+snippet time: 0.318002
+
+After cache
+Total: 107.42ms
+nlist: 3
+openlist time: 0.000140999999999
+sort list time: 0.000123000000002
+bm25time:  0.0219519999997
+get result & bm25 time: 0.087043
+result size: 18712
+sort BM25 time: 0.01843
+start index & end index: 0 10
+snippet time: 0.000399999999999
+
+query word: a
+Before cache
+Total: 7962.84ms
+nlist: 1
+size of list: 3664590
+openlist time: 3.173414
+sort list time: 9.59999999992e-05
+bm25time:  3.119059
+get result & bm25 time: 7.118595
+result size: 1221530
+sort BM25 time: 0.595017
+start index & end index: 0 10
+snippet time: 0.016624
+[I 130404 10:51:20 web:1462] 200 GET /?query=a (::1) 
+
+After cache
+Total: 4389.53ms
+nlist: 1
+openlist time: 4.6999999995e-05
+sort list time: 7.39999999979e-05
+bm25time:  3.023384
+get result & bm25 time: 3.835876
+result size: 1221530
+sort BM25 time: 0.543978
+start index & end index: 0 10
+snippet time: 0.000284000000008

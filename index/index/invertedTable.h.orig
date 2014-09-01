@@ -1,0 +1,86 @@
+//
+//  invertedTable.h
+//  index
+//
+//  Created by Hanzhou Li on 3/2/13.
+//  Copyright (c) 2013 Hanzhou Li. All rights reserved.
+//
+
+#ifndef __index__invertedTable__
+#define __index__invertedTable__
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include "Utility.h"
+#include "GlobalConfig.h"
+#include "tmpindex.h"
+
+using namespace std;
+
+typedef struct {
+<<<<<<< HEAD
+    uint32_t docID; // the diff of the docID
+    uint32_t actualDocID;
+    uint32_t freq;
+    uint32_t pos; // we only record one position for one word in one doc, just for snippet
+} Posting;
+
+typedef struct {
+    vector<uint32_t> zipDocID; //compressed docID for 128 posting
+    vector<uint32_t> zipFreq;   //compressed Freq for 128 posting
+    vector<uint32_t> zipPos;    //compressed Position for 128 posting
+}Chunk;
+=======
+    uint32_t docID;
+    uint32_t actualDocID;
+    uint32_t freq;
+    uint32_t pos;
+} DocTuple;
+>>>>>>> vbyte
+
+typedef struct {
+    uint16_t listLength;    // how many list in this block
+    uint16_t chunkLenght;   // how many chunk in this block
+    vector<uint16_t> listIndex; // position of each list start
+    vector<uint16_t> chunkSize; //size of each chunk
+    vector<uint32_t> lastDocID; // last docID of each chunk
+    vector<Chunk*> chunks;  // the chunk
+    uint16_t blockSize; //current block size, this attribute is not written to file
+}Block;
+
+class InvertedTable
+{
+private:
+    FILEMODE _mode;
+    string _word;
+    char _outputPath[128];
+    char _blockBuf[BLOCK_SIZE];
+    Block _block;
+    
+    vector<Posting *> _invertedList;
+    uint32_t _lastDocID;
+    uint32_t _counter;
+    uint16_t _fileID;
+    uint32_t _DocNumLastWord;
+    FILE *_fp;
+    void write();
+public:
+    InvertedTable();
+    ~InvertedTable();
+    void SetFileMode(FILEMODE mode);
+    uint32_t Insert(const RawPosting *rawPosting);
+    uint32_t WriteOutstanding();
+    uint32_t GetDocNumLastWord();
+    
+    uint32_t blockID;
+    uint16_t listID;
+};
+
+/****************************************************
+ Generate the final inverted index files from the
+ temporary index files.
+ ****************************************************/
+void GenerateInvertedIndexFile();
+
+#endif /* defined(__index__invertedTable__) */
